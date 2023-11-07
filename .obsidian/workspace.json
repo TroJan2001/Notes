@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "cb4218e89dd4c9a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "5175db68794ead59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aee279f6b8b9ea76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Shells/Web Shells.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db3cf52605debf5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bff91155ac16ac5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a1d3bed8daae7e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6abb264e130b325f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b01c46eb068f1bc6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "2e6cba6892eaa0dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "306c40c65aea8757",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ceee257c0e370edd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Shells/Web Shells.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c71dd083848e30c4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Shells/Web Shells.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a022e649d85c7b1e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "a07d2c76a8ad1209",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Shells/Web Shells.md"
+              }
+            }
+          },
+          {
+            "id": "b9ceb5dd86b8c643",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "aee279f6b8b9ea76",
+  "lastOpenFiles": [
+    "Shells/Socat Encrypted Shells.md",
+    "Shells/Socat.md",
+    "Shells/Reverse shells.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "Shells/Exploiting User Account.md",
+    "Network Exploitation/Filtering.md",
+    "Network Exploitation/Network Services/SMB/SMBClient.md",
+    "Network Exploitation/Network Services/SMB/SMB.md",
+    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
+    "Shells/Web Shells.md",
+    "Network Exploitation/Hydra.md",
+    "Researching/File Discovery & Hidden Files/Steganography.md",
+    "Network Exploitation/Network Services/SMTP, POP and IMAP.md",
+    "Network Exploitation/Network Services/MySQL.md",
+    "Encryption and Hashing/Encryption/HMAC.md",
+    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+    "Encryption and Hashing/Encryption/SSH Authentication.md",
+    "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+    "Encryption and Hashing/Encryption/PKI.md",
+    "Encryption and Hashing/Encryption/LKUS.md",
+    "Encryption and Hashing/Encryption/GPG.md",
+    "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
+    "Encryption and Hashing/Hashing/NTLM.md",
+    "Encryption and Hashing/Hashing/md5sum.md",
+    "Attachments/Pasted image 20230717053936.png",
+    "Attachments/Pasted image 20231105000838.png",
+    "Attachments/Pasted image 20230715165918.png",
+    "Attachments/Pasted image 20231105010425.png",
+    "Attachments/Pasted image 20231105010437.png",
+    "Attachments/Pasted image 20231105010021.png",
+    "Attachments/Pasted image 20231105010205.png",
+    "Attachments/Pasted image 20231105010157.png",
+    "Attachments/Pasted image 20231105010116.png",
+    "Attachments/Pasted image 20231105005837.png",
+    "LFI & RFI.md",
+    "Windows/Windows Update.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables",
+    "Privesc/Linux Privesc/Enumeration",
+    "Privesc/Linux Privesc/CVE",
+    "Privesc/Linux Privesc",
+    "Privesc",
+    "Researching/Privesc/Linux Privesc/SUID&SGID Executables",
+    "Researching/Privesc/Linux Privesc/Enumeration",
+    "Researching/Privesc/Linux Privesc/CVE",
+    "Researching/Privesc/Linux Privesc",
+    "Researching/Privesc",
+    "Untitled.canvas"
+  ]
+}

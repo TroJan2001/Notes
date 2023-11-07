@@ -1,0 +1,14 @@
+
+Command injection is also often known as “Remote Code Execution” (RCE) because of the ability to remotely execute code within an application. These vulnerabilities are often the most lucrative to an attacker because it means that the attacker can directly interact with the vulnerable system. For example, an attacker may read system or user files, data, and things of that nature.
+
+Command Injection can be detected in mostly one of two ways:
+
+1. Blind command injection
+2. Verbose command injection
+
+|**Method**|**Description**|
+|---|---|
+|Blind|This type of injection is where there is no direct output from the application when testing payloads. You will have to investigate the behaviours of the application to determine whether or not your payload was successful.|
+|Verbose|This type of injection is where there is direct feedback from the application once you have tested a payload. For example, running the `whoami` command to see what user the application is running under. The web application will output the username on the page directly.|
+
+Refer to this very useful command Injection payload cheat sheet for more information `https://github.com/payloadbox/command-injection-payload-list`

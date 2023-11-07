@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "42f8e4bad5caee15",
+    "type": "split",
+    "children": [
+      {
+        "id": "706c779a5e480082",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa9c5c0f03387272",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Introduction to Cyber Security Learning Path.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8d098605bb40d10e",
+    "type": "split",
+    "children": [
+      {
+        "id": "62ac29d1a3994919",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d703fa771abb588c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e77392347b71aa30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1a3b5ea3be0bfb17",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "11340f3977f61552",
+    "type": "split",
+    "children": [
+      {
+        "id": "225c654ca4ef55ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e42b027831d253e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Introduction to Cyber Security Learning Path.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0414fdaa6a699571",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Introduction to Cyber Security Learning Path.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8c585bd030776a35",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fe6c5c12d3c3995b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Introduction to Cyber Security Learning Path.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d703fa771abb588c",
+  "lastOpenFiles": [
+    "EduNotes/Xfreerdp.md",
+    "EduNotes/VNET-Creation.md",
+    "EduNotes/To-do notes.md",
+    "EduNotes/SMB enumeration.md",
+    "EduNotes/Setting manual DNS.md",
+    "EduNotes/PHP deserlialization.md",
+    "EduNotes/Mounting a tunneled NFS share.md",
+    "EduNotes/Linux forensics.md",
+    "EduNotes/LFI to RCE.md",
+    "EduNotes/Jenkins reverse shell.md",
+    "EduNotes/HTB-Photobomb.md",
+    "EduNotes/Exfiltration.md",
+    "EduNotes/Docker.md",
+    "EduNotes/Dive.md",
+    "EduNotes/C2 framework.md",
+    "EduNotes/Buffer overflow.md",
+    "EduNotes/Windows/Tools/Powerview.md",
+    "EduNotes/Windows/Tools/powerup.ps1.md",
+    "EduNotes/Windows/Methodologies/Windows privesc.md",
+    "EduNotes/Windows/Methodologies/Windows persistence.md",
+    "EduNotes/Windows/Methodologies/Windows firewall evasion.md",
+    "EduNotes/Windows/Methodologies/Windows exploitation.md",
+    "EduNotes/Windows/Methodologies/Windows Active directory.md",
+    "EduNotes/Windows/Methodologies/Credential harvesting.md",
+    "EduNotes/Windows/kerberos exploitation/Unconstrained delegation.md",
+    "EduNotes/Windows/kerberos exploitation/Skeleton key persistence.md",
+    "EduNotes/Windows/Forensics/WindowsForensicsCheatsheetTryHackMe-1.png",
+    "EduNotes/Windows/Tools",
+    "EduNotes/Windows/Methodologies",
+    "EduNotes/Windows/kerberos exploitation",
+    "EduNotes/Windows/Forensics",
+    "EduNotes/Windows/Exploits",
+    "EduNotes/Windows",
+    "EduNotes/Tools",
+    "EduNotes/Rooms",
+    "EduNotes/Nmap",
+    "EduNotes/Methods/Buffer overflows/x_sixty_what-picoCTF",
+    "EduNotes/Images/snapshot.jpg",
+    "EduNotes/Images/Pasted image 20230424224442.png",
+    "EduNotes/Images/Pasted image 20221109232554.png"
+  ]
+}

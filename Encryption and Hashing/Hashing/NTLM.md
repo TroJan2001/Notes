@@ -1,0 +1,1 @@
+The NTLM hash is **the cryptographic format in which user passwords are stored on Windows systems**
