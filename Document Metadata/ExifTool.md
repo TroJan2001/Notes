@@ -20,6 +20,3 @@ To read all the EXIF data embedded in an image:
 ```bash
 exiftool IMAGE.jpg
 ```
-
-
-hi edu
