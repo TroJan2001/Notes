@@ -11,11 +11,9 @@
             "id": "aee279f6b8b9ea76",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Shells/Web Shells.md",
-                "mode": "source",
-                "source": false
+                "file": "Attachments/Pasted image 20231105010437.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shells/Web Shells.md",
+                "file": "Attachments/Pasted image 20231105010437.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shells/Web Shells.md",
+                "file": "Attachments/Pasted image 20231105010437.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shells/Web Shells.md"
+                "file": "Attachments/Pasted image 20231105010437.png"
               }
             }
           },
@@ -159,6 +157,7 @@
   },
   "active": "aee279f6b8b9ea76",
   "lastOpenFiles": [
+    "Shells/Web Shells.md",
     "Attachments/Pasted image 20231107232202.png",
     "Shells/Socat Encrypted Shells.md",
     "Shells/Socat.md",
@@ -169,7 +168,6 @@
     "Network Exploitation/Network Services/SMB/SMBClient.md",
     "Network Exploitation/Network Services/SMB/SMB.md",
     "Network Exploitation/Network Services/SMB/Enum4Linux.md",
-    "Shells/Web Shells.md",
     "Network Exploitation/Hydra.md",
     "Researching/File Discovery & Hidden Files/Steganography.md",
     "Network Exploitation/Network Services/SMTP, POP and IMAP.md",
@@ -193,7 +191,6 @@
     "Attachments/Pasted image 20231105010205.png",
     "Attachments/Pasted image 20231105010157.png",
     "Attachments/Pasted image 20231105010116.png",
-    "Attachments/Pasted image 20231105005837.png",
     "LFI & RFI.md",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
