@@ -11,9 +11,11 @@
             "id": "aee279f6b8b9ea76",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Attachments/Pasted image 20231105010437.png"
+                "file": "Document Metadata/ExifTool.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Attachments/Pasted image 20231105010437.png",
+                "file": "Document Metadata/ExifTool.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Attachments/Pasted image 20231105010437.png",
+                "file": "Document Metadata/ExifTool.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Attachments/Pasted image 20231105010437.png"
+                "file": "Document Metadata/ExifTool.md"
               }
             }
           },
@@ -155,10 +157,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aee279f6b8b9ea76",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20231105010425.png",
     "Attachments/Pasted image 20231105010437.png",
+    "Attachments/Pasted image 20231105010425.png",
     "Shells/Web Shells.md",
     "Attachments/Pasted image 20231107232202.png",
     "Shells/Socat Encrypted Shells.md",
