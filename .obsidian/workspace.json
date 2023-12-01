@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5175db68794ead59",
+        "id": "316bc1b63273aba7",
         "type": "tabs",
         "children": [
           {
-            "id": "aee279f6b8b9ea76",
+            "id": "24ffc5a4b77a6990",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Document Metadata/ExifTool.md",
+                "file": "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Document Metadata/ExifTool.md",
+                "file": "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Document Metadata/ExifTool.md",
+                "file": "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Document Metadata/ExifTool.md"
+                "file": "Network Exploitation/Nmap/Nmap Live Host Discovery.md"
               }
             }
           },
@@ -157,43 +157,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "24ffc5a4b77a6990",
   "lastOpenFiles": [
+    "Network Exploitation/Nmap/Nmap Scans.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
+    "Network Exploitation/Nmap/Firewall evasion.md",
     "Attachments/Pasted image 20231105010437.png",
+    "Assignment 1.md",
     "Attachments/Pasted image 20231105010425.png",
-    "Shells/Web Shells.md",
-    "Attachments/Pasted image 20231107232202.png",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Socat.md",
-    "Shells/Reverse shells.md",
-    "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Exploiting User Account.md",
-    "Network Exploitation/Filtering.md",
-    "Network Exploitation/Network Services/SMB/SMBClient.md",
-    "Network Exploitation/Network Services/SMB/SMB.md",
-    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
+    "Attachments/Pasted image 20231122044417.png",
+    "Attachments/Pasted image 20231122052153.png",
+    "Attachments/Pasted image 20231122053109.png",
+    "Attachments/Pasted image 20231123180136.png",
+    "Attachments/Pasted image 20231123184907.png",
+    "Attachments/Pasted image 20231123184919.png",
+    "Attachments/Pasted image 20231123201629.png",
+    "Attachments/Pasted image 20231123201843.png",
+    "Attachments/Pasted image 20231121153911.png.md",
+    "Attachments/Pasted image 20231122044500.png.md",
+    "Assignment 1 1.md",
     "Network Exploitation/Hydra.md",
-    "Researching/File Discovery & Hidden Files/Steganography.md",
-    "Network Exploitation/Network Services/SMTP, POP and IMAP.md",
-    "Network Exploitation/Network Services/MySQL.md",
-    "Encryption and Hashing/Encryption/HMAC.md",
+    "Network Exploitation/HTTP Server.md",
+    "Network Exploitation/Network Services/NFS/NFS.md",
+    "Network Exploitation/Linux Firewalls/Netfilter.md",
+    "Network Exploitation/Linux Firewalls/iptables.md",
+    "Network Exploitation/Linux Firewalls/nftables.md",
     "Encryption and Hashing/Encryption/Symmetric Encryption.md",
-    "Encryption and Hashing/Encryption/SSH Authentication.md",
     "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
     "Encryption and Hashing/Encryption/PKI.md",
     "Encryption and Hashing/Encryption/LKUS.md",
+    "Encryption and Hashing/Encryption/HMAC.md",
     "Encryption and Hashing/Encryption/GPG.md",
     "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
-    "Encryption and Hashing/Hashing/NTLM.md",
-    "Encryption and Hashing/Hashing/md5sum.md",
-    "Attachments/Pasted image 20230717053936.png",
-    "Attachments/Pasted image 20231105000838.png",
-    "Attachments/Pasted image 20230715165918.png",
-    "Attachments/Pasted image 20231105010021.png",
-    "Attachments/Pasted image 20231105010205.png",
-    "Attachments/Pasted image 20231105010157.png",
-    "Attachments/Pasted image 20231105010116.png",
-    "LFI & RFI.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Resources.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
     "Privesc/Linux Privesc/CVE",

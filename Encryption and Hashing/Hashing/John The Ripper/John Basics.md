@@ -14,7 +14,7 @@ john [options] [path to file]
 An example of basic command is as follows:
 
 ```bash
-	john --wordlist=[path to wordlist] [path to file]
+john --wordlist=[path to wordlist] [path to file]
 ```
 
 To determine the type of the hash we want to crack, we can use the `hashid` command like so:
