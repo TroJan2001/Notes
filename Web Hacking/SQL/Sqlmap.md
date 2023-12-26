@@ -49,7 +49,8 @@ These options can be used to access the back-end database management system on t
 
 |Options|Description|
 |---|---|
-|--os-shell|Prompt for an interactive operating system shell|
+|--os-shell|Prompt for an interactive SQL shell|
+|--sql-shell|Prompt for an OOB shell, Meterpreter or VNC|
 |--os-pwn|Prompt for an OOB shell, Meterpreter or VNC|
 |--os-cmd=OSCMD|Execute an operating system command|
 |--priv-esc|Database process user privilege escalation|
