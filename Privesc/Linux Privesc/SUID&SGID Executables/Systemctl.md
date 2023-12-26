@@ -20,5 +20,5 @@ systemctl start <filename without path)>
 
 ```bash
 echo $TF #to get the file name and path, then we run the file but without the path
-systemctl start <filename without path)>
+systemctl start <filename without path>
 ```

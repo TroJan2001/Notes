@@ -1,7 +1,6 @@
 
 We can use John to crack the password on password protected Zip or RAR files. Again, we're going to be using a separate part of the john suite of tools to convert the zip or RAR file into a format that John will understand.
 
-
 ### Zip Files
 
 For zip files we will be using `Zip2John` tool, and the syntax is as follows:
