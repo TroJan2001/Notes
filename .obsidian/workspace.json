@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "316bc1b63273aba7",
+        "id": "fa2130529c3934da",
         "type": "tabs",
         "children": [
           {
-            "id": "24ffc5a4b77a6990",
+            "id": "b96a41491c34668c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Hacking/SQL/Sqlmap.md",
+                "file": "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Hacking/SQL/Sqlmap.md",
+                "file": "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Hacking/SQL/Sqlmap.md",
+                "file": "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Hacking/SQL/Sqlmap.md"
+                "file": "Network Exploitation/Nmap/Nmap Basic Port Scans.md"
               }
             }
           },
@@ -135,7 +135,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -157,8 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24ffc5a4b77a6990",
+  "active": "b96a41491c34668c",
   "lastOpenFiles": [
+    "Network Exploitation/Nmap/Firewall evasion.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Network Exploitation/Nmap/Nmap Scans.md",
+    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
     "Privesc/Linux Privesc/Enumeration/Find Command.md",
     "Web Hacking/SQL/Sqlmap.md",
     "Web Hacking/SQL",
@@ -181,11 +188,6 @@
     "Resources.md",
     "LFI & RFI.md",
     "Network Exploitation/Network Services/FTP.md",
-    "Researching/File Discovery & Hidden Files/dirb.md",
-    "Researching/File Discovery & Hidden Files/ffuf.md",
-    "Encryption and Hashing/Encryption/GPG.md",
-    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
-    "Encryption and Hashing/Encryption/SSH Authentication.md",
     "Attachments/Pasted image 20231105010354.png",
     "Attachments/Pasted image 20231105010225.png",
     "Attachments/Pasted image 20231105010205.png",
