@@ -12,3 +12,6 @@ Command Injection can be detected in mostly one of two ways:
 |Verbose|This type of injection is where there is direct feedback from the application once you have tested a payload. For example, running the `whoami` command to see what user the application is running under. The web application will output the username on the page directly.|
 
 Refer to this very useful command Injection payload cheat sheet for more information `https://github.com/payloadbox/command-injection-payload-list`
+
+Also, this link contains a very useful command injection bypass payloads
+https://yolospacehacker.com/hackersguide/?cat=cmdinjection

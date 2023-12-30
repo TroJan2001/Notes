@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4d8f4bc3cf4c1bb2",
+        "id": "f559e243c5ef827a",
         "type": "tabs",
         "children": [
           {
-            "id": "40fe6f8e20bb4a89",
+            "id": "ae303d0b03cafc94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+                "file": "LFI & RFI.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "john",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+                "file": "LFI & RFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+                "file": "LFI & RFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Encryption and Hashing/Hashing/John The Ripper/John Basics.md"
+                "file": "LFI & RFI.md"
               }
             }
           },
@@ -159,36 +159,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "40fe6f8e20bb4a89",
+  "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
-    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "Shells/Reverse shells.md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Web Hacking/Command Injection.md",
+    "Shells/Socat.md",
+    "Shells/Web Shells.md",
+    "Web Hacking/XML.md",
+    "Web Hacking/Walking An Application.md",
+    "Shells/Socat Encrypted Shells.md",
+    "Shells/Exploiting User Account.md",
+    "Web Hacking/Untitled.md",
     "Network Exploitation/SSH Tunnels.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
     "Attachments/Pasted image 20231228034029.png",
     "Attachments/Pasted image 20231228034008.png",
     "Network Exploitation/ss.md",
     "Web Hacking/SQL/Sqlmap.md",
-    "Shells/Reverse shells.md",
     "Network Exploitation/Hydra.md",
     "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
     "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
     "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
     "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
     "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
     "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Shells/Web Shells.md",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Socat.md",
-    "Shells/Netcat Shell Stabilisation.md",
     "Network Exploitation/Nessus.md",
     "Network Exploitation/hashdump.md",
     "Network Exploitation/Logs.md",
-    "Network Exploitation/HTTP Server.md",
-    "Network Exploitation/Filtering.md",
-    "Network Exploitation/Nmap/Nmap Scans.md",
-    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
-    "Network Exploitation/Nmap/Firewall evasion.md",
-    "Network Exploitation/Dig.md",
     "Web Hacking/SQL",
     "Attachments/Pasted image 20231105010354.png",
     "Attachments/Pasted image 20231105010225.png",
