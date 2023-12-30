@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LFI & RFI.md",
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LFI & RFI.md",
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LFI & RFI.md",
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LFI & RFI.md"
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md"
               }
             }
           },
@@ -161,6 +162,10 @@
   },
   "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
+    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+    "Privesc/Linux Privesc/Exploiting Crontab.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
+    "LFI & RFI.md",
     "Shells/Netcat Shell Stabilisation.md",
     "Shells/Reverse shells.md",
     "Privesc/Linux Privesc/Enumeration/Find Command.md",
@@ -185,10 +190,6 @@
     "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
     "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
     "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Network Exploitation/Nessus.md",
-    "Network Exploitation/hashdump.md",
-    "Network Exploitation/Logs.md",
     "Web Hacking/SQL",
     "Attachments/Pasted image 20231105010354.png",
     "Attachments/Pasted image 20231105010225.png",
