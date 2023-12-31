@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Exploitation/Chankro.md",
+                "file": "Web Exploitation/Hydra.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bypass",
+                "query": "hyd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Exploitation/Chankro.md",
+                "file": "Web Exploitation/Hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Exploitation/Chankro.md",
+                "file": "Web Exploitation/Hydra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Exploitation/Chankro.md"
+                "file": "Web Exploitation/Hydra.md"
               }
             }
           },
@@ -161,6 +162,15 @@
   },
   "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
+    "Network Exploitation/Nmap/Firewall evasion.md",
+    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Web Exploitation/XSS/XSS Payloads.md",
+    "Web Exploitation/XSS/XSS.md",
+    "Web Exploitation/XSS/Stored XSS.md",
+    "Web Exploitation/XSS/Reflected XSS.md",
+    "Web Exploitation/XSS/Blind XSS.md",
+    "Web Exploitation/XSS/Dom Based XSS.md",
+    "Web Exploitation/Chankro.md",
     "Web Exploitation/Command Injection.md",
     "Web Exploitation/Logs.md",
     "Web Exploitation/XML.md",
@@ -172,21 +182,12 @@
     "Network Exploitation/Whois.md",
     "Network Exploitation/Nessus.md",
     "Network Exploitation/ss.md",
-    "Web Exploitation/Chankro.md",
     "LFI & RFI.md",
     "Privesc/Linux Privesc/Exploiting PATH Variable.md",
     "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
     "Privesc/Linux Privesc/Exploiting Crontab.md",
     "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
     "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Reverse shells.md",
-    "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Shells/Socat.md",
-    "Shells/Web Shells.md",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Exploiting User Account.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
     "Attachments/Pasted image 20231228034029.png",
     "Attachments/Pasted image 20231228034008.png",
     "Web Exploitation/SQL",
