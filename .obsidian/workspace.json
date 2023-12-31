@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+                "file": "Network Exploitation/Whois.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path",
+                "query": "bypass",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+                "file": "Network Exploitation/Whois.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+                "file": "Network Exploitation/Whois.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md"
+                "file": "Network Exploitation/Whois.md"
               }
             }
           },
@@ -160,37 +159,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae303d0b03cafc94",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
+    "Web Exploitation/SSH Tunnels.md",
+    "Web Exploitation/Logs.md",
+    "Network Exploitation/Nessus.md",
+    "Web Exploitation/HTTP Server.md",
+    "Web Exploitation/Filtering.md",
+    "Web Exploitation/Hydra.md",
+    "Web Exploitation/Walking An Application.md",
+    "Network Exploitation/ss.md",
+    "Web Exploitation/Chankro.md",
+    "LFI & RFI.md",
+    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
     "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
     "Privesc/Linux Privesc/Exploiting Crontab.md",
     "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
-    "LFI & RFI.md",
     "Shells/Netcat Shell Stabilisation.md",
     "Shells/Reverse shells.md",
     "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Web Hacking/Command Injection.md",
+    "Web Exploitation/Command Injection.md",
     "Shells/Socat.md",
     "Shells/Web Shells.md",
-    "Web Hacking/XML.md",
-    "Web Hacking/Walking An Application.md",
+    "Web Exploitation/XML.md",
     "Shells/Socat Encrypted Shells.md",
     "Shells/Exploiting User Account.md",
-    "Web Hacking/Untitled.md",
-    "Network Exploitation/SSH Tunnels.md",
     "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
     "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
     "Attachments/Pasted image 20231228034029.png",
     "Attachments/Pasted image 20231228034008.png",
-    "Network Exploitation/ss.md",
-    "Web Hacking/SQL/Sqlmap.md",
-    "Network Exploitation/Hydra.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
-    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
-    "Web Hacking/SQL",
+    "Web Exploitation/SQL/Sqlmap.md",
+    "Web Exploitation/SQL",
     "Attachments/Pasted image 20231105010354.png",
     "Attachments/Pasted image 20231105010225.png",
     "Attachments/Pasted image 20231105010205.png",

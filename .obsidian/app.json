@@ -10,5 +10,6 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "Attachments",
   "newLinkFormat": "relative",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "alwaysUpdateLinks": true
 }
