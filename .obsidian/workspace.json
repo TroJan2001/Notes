@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c132ca612e20d984",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Network Exploitation/Nmap/Nmap TCP Null Scan, FIN Scan, and Xmas Scan.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,22 +159,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c132ca612e20d984",
+  "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20240103053313.png",
-    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Attachments/Pasted image 20231105005311.png",
+    "Attachments/Pasted image 20231105005254.png",
+    "Attachments/Pasted image 20231105005239.png",
+    "Attachments/Pasted image 20231105003138.png",
+    "Attachments/Pasted image 20231105000838.png",
+    "Attachments/Pasted image 20230717053936.png",
     "Network Exploitation/Nmap/Nmap NSE & Commands.md",
-    "Readme.md",
+    "Network Exploitation/Nmap/Nmap Scans.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Network Exploitation/Nmap/TCP Maimon Scan.md",
+    "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
     "Network Exploitation/Nmap/Nmap TCP Null Scan, FIN Scan, and Xmas Scan.md",
+    "Attachments/Pasted image 20240105181340.png",
+    "Attachments/Pasted image 20240103053313.png",
+    "Readme.md",
     "Attachments/Pasted image 20240103052510.png",
     "Attachments/Pasted image 20240103052447.png",
     "Attachments/Pasted image 20240103052251.png",
-    "Attachments/Pasted image 20240103051908.png",
-    "Network Exploitation/Nmap/Nmap Scans.md",
-    "Attachments/Pasted image 20231228034029.png",
-    "Attachments/Pasted image 20231105010437.png",
-    "Attachments/Pasted image 20240103051758.png",
     "Shells/Reverse shells.md",
     "Network Exploitation/Network Services/Telnet.md",
     "LFI & RFI.md",
@@ -205,12 +197,7 @@
     "Web Exploitation/Walking An Application.md",
     "Web Exploitation/SSH Tunnels.md",
     "Web Exploitation/Filtering.md",
-    "Web Exploitation/HTTP Server.md",
-    "Network Exploitation/Whois.md",
-    "Attachments/Pasted image 20231228034008.png",
     "Web Exploitation/SQL",
-    "Attachments/Pasted image 20231105010354.png",
-    "Attachments/Pasted image 20231105010225.png",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
     "Privesc/Linux Privesc/CVE",
