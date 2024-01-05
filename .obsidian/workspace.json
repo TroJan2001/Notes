@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Exploitation/Nmap/Fragmented Packets.md",
+                "file": "Web Exploitation/SQL/Sqlmap.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tcpdump",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network Exploitation/Nmap/Fragmented Packets.md",
+                "file": "Web Exploitation/SQL/Sqlmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Network Exploitation/Nmap/Fragmented Packets.md",
+                "file": "Web Exploitation/SQL/Sqlmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network Exploitation/Nmap/Fragmented Packets.md"
+                "file": "Web Exploitation/SQL/Sqlmap.md"
               }
             }
           },
@@ -159,16 +159,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae303d0b03cafc94",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
+    "Web Exploitation/SQL/SQL Injection.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Network Exploitation/Nmap/Fragmented Packets.md",
+    "Web Exploitation/SQL/Sqlmap.md",
+    "Attachments/Pasted image 20240105200104.png",
+    "Attachments/Pasted image 20240105200042.png",
     "Attachments/Pasted image 20240105192328.png",
     "Network Exploitation/Nmap/Spoofing and Decoys.md",
-    "Network Exploitation/Nmap/Fragmented Packets.md",
     "Readme.md",
     "Attachments/Pasted image 20240105191936.png",
     "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
     "Network Exploitation/Nmap/TCP Maimon Scan.md",
-    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
     "Attachments/Pasted image 20240105191503.png",
     "Attachments/Pasted image 20240105184221.png",
     "Attachments/Pasted image 20240105183957.png",
@@ -177,11 +182,7 @@
     "Attachments/Pasted image 20240105183607.png",
     "Attachments/Pasted image 20240105183604.png",
     "Attachments/Pasted image 20231105005311.png",
-    "Attachments/Pasted image 20231105005254.png",
-    "Attachments/Pasted image 20231105005239.png",
-    "Attachments/Pasted image 20231105003138.png",
     "Network Exploitation/Nmap/Nmap Scans.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
     "Shells/Reverse shells.md",
     "Network Exploitation/Network Services/Telnet.md",
     "LFI & RFI.md",
@@ -196,7 +197,6 @@
     "Web Exploitation/Command Injection.md",
     "Web Exploitation/Logs.md",
     "Web Exploitation/XML.md",
-    "Web Exploitation/Walking An Application.md",
     "Web Exploitation/SQL",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
