@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Exploitation/SQL/Sqlmap.md",
+                "file": "Researching/File Discovery & Hidden Files/Steganography.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "steg",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Exploitation/SQL/Sqlmap.md",
+                "file": "Researching/File Discovery & Hidden Files/Steganography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Exploitation/SQL/Sqlmap.md",
+                "file": "Researching/File Discovery & Hidden Files/Steganography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Exploitation/SQL/Sqlmap.md"
+                "file": "Researching/File Discovery & Hidden Files/Steganography.md"
               }
             }
           },
@@ -159,13 +160,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
+    "Privesc/Linux Privesc/History, Config and SSH Files.md",
+    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Web Exploitation/SQL/Sqlmap.md",
     "Web Exploitation/SQL/SQL Injection.md",
     "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
     "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
     "Network Exploitation/Nmap/Fragmented Packets.md",
-    "Web Exploitation/SQL/Sqlmap.md",
     "Attachments/Pasted image 20240105200104.png",
     "Attachments/Pasted image 20240105200042.png",
     "Attachments/Pasted image 20240105192328.png",
@@ -194,9 +198,6 @@
     "Web Exploitation/XSS/Blind XSS.md",
     "Web Exploitation/XSS/Dom Based XSS.md",
     "Web Exploitation/Chankro.md",
-    "Web Exploitation/Command Injection.md",
-    "Web Exploitation/Logs.md",
-    "Web Exploitation/XML.md",
     "Web Exploitation/SQL",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
