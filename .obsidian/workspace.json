@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Researching/File Discovery & Hidden Files/Steganography.md",
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "steg",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Researching/File Discovery & Hidden Files/Steganography.md",
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Researching/File Discovery & Hidden Files/Steganography.md",
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Researching/File Discovery & Hidden Files/Steganography.md"
+                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md"
               }
             }
           },
@@ -160,44 +159,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae303d0b03cafc94",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
-    "Privesc/Linux Privesc/History, Config and SSH Files.md",
-    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
-    "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Web Exploitation/SQL/Sqlmap.md",
-    "Web Exploitation/SQL/SQL Injection.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
-    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
-    "Network Exploitation/Nmap/Fragmented Packets.md",
+    "Shells/Reverse shells.md",
+    "Shells/Socat.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "Shells/Exploiting User Account.md",
+    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
+    "Web Exploitation/XSS/Dom Based XSS.md",
+    "Web Exploitation/Hydra.md",
+    "Web Exploitation/SSH Tunnels.md",
+    "Shells/Web Shells.md",
+    "Web Exploitation/XSS/XSS.md",
+    "Web Exploitation/XSS/Stored XSS.md",
+    "Web Exploitation/XSS/Blind XSS.md",
+    "Network Exploitation/Network Services/FTP.md",
+    "Network Exploitation/Network Services/SMB/SMBClient.md",
+    "Network Exploitation/Network Services/SMB/SMB.md",
+    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
+    "Network Exploitation/Network Services/NFS/NFS.md",
+    "Network Exploitation/Network Services/NFS/NFS-Common.md",
+    "Network Exploitation/Nmap/TCP Maimon Scan.md",
+    "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
+    "Network Exploitation/Nmap/Spoofing and Decoys.md",
+    "Network Exploitation/Nmap/Nmap TCP Null Scan, FIN Scan, and Xmas Scan.md",
+    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
+    "Attachments/Pasted image 20240107182254.png",
+    "Attachments/Pasted image 20240107182226.png",
+    "Attachments/Pasted image 20240107182201.png",
     "Attachments/Pasted image 20240105200104.png",
     "Attachments/Pasted image 20240105200042.png",
     "Attachments/Pasted image 20240105192328.png",
-    "Network Exploitation/Nmap/Spoofing and Decoys.md",
-    "Readme.md",
     "Attachments/Pasted image 20240105191936.png",
-    "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
-    "Network Exploitation/Nmap/TCP Maimon Scan.md",
     "Attachments/Pasted image 20240105191503.png",
     "Attachments/Pasted image 20240105184221.png",
     "Attachments/Pasted image 20240105183957.png",
-    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
-    "Network Exploitation/Nmap/Nmap TCP Null Scan, FIN Scan, and Xmas Scan.md",
-    "Attachments/Pasted image 20240105183607.png",
-    "Attachments/Pasted image 20240105183604.png",
-    "Attachments/Pasted image 20231105005311.png",
-    "Network Exploitation/Nmap/Nmap Scans.md",
-    "Shells/Reverse shells.md",
-    "Network Exploitation/Network Services/Telnet.md",
-    "LFI & RFI.md",
-    "Web Exploitation/Hydra.md",
-    "Web Exploitation/XSS/XSS Payloads.md",
-    "Web Exploitation/XSS/XSS.md",
-    "Web Exploitation/XSS/Stored XSS.md",
-    "Web Exploitation/XSS/Reflected XSS.md",
-    "Web Exploitation/XSS/Blind XSS.md",
-    "Web Exploitation/XSS/Dom Based XSS.md",
-    "Web Exploitation/Chankro.md",
     "Web Exploitation/SQL",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
