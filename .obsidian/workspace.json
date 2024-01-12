@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "find suid",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Linux Privesc/Exploiting PATH Variable.md"
+                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md"
               }
             }
           },
@@ -159,34 +159,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
     "Shells/Reverse shells.md",
-    "Shells/Socat.md",
-    "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Exploiting User Account.md",
-    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
-    "Web Exploitation/XSS/Dom Based XSS.md",
-    "Web Exploitation/Hydra.md",
-    "Web Exploitation/SSH Tunnels.md",
-    "Shells/Web Shells.md",
-    "Web Exploitation/XSS/XSS.md",
-    "Web Exploitation/XSS/Stored XSS.md",
-    "Web Exploitation/XSS/Blind XSS.md",
-    "Network Exploitation/Network Services/FTP.md",
-    "Network Exploitation/Network Services/SMB/SMBClient.md",
-    "Network Exploitation/Network Services/SMB/SMB.md",
-    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
-    "Network Exploitation/Network Services/NFS/NFS.md",
-    "Network Exploitation/Network Services/NFS/NFS-Common.md",
+    "Network Exploitation/Nmap/Nmap Post Port Scans.md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Network Exploitation/Whois.md",
+    "Network Exploitation/ss.md",
+    "Network Exploitation/Nessus.md",
+    "Network Exploitation/Dig.md",
+    "Researching/File Discovery & Hidden Files/ffuf.md",
+    "Network Exploitation/Metasploit/Metasploit.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap Advanced Port Scanning Summary.md",
+    "Researching/File Discovery & Hidden Files/Steganography.md",
+    "Network Exploitation/hashdump.md",
+    "Network Exploitation/Nmap/Fragmented Packets.md",
     "Network Exploitation/Nmap/TCP Maimon Scan.md",
     "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
     "Network Exploitation/Nmap/Spoofing and Decoys.md",
     "Network Exploitation/Nmap/Nmap TCP Null Scan, FIN Scan, and Xmas Scan.md",
     "Network Exploitation/Nmap/Nmap NSE & Commands.md",
+    "Network Exploitation/Nmap/Idle-Zombie Scan.md",
+    "Web Exploitation/Hydra.md",
+    "Network Exploitation/Network Services/FTP.md",
+    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+    "Shells/Socat.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "Shells/Exploiting User Account.md",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
     "Attachments/Pasted image 20240107182201.png",
