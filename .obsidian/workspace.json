@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md",
+                "file": "Network Exploitation/Common Protocols Ports.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md",
+                "file": "Network Exploitation/Common Protocols Ports.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md",
+                "file": "Network Exploitation/Common Protocols Ports.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network Exploitation/Nmap/Nmap Post Port Scans.md"
+                "file": "Network Exploitation/Common Protocols Ports.md"
               }
             }
           },
@@ -161,8 +161,11 @@
   },
   "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
-    "Shells/Reverse shells.md",
+    "Attachments/Pasted image 20240113185445.png",
+    "Security Principles.md",
+    "Network Exploitation/Common Protocols Ports.md",
     "Network Exploitation/Nmap/Nmap Post Port Scans.md",
+    "Shells/Reverse shells.md",
     "Privesc/Linux Privesc/Enumeration/Find Command.md",
     "Network Exploitation/Whois.md",
     "Network Exploitation/ss.md",
@@ -184,9 +187,6 @@
     "Web Exploitation/Hydra.md",
     "Network Exploitation/Network Services/FTP.md",
     "Privesc/Linux Privesc/Exploiting PATH Variable.md",
-    "Shells/Socat.md",
-    "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Exploiting User Account.md",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
     "Attachments/Pasted image 20240107182201.png",
