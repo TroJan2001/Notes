@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Exploitation/Common Protocols Ports.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "find suid",
+                "query": "find",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network Exploitation/Common Protocols Ports.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Network Exploitation/Common Protocols Ports.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network Exploitation/Common Protocols Ports.md"
+                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md"
               }
             }
           },
@@ -159,34 +160,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae303d0b03cafc94",
+  "active": "6abb264e130b325f",
   "lastOpenFiles": [
-    "Attachments/Pasted image 20240113185445.png",
-    "Security Principles.md",
-    "Network Exploitation/Common Protocols Ports.md",
-    "Network Exploitation/Nmap/Nmap Post Port Scans.md",
     "Shells/Reverse shells.md",
-    "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Network Exploitation/Whois.md",
-    "Network Exploitation/ss.md",
-    "Network Exploitation/Nessus.md",
-    "Network Exploitation/Dig.md",
-    "Researching/File Discovery & Hidden Files/ffuf.md",
-    "Network Exploitation/Metasploit/Metasploit.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
-    "Network Exploitation/Nmap/Nmap Advanced Port Scanning Summary.md",
+    "Researching/File Discovery & Hidden Files/Gobuster.md",
+    "Researching/File Discovery & Hidden Files/Nikto.md",
     "Researching/File Discovery & Hidden Files/Steganography.md",
-    "Network Exploitation/hashdump.md",
-    "Network Exploitation/Nmap/Fragmented Packets.md",
-    "Network Exploitation/Nmap/TCP Maimon Scan.md",
-    "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
-    "Network Exploitation/Nmap/Spoofing and Decoys.md",
-    "Network Exploitation/Nmap/Nmap TCP Null Scan, FIN Scan, and Xmas Scan.md",
-    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
-    "Network Exploitation/Nmap/Idle-Zombie Scan.md",
-    "Web Exploitation/Hydra.md",
-    "Network Exploitation/Network Services/FTP.md",
+    "Researching/File Discovery & Hidden Files/Foremost.md",
+    "Researching/File Discovery & Hidden Files/ffuf.md",
+    "Researching/File Discovery & Hidden Files/dirb.md",
+    "Privesc/Linux Privesc/LinEnum.md",
     "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
+    "Privesc/Linux Privesc/Escaping Vi Editor.md",
+    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-3560.md",
+    "Privesc/Linux Privesc/Exploiting Crontab.md",
+    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+    "Encryption and Hashing/Encryption/SSH Authentication.md",
+    "Encryption and Hashing/Encryption/LKUS.md",
+    "Encryption and Hashing/Encryption/GPG.md",
+    "Encryption and Hashing/Encryption/PKI.md",
+    "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
+    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
+    "Attachments/Pasted image 20240113185445.png",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
     "Attachments/Pasted image 20240107182201.png",
@@ -196,7 +198,6 @@
     "Attachments/Pasted image 20240105191936.png",
     "Attachments/Pasted image 20240105191503.png",
     "Attachments/Pasted image 20240105184221.png",
-    "Attachments/Pasted image 20240105183957.png",
     "Web Exploitation/SQL",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",
