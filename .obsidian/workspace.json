@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md",
+                "file": "Windows/WHfB.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "find",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md",
+                "file": "Windows/WHfB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md",
+                "file": "Windows/WHfB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Find Command.md"
+                "file": "Windows/WHfB.md"
               }
             }
           },
@@ -160,34 +159,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6abb264e130b325f",
+  "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
-    "Shells/Reverse shells.md",
-    "Researching/File Discovery & Hidden Files/Gobuster.md",
-    "Researching/File Discovery & Hidden Files/Nikto.md",
-    "Researching/File Discovery & Hidden Files/Steganography.md",
-    "Researching/File Discovery & Hidden Files/Foremost.md",
-    "Researching/File Discovery & Hidden Files/ffuf.md",
-    "Researching/File Discovery & Hidden Files/dirb.md",
-    "Privesc/Linux Privesc/LinEnum.md",
-    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
-    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
-    "Privesc/Linux Privesc/Escaping Vi Editor.md",
-    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-3560.md",
-    "Privesc/Linux Privesc/Exploiting Crontab.md",
-    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
-    "Encryption and Hashing/Encryption/SSH Authentication.md",
-    "Encryption and Hashing/Encryption/LKUS.md",
-    "Encryption and Hashing/Encryption/GPG.md",
-    "Encryption and Hashing/Encryption/PKI.md",
-    "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
-    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
+    "Network Exploitation/Network Services/SMB/SMBClient.md",
+    "Windows/WHfB.md",
+    "Network Exploitation/Network Services/SMB/SMB.md",
+    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
+    "Network Exploitation/Nmap/Nmap Post Port Scans.md",
+    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap Advanced Port Scanning Summary.md",
+    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Network Exploitation/Nmap/Idle-Zombie Scan.md",
+    "Network Exploitation/Nmap/Fragmented Packets.md",
+    "Shells/Exploiting User Account.md",
+    "Privesc/Linux Privesc/Weak File Permissions.md",
     "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
+    "Researching/File Discovery & Hidden Files/Nikto.md",
+    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
+    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+    "Shells/Reverse shells.md",
+    "Researching/File Discovery & Hidden Files/ffuf.md",
+    "LFI & RFI.md",
+    "Network Exploitation/Linux Firewalls/iptables.md",
+    "Network Exploitation/Linux Firewalls/Netfilter.md",
+    "Network Exploitation/Linux Firewalls/UFW.md",
+    "Network Exploitation/Linux Firewalls/nftables.md",
+    "Network Exploitation/Metasploit/Msfvenom.md",
+    "Network Exploitation/Metasploit/Msfconsole.md",
     "Attachments/Pasted image 20240113185445.png",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
