@@ -31,3 +31,5 @@ Now we have RCE!.
 ![](../Attachments/Pasted%20image%2020240212141401.png)
 
 Taken from https://www.cdxy.me/?p=752
+
+check https://www.thehacker.recipes/web/inputs/file-inclusion/lfi-to-rce/php-wrappers-and-streams for more payloads and testing.
