@@ -19,6 +19,8 @@ For example, the table below represents the output of the target file .htaccess
 
 The data stream wrapper is another example of PHP's wrapper functionality. The `data://` wrapper allows inline data embedding. It is used to embed small amounts of data directly within the URI, often used for embedding small data sets or resources.
 
+**Note:** allow_url_include must be set!
+
 For example, `?page=data:text/plain,<?php%20phpinfo();%20?>` (POC)
 
 We could use both data and filter by adding this payload `php://filter/convert.base64-decode/resource=data://plain/text,PD9waHAgc3lzdGVtKCRfR0VUWydjbWQnXSk7Pz4=` which belongs to this `<?php system($_GET['cmd']);?>`, then we could do something like this:
