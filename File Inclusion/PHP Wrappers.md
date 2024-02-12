@@ -17,7 +17,7 @@ For example, the table below represents the output of the target file .htaccess
 
 ### Data Wrapper
 
-The data stream wrapper is another example of PHP's wrapper functionality. The `data://` wrapper allows inline data embedding. It is used to embed small amounts of data directly into the application code.
+The data stream wrapper is another example of PHP's wrapper functionality. The `data://` wrapper allows inline data embedding. It is used to embed small amounts of data directly within the URI, often used for embedding small data sets or resources.
 
 For example, `?page=data:text/plain,<?php%20phpinfo();%20?>` (POC)
 
