@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/WHfB.md",
+                "file": "File Inclusion/PHP Wrappers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/WHfB.md",
+                "file": "File Inclusion/PHP Wrappers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/WHfB.md",
+                "file": "File Inclusion/PHP Wrappers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/WHfB.md"
+                "file": "File Inclusion/PHP Wrappers.md"
               }
             }
           },
@@ -161,8 +161,17 @@
   },
   "active": "ae303d0b03cafc94",
   "lastOpenFiles": [
-    "Network Exploitation/Network Services/SMB/SMBClient.md",
+    "Attachments/Pasted image 20240212141401.png",
+    "File Inclusion/Log Poisoning.md",
+    "File Inclusion/Session Files.md",
+    "File Inclusion/LFI & RFI.md",
+    "File Inclusion/Base Directory Breakouts.md",
+    "File Inclusion/PHP Wrappers.md",
+    "Shells/Reverse shells.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
     "Windows/WHfB.md",
+    "File Inclusion",
+    "Network Exploitation/Network Services/SMB/SMBClient.md",
     "Network Exploitation/Network Services/SMB/SMB.md",
     "Network Exploitation/Network Services/SMB/Enum4Linux.md",
     "Network Exploitation/Nmap/Nmap Post Port Scans.md",
@@ -178,15 +187,7 @@
     "Researching/File Discovery & Hidden Files/Nikto.md",
     "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
     "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
-    "Shells/Reverse shells.md",
     "Researching/File Discovery & Hidden Files/ffuf.md",
-    "LFI & RFI.md",
-    "Network Exploitation/Linux Firewalls/iptables.md",
-    "Network Exploitation/Linux Firewalls/Netfilter.md",
-    "Network Exploitation/Linux Firewalls/UFW.md",
-    "Network Exploitation/Linux Firewalls/nftables.md",
-    "Network Exploitation/Metasploit/Msfvenom.md",
-    "Network Exploitation/Metasploit/Msfconsole.md",
     "Attachments/Pasted image 20240113185445.png",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
@@ -206,7 +207,6 @@
     "Researching/Privesc/Linux Privesc/SUID&SGID Executables",
     "Researching/Privesc/Linux Privesc/Enumeration",
     "Researching/Privesc/Linux Privesc/CVE",
-    "Researching/Privesc/Linux Privesc",
     "Untitled.canvas"
   ]
 }
