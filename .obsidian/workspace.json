@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "File Inclusion/PHP Wrappers.md",
+                "file": "Web Exploitation/Exposed .git directory.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File Inclusion/PHP Wrappers.md",
+                "file": "Web Exploitation/Exposed .git directory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File Inclusion/PHP Wrappers.md",
+                "file": "Web Exploitation/Exposed .git directory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File Inclusion/PHP Wrappers.md"
+                "file": "Web Exploitation/Exposed .git directory.md"
               }
             }
           },
@@ -159,15 +159,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae303d0b03cafc94",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
-    "File Inclusion/LFI & RFI.md",
-    "File Inclusion/Log Poisoning.md",
+    "Web Exploitation/HTTP Server.md",
+    "Web Exploitation/SSH Tunnels.md",
+    "Virtualization and Containers/Kubernetes.md",
+    "Web Exploitation/Exposed .git directory.md",
     "File Inclusion/PHP Wrappers.md",
     "File Inclusion/Session Files.md",
+    "File Inclusion/LFI & RFI.md",
+    "Resources.md",
+    "Readme.md",
+    "Shells/Web Shells.md",
+    "Windows/TMP & Bitlocker.md",
+    "Security Principles.md",
+    "Encryption and Hashing/Hashing/md5sum.md",
+    "Shells/Reverse shells.md",
+    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
+    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "File Inclusion/Log Poisoning.md",
     "Attachments/Pasted image 20240212141401.png",
     "File Inclusion/Base Directory Breakouts.md",
-    "Shells/Reverse shells.md",
     "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
     "Windows/WHfB.md",
     "File Inclusion",
@@ -176,18 +189,6 @@
     "Network Exploitation/Network Services/SMB/Enum4Linux.md",
     "Network Exploitation/Nmap/Nmap Post Port Scans.md",
     "Network Exploitation/Nmap/Nmap NSE & Commands.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
-    "Network Exploitation/Nmap/Nmap Advanced Port Scanning Summary.md",
-    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
-    "Network Exploitation/Nmap/Idle-Zombie Scan.md",
-    "Network Exploitation/Nmap/Fragmented Packets.md",
-    "Shells/Exploiting User Account.md",
-    "Privesc/Linux Privesc/Weak File Permissions.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
-    "Researching/File Discovery & Hidden Files/Nikto.md",
-    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
-    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
-    "Researching/File Discovery & Hidden Files/ffuf.md",
     "Attachments/Pasted image 20240113185445.png",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
