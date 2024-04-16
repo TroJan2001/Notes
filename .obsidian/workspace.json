@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f559e243c5ef827a",
+        "id": "1d36b0ba127a334a",
         "type": "tabs",
         "children": [
           {
-            "id": "ae303d0b03cafc94",
+            "id": "48662d992a9389bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Exploitation/Exposed .git directory.md",
+                "file": "DevSecOps/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "gobuster",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Exploitation/Exposed .git directory.md",
+                "file": "DevSecOps/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Exploitation/Exposed .git directory.md",
+                "file": "DevSecOps/Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Exploitation/Exposed .git directory.md"
+                "file": "DevSecOps/Kubernetes.md"
               }
             }
           },
@@ -159,36 +159,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "48662d992a9389bf",
   "lastOpenFiles": [
-    "Web Exploitation/HTTP Server.md",
-    "Web Exploitation/SSH Tunnels.md",
-    "Virtualization and Containers/Kubernetes.md",
-    "Web Exploitation/Exposed .git directory.md",
-    "File Inclusion/PHP Wrappers.md",
-    "File Inclusion/Session Files.md",
-    "File Inclusion/LFI & RFI.md",
-    "Resources.md",
-    "Readme.md",
-    "Shells/Web Shells.md",
-    "Windows/TMP & Bitlocker.md",
-    "Security Principles.md",
-    "Encryption and Hashing/Hashing/md5sum.md",
+    "Attachments/Pasted image 20240416074205.png",
+    "Researching/File Discovery & Hidden Files/Gobuster.md",
+    "DevSecOps/Kubernetes.md",
+    "DevSecOps",
+    "Virtualization and Containers/Containers.md",
+    "Web Exploitation/Filtering.md",
     "Shells/Reverse shells.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
-    "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
+    "Shells/Web Shells.md",
     "Shells/Netcat Shell Stabilisation.md",
-    "File Inclusion/Log Poisoning.md",
+    "Privesc/Linux Privesc/Exploiting Crontab.md",
+    "Network Exploitation/Network Services/Telnet.md",
+    "Document Metadata/ExifTool.md",
+    "Document Metadata/pdfinfo.md",
+    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
+    "Network Exploitation/Linux Firewalls/UFW.md",
+    "Network Exploitation/Linux Firewalls/nftables.md",
+    "Network Exploitation/Linux Firewalls/Netfilter.md",
+    "Network Exploitation/Metasploit/Msfvenom.md",
+    "Network Exploitation/Metasploit/Msfconsole.md",
+    "Network Exploitation/Metasploit/Meterpreter.md",
+    "Network Exploitation/Metasploit/Metasploit Database.md",
+    "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
+    "Encryption and Hashing/Encryption/LKUS.md",
+    "Encryption and Hashing/Encryption/HMAC.md",
+    "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+    "Encryption and Hashing/Encryption/GPG.md",
+    "File Inclusion/LFI & RFI.md",
     "Attachments/Pasted image 20240212141401.png",
-    "File Inclusion/Base Directory Breakouts.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
-    "Windows/WHfB.md",
     "File Inclusion",
-    "Network Exploitation/Network Services/SMB/SMBClient.md",
-    "Network Exploitation/Network Services/SMB/SMB.md",
-    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
-    "Network Exploitation/Nmap/Nmap Post Port Scans.md",
-    "Network Exploitation/Nmap/Nmap NSE & Commands.md",
     "Attachments/Pasted image 20240113185445.png",
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
@@ -206,7 +207,6 @@
     "Privesc",
     "Researching/Privesc/Linux Privesc/SUID&SGID Executables",
     "Researching/Privesc/Linux Privesc/Enumeration",
-    "Researching/Privesc/Linux Privesc/CVE",
     "Untitled.canvas"
   ]
 }
