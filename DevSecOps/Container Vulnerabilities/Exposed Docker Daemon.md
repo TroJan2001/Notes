@@ -11,4 +11,4 @@ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
 
 2- The Docker Engine - TCP Sockets Edition: The Docker Engine will listen on a port when configured to be run remotely
 
-By default, the engine will run on port 2375, which could be used to start containers, delete containers ... etc (RCE).
+By default, the engine will run on port 2375, which could be used to start containers, delete containers .. etc (RCE).
