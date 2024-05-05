@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevSecOps/Container Hardening/Docker Daemon.md",
+                "file": "File Inclusion/LFI & RFI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevSecOps/Container Hardening/Docker Daemon.md",
+                "file": "File Inclusion/LFI & RFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevSecOps/Container Hardening/Docker Daemon.md",
+                "file": "File Inclusion/LFI & RFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevSecOps/Container Hardening/Docker Daemon.md"
+                "file": "File Inclusion/LFI & RFI.md"
               }
             }
           },
@@ -159,13 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48662d992a9389bf",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
+    "File Inclusion/Session Files.md",
+    "File Inclusion/PHP Wrappers.md",
+    "File Inclusion/Log Poisoning.md",
+    "File Inclusion/LFI & RFI.md",
+    "Shells/Reverse shells.md",
+    "DevSecOps/Container Hardening/Docker Daemon.md",
     "DevSecOps/Container Hardening",
     "DevSecOps/Kubernetes.md",
-    "DevSecOps/Container Hardening/Docker Daemon.md",
     "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
-    "Shells/Reverse shells.md",
     "Shells/Socat.md",
     "Shells/Socat Encrypted Shells.md",
     "Shells/Web Shells.md",
@@ -186,9 +190,6 @@
     "Network Exploitation/Metasploit/Msfconsole.md",
     "Web Exploitation/Command Injection.md",
     "Network Exploitation/Metasploit/Metasploit Database.md",
-    "File Inclusion/LFI & RFI.md",
-    "Network Exploitation/Nmap/Fragmented Packets.md",
-    "Network Exploitation/Nmap/TCP Maimon Scan.md",
     "Attachments/Pasted image 20240416074205.png",
     "DevSecOps",
     "Attachments/Pasted image 20240212141401.png",
@@ -206,7 +207,6 @@
     "Privesc/Linux Privesc/CVE",
     "Privesc/Linux Privesc",
     "Privesc",
-    "Researching/Privesc/Linux Privesc/SUID&SGID Executables",
     "Untitled.canvas"
   ]
 }
