@@ -34,6 +34,6 @@ on client:
 docker --tlsverify --tlscacert=myca.pem --tlscert=client-cert.pem --tlskey=client-key.pem -H=SERVERIP:2376 info
 ```
 
-Note: TLS its not completely secure, it has an attack vector if someone can verify his certificate .
+Note: TLS its not completely secure, it has an attack vector if someone can verify his certificate, for example if we accept public CA to verify the certificate, not our own CA server.
 
 Note: The following YouTube video "Docker Nuggets" has a very good explanation of docker remote access: https://www.youtube.com/watch?v=YX2BSioWyhI.
