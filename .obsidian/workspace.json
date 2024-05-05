@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevSecOps/Container Vulnerabilities/Container Hardening.md",
+                "file": "DevSecOps/Container Hardening/Docker Daemon.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevSecOps/Container Vulnerabilities/Container Hardening.md",
+                "file": "DevSecOps/Container Hardening/Docker Daemon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevSecOps/Container Vulnerabilities/Container Hardening.md",
+                "file": "DevSecOps/Container Hardening/Docker Daemon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevSecOps/Container Vulnerabilities/Container Hardening.md"
+                "file": "DevSecOps/Container Hardening/Docker Daemon.md"
               }
             }
           },
@@ -161,8 +161,9 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
+    "DevSecOps/Container Hardening",
     "DevSecOps/Kubernetes.md",
-    "DevSecOps/Container Vulnerabilities/Container Hardening.md",
+    "DevSecOps/Container Hardening/Docker Daemon.md",
     "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
     "Shells/Reverse shells.md",
     "Shells/Socat.md",
@@ -188,7 +189,6 @@
     "File Inclusion/LFI & RFI.md",
     "Network Exploitation/Nmap/Fragmented Packets.md",
     "Network Exploitation/Nmap/TCP Maimon Scan.md",
-    "Network Exploitation/Nmap/TCP ACK, Window, and Custom Scan.md",
     "Attachments/Pasted image 20240416074205.png",
     "DevSecOps",
     "Attachments/Pasted image 20240212141401.png",
