@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Encryption and Hashing/Encryption/Symmetric Encryption.md"
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md"
               }
             }
           },
@@ -162,6 +162,7 @@
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
     "Encryption and Hashing/Encryption/SSH Authentication.md",
+    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
     "Encryption and Hashing/Encryption/PKI.md",
     "Encryption and Hashing/Encryption/LKUS.md",
@@ -187,7 +188,6 @@
     "Shells/Web Shells.md",
     "Shells/Netcat Shell Stabilisation.md",
     "Shells/Exploiting User Account.md",
-    "Web Exploitation/SQL/Sqlmap.md",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",
     "Attachments/Pasted image 20240416074205.png",
