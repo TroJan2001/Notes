@@ -1,4 +1,3 @@
-
 OWASP favicon database: https://wiki.owasp.org/index.php/OWASP_favicon_database
 
 SecLists: https://github.com/danielmiessler/SecLists/tree/master

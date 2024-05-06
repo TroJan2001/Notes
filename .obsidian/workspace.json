@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Firewall.md",
+                "file": "Security Principles.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows Firewall.md",
+                "file": "Security Principles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Windows Firewall.md",
+                "file": "Security Principles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Windows Firewall.md"
+                "file": "Security Principles.md"
               }
             }
           },
@@ -159,8 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48662d992a9389bf",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
+    "Resources.md",
+    "Readme.md",
+    "Windows/Windows Update.md",
+    "Windows/Windows Firewall.md",
     "Windows/WHfB.md",
     "Windows/TMP & Bitlocker.md",
     "Windows/RDP.md",
@@ -183,10 +187,6 @@
     "Windows/Processes/csrss.exe.md",
     "Web Exploitation/XML.md",
     "Web Exploitation/Walking An Application.md",
-    "Web Exploitation/SSH Tunnels.md",
-    "Web Exploitation/Logs.md",
-    "Web Exploitation/Hydra.md",
-    "Web Exploitation/HTTP Server.md",
     "TryHackMe/Complete Beginner.png",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
