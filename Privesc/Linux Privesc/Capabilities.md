@@ -1,7 +1,4 @@
-
 Capabilities help manage privileges at a more granular level.
-
-
 # Exploiting Capabilities
 
 First, we use `getcap` tool to list enabled capabilities:

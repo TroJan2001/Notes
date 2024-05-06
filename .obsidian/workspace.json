@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/UFW.md",
+                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/UFW.md",
+                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/UFW.md",
+                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/UFW.md"
+                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md"
               }
             }
           },
@@ -161,6 +161,20 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
+    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-3560.md",
+    "Privesc/Linux Privesc/CVE/Exim CVE-2016-1531.md",
+    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+    "Privesc/Linux Privesc/Escaping Vi Editor.md",
+    "Privesc/Linux Privesc/Capabilities.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/Systemctl.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/SUID&GUID Files.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/Shared Object Injection Exploitation.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/Known Exploits.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
+    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
+    "Network Exploitation/Linux Firewalls/UFW.md",
     "Network Exploitation/Linux Firewalls/nftables.md",
     "Network Exploitation/Linux Firewalls/Netfilter.md",
     "Network Exploitation/Linux Firewalls/iptables.md",
@@ -173,20 +187,6 @@
     "Encryption and Hashing/Encryption/GPG.md",
     "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
     "File Inclusion/LFI & RFI.md",
-    "Encryption and Hashing/Hashing/NTLM.md",
-    "Encryption and Hashing/Hashing/md5sum.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
-    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
-    "Encryption and Hashing/Encryption/SSH Authentication.md",
-    "Encryption and Hashing/Encryption/PKI.md",
-    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
-    "DevSecOps/Container Hardening/Docker Daemon.md",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",

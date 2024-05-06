@@ -1,4 +1,3 @@
-
 If we have a `Systemctl` command with enabled SUID bit we can exploit it to get a root shell using the following command:
 
 ```bash
