@@ -27,7 +27,6 @@ Each will have a different value for ServiceDLL. Let's take LSM as an example an
 ![](../../Attachments/Pasted%20image%2020231105010205.png)
 
 Since svchost.exe will always have multiple running processes on any Windows system, this process has been a target for malicious use. Adversaries create malware to masquerade as this process and try to hide amongst the legitimate svchost.exe processes. They can name the malware svchost.exe or misspell it slightly, such as scvhost.exe. By doing so, the intention is to go under the radar. Another tactic is to install/call a malicious service (DLL).
-
 ### Normal State:
 
 ![](../../Attachments/Pasted%20image%2020231105010211.png)
@@ -37,7 +36,6 @@ Since svchost.exe will always have multiple running processes on any Windows sys
 **Number of Instances**: Many
 **User Account**: Varies (SYSTEM, Network Service, Local Service) depending on the svchost.exe instance. In Windows 10, some instances run as the logged-in user.
 **Start Time**: Typically within seconds of boot time. Other instances of svchost.exe can be started after boot.
-
 ### What is unusual?
 
 - A parent process other than services.exe

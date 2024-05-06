@@ -1,5 +1,4 @@
-  
-Trusted Platform Module (TPM) and BitLocker are two security features that can be used to protect your data on Windows computers.
+  Trusted Platform Module (TPM) and BitLocker are two security features that can be used to protect your data on Windows computers.
 
 - **TPM** is a small chip that is embedded on your computer's motherboard. It provides a secure place to store encryption keys, which are used to protect your data.
 - **BitLocker** is a full-disk encryption feature that uses the TPM to encrypt your computer's hard drive. This means that even if someone steals your computer, they will not be able to access your data without the encryption keys.

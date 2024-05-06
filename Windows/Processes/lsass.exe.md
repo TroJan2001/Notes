@@ -5,7 +5,6 @@ It creates security tokens for SAM (Security Account Manager), AD (Active Dire
 ![](../../Attachments/Pasted%20image%2020231105010021.png)
 
 Lsass.exe is another process adversaries target. Common tools such as **mimikatz** are used to dump credentials, or adversaries mimic this process to hide in plain sight. Again, they do this by either naming their malware by this process name or simply misspelling the malware slightly.
-
 ### Normal State :
 
 ![](../../Attachments/Pasted%20image%2020231105010038.png)
@@ -15,7 +14,6 @@ Lsass.exe is another process adversaries target. Common tools such as **mimikat
 **Number of Instances**:  One
 **User Account**:  Local System
 **Start Time**:  Within seconds of boot time
-
 ### What is unusual?
 
 - A parent process other than wininit.exe

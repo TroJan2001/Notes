@@ -14,8 +14,6 @@ This process is also responsible for loading the user profile. It loads the user
 **Number of Instances**:  One or more
 **User Account**:  Local System
 **Start Time**:  Within seconds of boot time for the first instance (for Session 1). Additional instances occur as new sessions are created, typically through Remote Desktop or Fast User Switching logons.
-
-  
 ### What is unusual?
 
 - An actual parent process. (smss.exe calls this process and self-terminates)

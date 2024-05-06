@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Exploitation/XSS/XSS.md",
+                "file": "Windows/Windows Firewall.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Exploitation/XSS/XSS.md",
+                "file": "Windows/Windows Firewall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Exploitation/XSS/XSS.md",
+                "file": "Windows/Windows Firewall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Exploitation/XSS/XSS.md"
+                "file": "Windows/Windows Firewall.md"
               }
             }
           },
@@ -161,33 +161,33 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
-    "Web Exploitation/XSS/Stored XSS.md",
-    "Web Exploitation/XSS/Reflected XSS.md",
-    "Web Exploitation/XSS/Dom Based XSS.md",
-    "Web Exploitation/XSS/Blind XSS.md",
-    "Web Exploitation/SQL/Sqlmap.md",
-    "Web Exploitation/SQL/SQL Injection.md",
-    "Virtualization and Containers/Kubernetes.md",
-    "Virtualization and Containers/Hypervisors.md",
-    "Virtualization and Containers/Docker.md",
-    "Virtualization and Containers/Containers.md",
+    "Windows/WHfB.md",
+    "Windows/TMP & Bitlocker.md",
+    "Windows/RDP.md",
+    "Windows/EDR.md",
+    "Windows/System Configuration Tools/resmon.md",
+    "Windows/System Configuration Tools/regedit.md",
+    "Windows/System Configuration Tools/msinfo32.md",
+    "Windows/System Configuration Tools/msconfig.md",
+    "Windows/System Configuration Tools/Local User and Group Management.md",
+    "Windows/System Configuration Tools/compmgmt.md",
+    "Windows/System Configuration Tools/cmd.md",
+    "Windows/Processes/winlogon.exe.md",
+    "Windows/Processes/wininit.exe.md",
+    "Windows/Processes/System.md",
+    "Windows/Processes/svchost.exe.md",
+    "Windows/Processes/smss.exe.md",
+    "Windows/Processes/services.exe.md",
+    "Windows/Processes/lsass.exe.md",
+    "Windows/Processes/explorer.exe.md",
+    "Windows/Processes/csrss.exe.md",
+    "Web Exploitation/XML.md",
+    "Web Exploitation/Walking An Application.md",
+    "Web Exploitation/SSH Tunnels.md",
+    "Web Exploitation/Logs.md",
+    "Web Exploitation/Hydra.md",
+    "Web Exploitation/HTTP Server.md",
     "TryHackMe/Complete Beginner.png",
-    "Shells/Web Shells.md",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Socat.md",
-    "Shells/Reverse shells.md",
-    "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Exploiting User Account.md",
-    "Researching/ExpliotDB.md",
-    "Researching/curl.md",
-    "Researching/Auditing.md",
-    "Researching/Vulnerability Searching.md",
-    "Researching/Sitemap.xml.md",
-    "Researching/robots.txt.md",
-    "Researching/OSINT/Wayback Machine.md",
-    "Researching/OSINT/Wappalyzer.md",
-    "Researching/OSINT/S3 Buckets.md",
-    "Researching/OSINT/Google Hacking, Dorking.md",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",

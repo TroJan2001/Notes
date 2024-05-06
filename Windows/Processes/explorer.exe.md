@@ -5,7 +5,6 @@ As mentioned previously, the ==Winlogon== process runs userinit.exe, which launc
 There will be many child processes for explorer.exe.
 
 ![](../../Attachments/Pasted%20image%2020231105010007.png)
-
 ### Normal State:
 
 ![](../../Attachments/Pasted%20image%2020231105010014.png)
@@ -15,7 +14,6 @@ There will be many child processes for explorer.exe.
 **Number of Instances**:  One or more per interactively logged-in user
 **User Account**:  Logged-in user(s)
 **Start Tim**e:  First instance when the first interactive user logon session begins
-
 ### What is unusual?
 
 - An actual parent process. (userinit.exe calls this process and exits)

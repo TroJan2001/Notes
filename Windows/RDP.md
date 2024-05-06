@@ -6,7 +6,6 @@ RDP is based on, and is an extension of, the T-120 family of protocol standards.
 - highly encrypted data, such as keyboard, mouse activity
 
 RDP is an extension of the core T.Share protocol. Several other capabilities are retained as part of the RDP, such as the architectural features necessary to support multipoint (multiparty sessions). Multipoint data delivery allows data from an application to be delivered in **real time** to multiple parties, such as Virtual Whiteboards. It doesn't require to send the same data to each session individually
-
 # Useful Commands:
 
  we can use this command to remotely connect to a server using the command line:

@@ -1,5 +1,4 @@
 With the command shell, you can directly interact with the operating system. Think command prompt as an interpreter that accepts the commands or the user’s inputs and translates them into machine language.
-
 ### Useful commands:
 
 The command ==**hostname**== will output the computer name:
