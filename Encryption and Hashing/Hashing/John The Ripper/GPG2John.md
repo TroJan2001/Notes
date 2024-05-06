@@ -1,5 +1,4 @@
-
-### Useful Commands
+# Useful Commands
 
 To crack a an asc file so you can access a pgp file, we use the following commands:
 

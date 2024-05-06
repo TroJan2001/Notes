@@ -1,3 +1,4 @@
+Docker Daemon is a persistent background process that manages Docker images, containers, networks, and storage volumes. The Docker daemon constantly listens for Docker API requests and processes them.
 # Using SSH and docker context
 
 Prerequisites: You must have SSH access to the remote device, and your user account on the remote device **must have permission to execute Docker commands**.

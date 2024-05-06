@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+                "file": "Network Exploitation/Linux Firewalls/iptables.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+                "file": "Network Exploitation/Linux Firewalls/iptables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+                "file": "Network Exploitation/Linux Firewalls/iptables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md"
+                "file": "Network Exploitation/Linux Firewalls/iptables.md"
               }
             }
           },
@@ -161,33 +161,33 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
-    "Encryption and Hashing/Encryption/SSH Authentication.md",
-    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+    "File Inclusion/Session Files.md",
+    "File Inclusion/PHP Wrappers.md",
+    "File Inclusion/Log Poisoning.md",
     "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
-    "Encryption and Hashing/Encryption/PKI.md",
     "Encryption and Hashing/Encryption/LKUS.md",
     "Encryption and Hashing/Encryption/HMAC.md",
     "Encryption and Hashing/Encryption/GPG.md",
     "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
+    "File Inclusion/LFI & RFI.md",
+    "Encryption and Hashing/Hashing/NTLM.md",
+    "Encryption and Hashing/Hashing/md5sum.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
+    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
+    "Encryption and Hashing/Hashing/John The Ripper/Custom Rules.md",
+    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+    "Encryption and Hashing/Encryption/SSH Authentication.md",
+    "Encryption and Hashing/Encryption/PKI.md",
+    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
+    "DevSecOps/Container Hardening/Docker Daemon.md",
     "Document Metadata/pdfinfo.md",
     "Document Metadata/ExifTool.md",
     "DevSecOps/Kubernetes.md",
-    "DevSecOps/Container Vulnerabilities/Exposed Docker Daemon.md",
-    "DevSecOps/Container Vulnerabilities/Capabilities.md",
-    "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
-    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
-    "DevSecOps/Container Hardening/Docker Daemon.md",
-    "File Inclusion/LFI & RFI.md",
-    "File Inclusion/Session Files.md",
-    "File Inclusion/PHP Wrappers.md",
-    "File Inclusion/Log Poisoning.md",
-    "Shells/Reverse shells.md",
     "DevSecOps/Container Hardening",
-    "Shells/Socat.md",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Web Shells.md",
-    "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Exploiting User Account.md",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",
     "Attachments/Pasted image 20240416074205.png",

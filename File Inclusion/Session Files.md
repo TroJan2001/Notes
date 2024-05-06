@@ -1,4 +1,4 @@
-### Session Files
+PHP session poisoning denotes a security vulnerability where attackers manipulate or exploit PHP application session management systems, enabling unauthorized access or malicious activities.
 
 Sometimes we could exploit session files with a payload like this:
 
