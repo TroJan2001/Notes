@@ -1,5 +1,5 @@
 
-Diffie-Hellman is an asymmetric encryption algorithm. It allows the exchange of a secret over a public channel.
+Diffie–Hellman key exchange establishes a shared secret between two parties that can be used for secret communication for exchanging data over a public network.
 
 ### The math(s) side:
 

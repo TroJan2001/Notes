@@ -1,4 +1,4 @@
-### Saving metadata to image files
+# Saving metadata to image files
 
 ExifTool is used to read and write metadata in various file types, such as JPEG images.
 

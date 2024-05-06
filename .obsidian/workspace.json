@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md",
+                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md",
+                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md",
+                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md"
+                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md"
               }
             }
           },
@@ -159,17 +159,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "48662d992a9389bf",
   "lastOpenFiles": [
+    "Document Metadata/pdfinfo.md",
+    "Document Metadata/ExifTool.md",
+    "DevSecOps/Kubernetes.md",
+    "DevSecOps/Container Vulnerabilities/Exposed Docker Daemon.md",
+    "DevSecOps/Container Vulnerabilities/Capabilities.md",
+    "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
+    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
+    "DevSecOps/Container Hardening/Docker Daemon.md",
+    "File Inclusion/LFI & RFI.md",
     "File Inclusion/Session Files.md",
     "File Inclusion/PHP Wrappers.md",
     "File Inclusion/Log Poisoning.md",
-    "File Inclusion/LFI & RFI.md",
     "Shells/Reverse shells.md",
-    "DevSecOps/Container Hardening/Docker Daemon.md",
     "DevSecOps/Container Hardening",
-    "DevSecOps/Kubernetes.md",
-    "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
     "Shells/Socat.md",
     "Shells/Socat Encrypted Shells.md",
     "Shells/Web Shells.md",
@@ -181,15 +186,10 @@
     "Network Exploitation/Network Services/SMB/SMBClient.md",
     "Network Exploitation/Network Services/SMB/SMB.md",
     "Network Exploitation/Metasploit/Metasploit Exploitation.md",
-    "DevSecOps/Container Vulnerabilities/Capabilities.md",
-    "DevSecOps/Container Vulnerabilities/Exposed Docker Daemon.md",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",
     "Network Exploitation/Network Services/MySQL.md",
     "Privesc/Linux Privesc/Exploiting PATH Variable.md",
-    "Network Exploitation/Metasploit/Msfconsole.md",
-    "Web Exploitation/Command Injection.md",
-    "Network Exploitation/Metasploit/Metasploit Database.md",
     "Attachments/Pasted image 20240416074205.png",
     "DevSecOps",
     "Attachments/Pasted image 20240212141401.png",
