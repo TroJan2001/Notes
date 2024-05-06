@@ -3,9 +3,8 @@
 This exploit takes advantage of situations where a container shares the same namespace as the host operating system, allowing the container to interact with processes on the host.
 
 This scenario commonly occurs when a container requires access to host processes, such as for debugging purposes or when dependencies on host resources exist. As a result, when viewing processes within the container using `ps aux`, you'll observe the host's processes listed alongside those of the container.
-
 ### Example:
-  
+
 The command leveraging `nsenter` to execute processes within the same namespace as another process, along with the explanation of how the exploit works, can be combined as follows:
 
 ```bash

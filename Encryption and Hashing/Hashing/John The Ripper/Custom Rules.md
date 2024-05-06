@@ -10,7 +10,6 @@ In other words, some sites ask you to match a specific type of rules to set your
 
 **Note: Custom rules are defined in the `john.conf` file, usually located in `/etc/john/john.conf` if you have installed John using a package manager or built from source with `make` and in `/opt/john/john.conf` on the TryHackMe Attackbox.**
 
-
 The first line:
 
 `[List.Rules:THMRules]` - Is used to define the name of your rule, this is what you will use to call your custom rule as a John argument.
@@ -21,15 +20,11 @@ We then use a regex style pattern match to define where in the word will be modi
 
 `A0` - Takes the word and prepends it with the characters you define  
 
-`c` - Capitalises the character positionally
-
-  
+`c` - Capitalises the character positionally  
 
 These can be used in combination to define where and what in the word you want to modify.
 
 Lastly, we then need to define what characters should be appended, prepended or otherwise included, we do this by adding character sets in square brackets `[ ]` in the order they should be used. These directly follow the modifier patterns inside of double quotes `" "`. Here are some common examples:
-
-  
 
 `[0-9]` - Will include numbers 0-9  
 
@@ -44,8 +39,6 @@ Lastly, we then need to define what characters should be appended, prepended or 
 `[a]` - Will include only a  
 
 `[!£$%@]` - Will include the symbols !£$%@  
-
-  
 
 Putting this all together, in order to generate a wordlist from the rules that would match the example password "Polopassword1!" (assuming the word polopassword was in our wordlist) we would create a rule entry that looks like this:
 

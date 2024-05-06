@@ -20,7 +20,6 @@ Now its ready to be cracked using the following command:
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
 ```
-
 ### RAR Files
 
 its almost the same for RAR files unless the tool is different, we will be using `Rar2John`, and the syntax is as follows 

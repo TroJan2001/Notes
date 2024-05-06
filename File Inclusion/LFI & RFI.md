@@ -1,3 +1,5 @@
+# LFI
+
 LFI attacks against web applications are often due to a developers' lack of security awareness. With PHP, using functions such as include, require, include_once, and require_once often contribute to vulnerable web applications
 
 even not all payloads may work, but take a look here on a very useful set of payloads that may vary depending on the situation you are dealing with:
@@ -30,8 +32,7 @@ Many tricks have been published over the years:
 - Obsolete `/proc/self/environ` tricks - [https://www.exploit-db.com/papers/12886](https://www.exploit-db.com/papers/12886)
 - Obsolete `/var/log/apache2/*log` (has this ever worked)?
 - etc.
-
-RFI
+# RFI
 
 Remote File Inclusion (RFI) is a technique to include remote files and into a vulnerable application. Like LFI, the RFI occurs when improperly sanitizing user input, allowing an attacker to inject an external URL into include function. One requirement for RFI is that the allow_url_fopen option needs to be on.
   

@@ -1,7 +1,6 @@
 #### ==**Find directories & hidden website pages**==
 
 ffuf is a fest web fuzzer written in Go that allows typical directory discovery, virtual host discovery (without DNS records) and GET and POST parameter fuzzing.
-
 # Useful Commands:
 
 ```bash

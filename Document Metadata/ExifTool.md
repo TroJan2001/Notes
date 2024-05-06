@@ -6,7 +6,6 @@ The following are examples of metadata that can be found in the original digital
 - Camera model / Smartphone model
 - Date and time of image capture
 - Photo settings such as focal length, aperture, shutter speed, and ISO settings
-
 ### Useful commands:
 
 To install pdfinfo :

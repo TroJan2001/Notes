@@ -1,10 +1,8 @@
-
- Nikto is capable of performing an assessment on all types of webservers (and isn't application-specific such as WPScan.). Nikto can be used to discover possible vulnerabilities including:
+Nikto is capable of performing an assessment on all types of webservers (and isn't application-specific such as WPScan.). Nikto can be used to discover possible vulnerabilities including:
 
 - Sensitive files
 - Outdated servers and programs (i.e. [vulnerable web server installs](https://httpd.apache.org/security/vulnerabilities_24.html))
 - Common server and software misconfigurations (Directory indexing, cgi scripts, x-ss protections)
-
 # Useful Commands:
 
 To make a basic scan we can use:

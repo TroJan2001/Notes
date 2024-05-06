@@ -3,7 +3,6 @@
  Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files.
  
  The very first tool there looks to be useful. It can be used to extract embedded data from JPEG files.
- 
 # Useful commands: 
 
 Displays info about a file whether it has embedded data or not:

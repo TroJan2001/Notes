@@ -2,7 +2,6 @@
 # The math(s) side
 
 RSA is based on the mathematically difficult problem of working out the factors of a large number. It’s very quick to multiply two prime numbers together, say 17*23 = 391, but it’s quite difficult to work out what two prime numbers multiply together to make 14351 (113x127 for reference).
-
 ### The attacking side
 
 The maths behind RSA seems to come up relatively often in CTFs, normally requiring you to calculate variables or break some encryption based on them. The wikipedia page for RSA seems complicated at first, but will give you almost all of the information you need in order to complete challenges.
@@ -16,7 +15,6 @@ The key variables that you need to know about for RSA in CTFs are p, q, m, n, e,
 The public key is n and e, the private key is n and d.
 
 “m” is used to represent the message (in plaintext) and “c” represents the ciphertext (encrypted text).
-
 ### Algorithm:
 
 RSA got its name from its inventors, Rivest, Shamir, and Adleman. It works as follows:
@@ -35,7 +33,6 @@ Let’s consider the following practical example.
 2. With _ϕ_(_N_) = _N_ − _p_ − _q_ + 1 = 31243 − 157 − 199 + 1 = 30888, Bob selects _e_ = 163 and _d_ = 379 where _e_ × _d_ = 163 × 379 = 61777 and 61777 mod 30888 = 1. The public key is (31243,163) and the private key is (31243,379).
 3. Let’s say that the value to encrypt is _x_ = 13, then Alice would calculate and send _y_ = _x__e_ mod _N_ = 13163 mod 31243 = 16342.
 4. Bob will decrypt the received value by calculating _x_ = _y__d_ mod _N_ = 16341379 mod 31243 = 13.
-
 # Useful Commands
 
 To generate a private key:

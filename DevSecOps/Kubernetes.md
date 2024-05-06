@@ -1,14 +1,10 @@
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
-
-
 # Kubernetes Architecture 
 
 ![](../Attachments/Pasted%20image%2020240416074205.png)
-
 # kubectl
 
 The Kubernetes command-line tool, [kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/), allows you to run commands against Kubernetes clusters.
-
 ### Useful Commands
 
 To apply our deployment and service configurations that we have in our YAML configuration files, we can use the following command:

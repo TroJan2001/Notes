@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
+                "file": "Researching/OSINT/Google Hacking, Dorking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
+                "file": "Researching/OSINT/Google Hacking, Dorking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
+                "file": "Researching/OSINT/Google Hacking, Dorking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md"
+                "file": "Researching/OSINT/Google Hacking, Dorking.md"
               }
             }
           },
@@ -161,11 +161,22 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
-    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-3560.md",
-    "Privesc/Linux Privesc/CVE/Exim CVE-2016-1531.md",
-    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
-    "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+    "Researching/File Discovery & Hidden Files/WPScan.md",
+    "Researching/File Discovery & Hidden Files/Steganography.md",
+    "Researching/File Discovery & Hidden Files/Nikto.md",
+    "Researching/File Discovery & Hidden Files/Gobuster.md",
+    "Researching/File Discovery & Hidden Files/Foremost.md",
+    "Researching/File Discovery & Hidden Files/ffuf.md",
+    "Researching/File Discovery & Hidden Files/dirb.md",
+    "Privesc/Linux Privesc/Weak File Permissions.md",
+    "Privesc/Linux Privesc/Privilege Escalation.md",
+    "Privesc/Linux Privesc/NFS.md",
+    "Privesc/Linux Privesc/MySQL UDF Exploit.md",
+    "Privesc/Linux Privesc/LinEnum.md",
+    "Privesc/Linux Privesc/History, Config and SSH Files.md",
+    "Privesc/Linux Privesc/Exploiting Sudo Environment Variables.md",
+    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+    "Privesc/Linux Privesc/Exploiting Crontab.md",
     "Privesc/Linux Privesc/Escaping Vi Editor.md",
     "Privesc/Linux Privesc/Capabilities.md",
     "Privesc/Linux Privesc/SUID&SGID Executables/Systemctl.md",
@@ -173,20 +184,9 @@
     "Privesc/Linux Privesc/SUID&SGID Executables/Shared Object Injection Exploitation.md",
     "Privesc/Linux Privesc/SUID&SGID Executables/Known Exploits.md",
     "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
-    "Privesc/Linux Privesc/CVE/Polkit CVE-2021-4034 (Pwnkit).md",
-    "Network Exploitation/Linux Firewalls/UFW.md",
-    "Network Exploitation/Linux Firewalls/nftables.md",
-    "Network Exploitation/Linux Firewalls/Netfilter.md",
-    "Network Exploitation/Linux Firewalls/iptables.md",
-    "File Inclusion/Session Files.md",
-    "File Inclusion/PHP Wrappers.md",
-    "File Inclusion/Log Poisoning.md",
-    "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
-    "Encryption and Hashing/Encryption/LKUS.md",
-    "Encryption and Hashing/Encryption/HMAC.md",
-    "Encryption and Hashing/Encryption/GPG.md",
-    "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
-    "File Inclusion/LFI & RFI.md",
+    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+    "Privesc/Linux Privesc/CVE/Exim CVE-2016-1531.md",
+    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",

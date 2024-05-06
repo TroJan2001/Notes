@@ -19,7 +19,6 @@ Calculating the HMAC follows the following steps as shown in the figure:
 To calculate the HMAC on a Linux system, you can use any of the available tools such as `hmac256` (or `sha224hmac`, `sha256hmac`, `sha384hmac`, and `sha512hmac`, where the secret key is added after the option `--key`). Below we show an example of calculating the HMAC using `hmac256` and `sha256hmac` with two different keys.
 # Useful Commands
 
-
 To calculate the 256bit hash, we can either use `hmac256` like so:
 
 ```bash

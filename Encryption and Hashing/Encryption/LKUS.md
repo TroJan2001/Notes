@@ -1,6 +1,5 @@
 Linux Unified Key Setup (LUKS) is a cryptographic disk encryption standard for Linux systems. It uses symmetric and asymmetric encryption to protect data on encrypted disks and partitions. LUKS is a versatile encryption method that can be used to encrypt any block device, including hard drives, USB drives, and even entire operating systems.
 
-
 To set up LUKS from the command line, the steps are along these lines:
 
 - Install `cryptsetup-luks`. (You can issue `apt install cryptsetup`, `yum install cryptsetup-luks` or `dnf install cryptsetup-luks` for Ubuntu/Debian, RHEL/Cent OS, and Fedora, respectively.)

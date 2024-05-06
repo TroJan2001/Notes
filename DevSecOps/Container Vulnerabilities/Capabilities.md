@@ -1,4 +1,3 @@
-
 If we have a privileged container, and we run `capsh --print` to see what capabilities we can have on the running container, we can get something like this: `Current: = cap_chown, cap_sys_module, cap_sys_chroot, cap_sys_admin, cap_setgid,cap_setuid`, which means we can use the mount syscall (since we have cap_sys_admin) to mount the host's control groups into the container.
 
 The steps are shown below, these steps are PoC steps taken from TryHackMe container vulnerabilities room:

@@ -26,7 +26,6 @@ rws-rwx-rwx
 GUID:
 
 rwx-rws-rwx  
-
 ### Finding SUID Binaries  
 
 We already know that there is SUID capable files on the system, thanks to our LinEnum scan. However, if we want to do this manually we can use the following command to search the file system for SUID/GUID files:

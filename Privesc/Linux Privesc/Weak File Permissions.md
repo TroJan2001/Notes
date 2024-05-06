@@ -1,6 +1,4 @@
-
 Lets talk about wild vulnerabilities that take place in security due to weak file permissions:
-
 # Readable /etc/shadow
 
 If the shadow file is readable by users, we can view the content using `cat /etc/shadow`, then we would just copy the hash of any user we want to crack its hash to a txt file and then use john the ripper to crack it using the following commands:
@@ -8,7 +6,6 @@ If the shadow file is readable by users, we can view the content using `cat /etc
 ```bash
 echo '$6$Tb/euwmK$OXA.dwMeOAcopwBl68boTG5zi65wIHsc84OWAIye5VITLLtVlaXvRDJXET..it8r.jbrlpfZeMdwD3B0fGxJI0' > hash.txt & john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
-
 # Writable /etc/shadow
 
 We could just generate a password hash and replace the password hash of any user with the one we generated.
@@ -18,7 +15,6 @@ mkpasswd -m sha-512 newpasswordhere
 ```
 
 and then we use `nano` or `vim` to edit the `/etc/shadow` file
-
 # Writable /etc/passwd
 
 After Enumerating using LinEnum or linpeas, we might find some misconfigured file configuration, like making a specific user a a member of root group noting that the `/etc/passwd` file is writable by users of the root group. This allow us to add a new entry to the `/etc/passwd` file by accessing that user which has high privileges (member of the root group) and making the new entry a root user.
@@ -32,7 +28,6 @@ openssl passwd -1 -salt <salt> <password>
 For example if we want to make "123" password with the salt "new", we can get the following hash `$1$new$p7ptkEKU1HnaHpRtzNizS1`
 
 Finally we must add the entry according to this syntax `test:x:0:0:root:/root:/bin/bash` if we want to add a root user, for our example the entry should look like this: `new:$1$new$p7ptkEKU1HnaHpRtzNizS1:0:0:root:/root:/bin/bash`.
-
 # Extra: Understanding /etc/passwd
 
 The /etc/passwd file stores essential information, which  is required during login. In other words, it stores user account information. The /etc/passwd is a plain text file. It contains a list of the system’s accounts, giving for each account some useful information like user ID, group ID, home directory, shell, and more.

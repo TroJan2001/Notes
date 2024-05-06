@@ -4,7 +4,6 @@ Here are many programs available for symmetric encryption. We will focus on two,
 
 - GNU Privacy Guard
 - OpenSSL Project
-
 ### GNU Privacy Guard
 
 The GNU Privacy Guard, also known as GnuPG or GPG, implements the OpenPGP standard.
@@ -18,7 +17,6 @@ The default output is in the binary OpenPGP format; however, if you prefer to cr
 You can decrypt using the following command:
 
 `gpg --output original_message.txt --decrypt message.gpg`
-
 ### OpenSSL Project
 
 The OpenSSL Project maintains the OpenSSL software.

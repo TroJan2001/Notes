@@ -1,4 +1,3 @@
-
 We have 2 types of Docker Daemon:
 
 1- Unix Socket Docker Daemon: which means there is a daemon running locally that can be exploited if we have enough permissions (sudo, docker group).

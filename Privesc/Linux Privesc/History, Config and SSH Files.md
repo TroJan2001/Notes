@@ -1,4 +1,3 @@
-
 ### History Files
 
 If a user accidentally types their password on the command line instead of into a password prompt, it may get recorded in a history file.
@@ -8,11 +7,9 @@ View the contents of all the hidden history files in the user's home directory:
 ```bash
 cat ~/.*history | less
 ```
-
 ### Config Files
 
 **Sometimes we would just find a reference to another location where the root user's credentials can be found, so make sure to look on config files whenever you find one.**
-
 ### SSH Keys
 
 Sometimes users make backups of important files but fail to secure them with the correct permissions.

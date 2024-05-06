@@ -6,7 +6,6 @@ Diffie–Hellman key exchange establishes a shared secret between two parties th
 3. Bob picks a random number b smaller than q. He calculates _B_ = (g$^b$) mod _q_. Bob must keep b a secret; however, he sends B to Alice. Let’s consider the case where Bob chooses the number b = 15 and calculates B = 3$^{15}$%29 = 26. He proceeds to send it to Alice.
 4. Alice receives B and calculates key = B$^a$ mod q. Numeric example key = 26$^{13}$ mod 29 = 10.
 5. Bob receives A and calculates key = A$^b$ mod q. Numeric example key = 19$^{15}$ mod 29 = 10.
-
 # Useful Commands
 
 To generate DH parameters:

@@ -1,5 +1,4 @@
 PHP wrappers are part of PHP's functionality that allows users access to various data streams. Wrappers can also access or execute code through built-in PHP protocols, which may lead to significant security risks if not properly handled.
-
 ### Filter Wrapper
 
 For example, the table below represents the output of the target file .htaccess using the different string filters in PHP, Don't forget to add `?page=`.

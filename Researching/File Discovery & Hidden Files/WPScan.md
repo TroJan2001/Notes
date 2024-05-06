@@ -1,4 +1,3 @@
-
 The WPScan framework is capable of enumerating & researching a few security vulnerability categories present in WordPress sites - including - but not limited to:
 
 - Sensitive Information Disclosure (Plugin & Theme installation versions for disclosed vulnerabilities or CVE's)
@@ -6,7 +5,6 @@ The WPScan framework is capable of enumerating & researching a few security vuln
 - Weak Password Policies (Password bruteforcing)
 - Presence of Default Installation (Looking for default files)
 - Testing Web Application Firewalls (Common WAF plugins)
-
 # Useful Commands:
 
 To Enumerate for installed themes we can use:

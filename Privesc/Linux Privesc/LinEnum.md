@@ -1,14 +1,10 @@
-
 LinEnum is a simple bash script that performs common commands related to privilege escalation, saving time and allowing more effort to be put toward getting root
-
-
 ### How do I get LinEnum on the target machine?
 
 There are two ways to get LinEnum on the target machine:
 The first way, is to go to the directory that you have your local copy of LinEnum stored in, and start a Python web server using **"python3 -m http.server 8000"**. Then, using **"wget"** on the target machine, and your local IP, you can grab the file from your local machine . Then make the file executable using the command **"chmod +x FILENAME.sh"**.
 
 The second way, if you have sufficient permissions, copy the raw LinEnum code from your local machine [1] and paste it into a new file on the target, using Vi or Nano [2]. Once you've done this, you can save the file with the **".sh"** extension. Then make the file executable using the command **"chmod +x FILENAME.sh"**. You now have now made your own executable copy of the LinEnum script on the target machine.
-
 ### Understanding LinEnum Output
 
 The LinEnum output is broken down into different sections, these are the main sections that we will focus on:

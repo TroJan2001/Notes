@@ -1,6 +1,6 @@
 Log Poisoning involves reading a log file through a “file inclusion” (LFI) and modifying the text of the headers (e.g., User-agent) to write arbitrary code and achieve its execution (RCE) on the victim machine.
 
-Perquisites: LFI
+**Perquisites: LFI**
 We send a malicious code inside the `User-Agent` header for example, then we access the log file that contains this php code.
 
 path examples for Logs: 
