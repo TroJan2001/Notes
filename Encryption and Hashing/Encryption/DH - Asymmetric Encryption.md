@@ -1,4 +1,3 @@
-
 Diffie–Hellman key exchange establishes a shared secret between two parties that can be used for secret communication for exchanging data over a public network.
 
 ### The math(s) side:

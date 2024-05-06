@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md"
+                "file": "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md"
               }
             }
           },
@@ -161,6 +161,12 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
+    "Encryption and Hashing/Encryption/PKI.md",
+    "Encryption and Hashing/Encryption/RSA - Asymmetric Encryption.md",
+    "Encryption and Hashing/Encryption/LKUS.md",
+    "Encryption and Hashing/Encryption/HMAC.md",
+    "Encryption and Hashing/Encryption/GPG.md",
+    "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
     "Document Metadata/pdfinfo.md",
     "Document Metadata/ExifTool.md",
     "DevSecOps/Kubernetes.md",
@@ -182,14 +188,8 @@
     "Shells/Exploiting User Account.md",
     "Web Exploitation/SQL/Sqlmap.md",
     "Web Exploitation/SQL/SQL Injection.md",
-    "Web Exploitation/Hydra.md",
-    "Network Exploitation/Network Services/SMB/SMBClient.md",
-    "Network Exploitation/Network Services/SMB/SMB.md",
-    "Network Exploitation/Metasploit/Metasploit Exploitation.md",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",
-    "Network Exploitation/Network Services/MySQL.md",
-    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
     "Attachments/Pasted image 20240416074205.png",
     "DevSecOps",
     "Attachments/Pasted image 20240212141401.png",
