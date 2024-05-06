@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/iptables.md",
+                "file": "Network Exploitation/Linux Firewalls/UFW.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/iptables.md",
+                "file": "Network Exploitation/Linux Firewalls/UFW.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/iptables.md",
+                "file": "Network Exploitation/Linux Firewalls/UFW.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Network Exploitation/Linux Firewalls/iptables.md"
+                "file": "Network Exploitation/Linux Firewalls/UFW.md"
               }
             }
           },
@@ -161,6 +161,9 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
+    "Network Exploitation/Linux Firewalls/nftables.md",
+    "Network Exploitation/Linux Firewalls/Netfilter.md",
+    "Network Exploitation/Linux Firewalls/iptables.md",
     "File Inclusion/Session Files.md",
     "File Inclusion/PHP Wrappers.md",
     "File Inclusion/Log Poisoning.md",
@@ -184,9 +187,6 @@
     "Encryption and Hashing/Encryption/PKI.md",
     "DevSecOps/Container Hardening/Control Groups (cgroups).md",
     "DevSecOps/Container Hardening/Docker Daemon.md",
-    "Document Metadata/pdfinfo.md",
-    "Document Metadata/ExifTool.md",
-    "DevSecOps/Kubernetes.md",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",
