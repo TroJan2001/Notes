@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Researching/OSINT/Google Hacking, Dorking.md",
+                "file": "Web Exploitation/XSS/XSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Researching/OSINT/Google Hacking, Dorking.md",
+                "file": "Web Exploitation/XSS/XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Researching/OSINT/Google Hacking, Dorking.md",
+                "file": "Web Exploitation/XSS/XSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Researching/OSINT/Google Hacking, Dorking.md"
+                "file": "Web Exploitation/XSS/XSS.md"
               }
             }
           },
@@ -161,32 +161,33 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
-    "Researching/File Discovery & Hidden Files/WPScan.md",
-    "Researching/File Discovery & Hidden Files/Steganography.md",
-    "Researching/File Discovery & Hidden Files/Nikto.md",
-    "Researching/File Discovery & Hidden Files/Gobuster.md",
-    "Researching/File Discovery & Hidden Files/Foremost.md",
-    "Researching/File Discovery & Hidden Files/ffuf.md",
-    "Researching/File Discovery & Hidden Files/dirb.md",
-    "Privesc/Linux Privesc/Weak File Permissions.md",
-    "Privesc/Linux Privesc/Privilege Escalation.md",
-    "Privesc/Linux Privesc/NFS.md",
-    "Privesc/Linux Privesc/MySQL UDF Exploit.md",
-    "Privesc/Linux Privesc/LinEnum.md",
-    "Privesc/Linux Privesc/History, Config and SSH Files.md",
-    "Privesc/Linux Privesc/Exploiting Sudo Environment Variables.md",
-    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
-    "Privesc/Linux Privesc/Exploiting Crontab.md",
-    "Privesc/Linux Privesc/Escaping Vi Editor.md",
-    "Privesc/Linux Privesc/Capabilities.md",
-    "Privesc/Linux Privesc/SUID&SGID Executables/Systemctl.md",
-    "Privesc/Linux Privesc/SUID&SGID Executables/SUID&GUID Files.md",
-    "Privesc/Linux Privesc/SUID&SGID Executables/Shared Object Injection Exploitation.md",
-    "Privesc/Linux Privesc/SUID&SGID Executables/Known Exploits.md",
-    "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
-    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
-    "Privesc/Linux Privesc/CVE/Exim CVE-2016-1531.md",
-    "Privesc/Linux Privesc/CVE/Dirty COW (CVE-2016-5195).md",
+    "Web Exploitation/XSS/Stored XSS.md",
+    "Web Exploitation/XSS/Reflected XSS.md",
+    "Web Exploitation/XSS/Dom Based XSS.md",
+    "Web Exploitation/XSS/Blind XSS.md",
+    "Web Exploitation/SQL/Sqlmap.md",
+    "Web Exploitation/SQL/SQL Injection.md",
+    "Virtualization and Containers/Kubernetes.md",
+    "Virtualization and Containers/Hypervisors.md",
+    "Virtualization and Containers/Docker.md",
+    "Virtualization and Containers/Containers.md",
+    "TryHackMe/Complete Beginner.png",
+    "Shells/Web Shells.md",
+    "Shells/Socat Encrypted Shells.md",
+    "Shells/Socat.md",
+    "Shells/Reverse shells.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "Shells/Exploiting User Account.md",
+    "Researching/ExpliotDB.md",
+    "Researching/curl.md",
+    "Researching/Auditing.md",
+    "Researching/Vulnerability Searching.md",
+    "Researching/Sitemap.xml.md",
+    "Researching/robots.txt.md",
+    "Researching/OSINT/Wayback Machine.md",
+    "Researching/OSINT/Wappalyzer.md",
+    "Researching/OSINT/S3 Buckets.md",
+    "Researching/OSINT/Google Hacking, Dorking.md",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
     "Attachments/Pasted image 20240427011318.png",
@@ -200,7 +201,6 @@
     "Attachments/Pasted image 20240107182201.png",
     "Attachments/Pasted image 20240105200104.png",
     "Attachments/Pasted image 20240105200042.png",
-    "Attachments/Pasted image 20240105192328.png",
     "Web Exploitation/SQL",
     "Privesc/Linux Privesc/SUID&SGID Executables",
     "Privesc/Linux Privesc/Enumeration",

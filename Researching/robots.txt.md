@@ -1,2 +1,1 @@
-
 This file is a document which tells search engines which files are allowed to be included in the search results and which are allowed, which could be very useful to know which can give us a hint about which locations of the website owners don't want to tell us about.

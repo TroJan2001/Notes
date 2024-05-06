@@ -1,4 +1,3 @@
-
 **Kubernetes**, also shortened to "**K8s**," is one such solution known as an **orchestration platform**. An orchestration platform aims to integrate into other products, such as Docker, and extend their capabilities or "synchronize" them with other products or applications.
 
 Kubernetes relies on these traditional virtualization models like hypervisors and containers and extends their uses, features, and capabilities.
@@ -9,7 +8,6 @@ These capabilities and features include the following:
 - **Extensibility**: Clusters can be modified dynamically without affecting containers outside of the intended group.
 - **Self-healing**: K8s can automatically restart, replace, reschedule, and kill containers that are not properly functioning based on user-defined health checks.
 - **Automated rollouts and rollbacks**: K8s can progressively roll out changes to containers. As changes are made, it will monitor the application's health and decide whether to continue the rollout or rollback. This ensures the constant uptime of your cluster even if some containers fail.
-
 # Useful Commands
 
 To start all clusters:

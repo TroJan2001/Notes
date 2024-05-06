@@ -1,7 +1,4 @@
-
-
 Webshell is a colloquial term for a script that runs inside a webserver (usually in a language such as PHP or ASP) which executes code on the server. Essentially, commands are entered into a webpage -- either through a HTML form, or directly as arguments in the URL -- which are then executed by the script, with the results returned and written to the page. This can be extremely useful if there are firewalls in place, or even just as a stepping stone into a fully fledged reverse or bind shell.
-
 # Useful Commands
 
 As PHP is still the most common server side scripting language, let's have a look at some simple code for this.

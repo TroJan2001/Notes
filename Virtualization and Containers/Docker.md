@@ -1,8 +1,6 @@
-
 Docker is a container platform and engine that is used to run Docker "images" as containers.
 
 Each Docker image is built of a base image, such as Alpine or Ubuntu, that is specifically built for use in containers and is lightweight. To build a Docker image, a Dockerfile must be created, which defines the base image for a container and any commands to be run.
-
 # Useful Commands
 
 Using Docker Hub, we can pull Docker images created by others or push our own.

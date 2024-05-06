@@ -1,6 +1,4 @@
-
 One of the efficient command-line tools to audit system logs on a Linux system is `aureport`.
-
 # Useful Commands
 
 To get logs summary, we can use the following command:

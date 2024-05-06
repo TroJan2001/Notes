@@ -1,2 +1,1 @@
-
 This file contains a list of all files that could be in the result of search engines.

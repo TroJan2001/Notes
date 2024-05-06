@@ -1,12 +1,8 @@
-
 Socat is similar to netcat in some ways, but fundamentally different in many others. The easiest way to think about socat is as a connector between two points. In the interests of this room, this will essentially be a listening port and the keyboard, however, it could also be a listening port and a file, or indeed, two listening ports. All socat does is provide a link between two points -- much like the portal gun from the Portal games!
-
 # Useful Commands:
-
 ## Reverse Shells
 
 The following command  `socat TCP-L:<port> -` is taking two points (a listening port, and standard input) and connecting them together. The resulting shell is unstable, but this will work on either Linux or Windows and is equivalent to `nc -lvnp <port>`
-
 ### Basic Reverse Shell
 
 To run a basic reverse shell listener in socat we use the following command:
