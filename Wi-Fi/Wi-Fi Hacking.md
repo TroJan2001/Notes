@@ -14,6 +14,11 @@ sudo service NetworkManager restart
 sudo ifconfig wlan0 up
 ```
 
+To check if the monitor mode is on and working, we can use the following command:
+
+```bash
+sudo iwconfig
+```
 Now we might need to unplug the USB device then plug it back.
 
 Then we run the following command to start capturing packets:
