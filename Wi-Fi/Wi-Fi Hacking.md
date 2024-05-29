@@ -61,8 +61,10 @@ sudo ifconfig wlan0 up
 
 Note: you might need to toggle Wi-Fi button from top-right menu. 
 
-In case the network manager gets stuck, use the following command:
+In case the network manager gets stuck, use the following commands:
 
 ```bash
 sudo apt-get install --reinstall network-manager
+sudo apt-get install --reinstall wpasupplicant
+sudo apt-get install --reinstall isc-dhcp-client
 ```

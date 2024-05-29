@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wi-Fi/Wi-Fi Hacking.md",
+                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wi-Fi/Wi-Fi Hacking.md",
+                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wi-Fi/Wi-Fi Hacking.md",
+                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wi-Fi/Wi-Fi Hacking.md"
+                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md"
               }
             }
           },
@@ -161,8 +161,10 @@
   },
   "active": "48662d992a9389bf",
   "lastOpenFiles": [
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Shells/Exploiting User Account.md",
+    "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
     "Wi-Fi/Wi-Fi Hacking.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
     "Wi-Fi",
     "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
     "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
@@ -189,8 +191,6 @@
     "Windows/System Configuration Tools/msconfig.md",
     "Windows/System Configuration Tools/Local User and Group Management.md",
     "Windows/System Configuration Tools/compmgmt.md",
-    "Windows/System Configuration Tools/cmd.md",
-    "Windows/Processes/winlogon.exe.md",
     "TryHackMe/Complete Beginner.png",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
