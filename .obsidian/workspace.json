@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1d36b0ba127a334a",
+        "id": "1967fff96080a17f",
         "type": "tabs",
         "children": [
           {
-            "id": "48662d992a9389bf",
+            "id": "6011f0a981ee2a2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevSecOps/Container Hardening/Seccomp & AppArmor.md"
+                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md"
               }
             }
           },
@@ -159,38 +159,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48662d992a9389bf",
+  "active": "6011f0a981ee2a2f",
   "lastOpenFiles": [
-    "Shells/Exploiting User Account.md",
-    "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Privesc/Linux Privesc/Enumeration/Untitled.md",
+    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
     "Wi-Fi/Wi-Fi Hacking.md",
+    "Network Exploitation/Network Services/SMB/SMBClient.md",
+    "Network Exploitation/Network Services/SMB/SMB.md",
+    "Web Exploitation/SSH Tunnels.md",
+    "File Inclusion/PHP Wrappers.md",
+    "Researching/File Discovery & Hidden Files/Nikto.md",
+    "Network Exploitation/Metasploit/Msfvenom.md",
+    "File Inclusion/Log Poisoning.md",
+    "File Inclusion/LFI & RFI.md",
+    "Web Exploitation/Hydra.md",
+    "Resources.md",
+    "Document Metadata/ExifTool.md",
+    "Shells/Exploiting User Account.md",
+    "Shells/Reverse shells.md",
+    "Shells/Socat.md",
+    "Shells/Socat Encrypted Shells.md",
+    "Shells/Web Shells.md",
+    "Readme.md",
+    "Web Exploitation/SQL/SQL Injection.md",
+    "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
     "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
     "Wi-Fi",
     "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
     "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
-    "DevSecOps/Container Hardening/Over-Privileged Containers.md",
-    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
-    "DevSecOps/Kubernetes.md",
     "Attachments/Pasted image 20240509010126.png",
     "Attachments/Pasted image 20240509004540.png",
     "Attachments/Pasted image 20240509004457.png",
-    "DevSecOps/Container Hardening/Docker Daemon.md",
-    "Security Principles.md",
-    "Resources.md",
-    "Readme.md",
-    "Windows/Windows Update.md",
-    "Windows/Windows Firewall.md",
-    "Windows/WHfB.md",
-    "Windows/TMP & Bitlocker.md",
-    "Windows/RDP.md",
-    "Windows/EDR.md",
-    "Windows/System Configuration Tools/resmon.md",
-    "Windows/System Configuration Tools/regedit.md",
-    "Windows/System Configuration Tools/msinfo32.md",
-    "Windows/System Configuration Tools/msconfig.md",
-    "Windows/System Configuration Tools/Local User and Group Management.md",
-    "Windows/System Configuration Tools/compmgmt.md",
     "TryHackMe/Complete Beginner.png",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",

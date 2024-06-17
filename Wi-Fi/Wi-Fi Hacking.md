@@ -24,6 +24,8 @@ Now we might need to unplug the USB device then plug it back.
 Then we run the following command to start capturing packets:
 
 ```bash
+# Sometimes we might have to use the following command
+sudo rfkill unblock wifi; sudo rfkill unblock all
 sudo airodump-ng wlan0
 # To only display the access point that we want, we can use the following command
 sudo airodump-ng wlan0 -d <BSSID>

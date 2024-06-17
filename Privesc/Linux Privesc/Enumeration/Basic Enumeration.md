@@ -34,6 +34,12 @@ The “ps” command provides a few useful options.
 The `env` command will show environmental variables.
 
 The PATH variable may have a compiler or a scripting language (e.g. Python) that could be used to run code on the target system or leveraged for privilege escalation.
+
+or we could simply use the following command to check for Interesting information, passwords or API keys in the environment variables:
+
+```bash
+(env || set) 2>/dev/null
+```
 ### sudo -l
 
 The target system may be configured to allow users to run some (or all) commands with root privileges. The `sudo -l` command can be used to list all commands your user can run using `sudo`.
