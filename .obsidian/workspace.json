@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
+                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md"
+                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md"
               }
             }
           },
@@ -161,33 +161,33 @@
   },
   "active": "6011f0a981ee2a2f",
   "lastOpenFiles": [
-    "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Privesc/Linux Privesc/Enumeration/Untitled.md",
+    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
+    "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
+    "Privesc/Linux Privesc/Exploiting Sudo Environment Variables.md",
+    "Privesc/Linux Privesc/Weak File Permissions.md",
+    "Privesc/Linux Privesc/Privilege Escalation.md",
+    "Privesc/Linux Privesc/NFS.md",
+    "Privesc/Linux Privesc/MySQL UDF Exploit.md",
+    "Privesc/Linux Privesc/Enumeration/LinEnum.md",
+    "Privesc/Linux Privesc/Enumeration/Capabilities.md",
     "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
-    "Wi-Fi/Wi-Fi Hacking.md",
-    "Network Exploitation/Network Services/SMB/SMBClient.md",
-    "Network Exploitation/Network Services/SMB/SMB.md",
-    "Web Exploitation/SSH Tunnels.md",
-    "File Inclusion/PHP Wrappers.md",
-    "Researching/File Discovery & Hidden Files/Nikto.md",
-    "Network Exploitation/Metasploit/Msfvenom.md",
-    "File Inclusion/Log Poisoning.md",
-    "File Inclusion/LFI & RFI.md",
-    "Web Exploitation/Hydra.md",
-    "Resources.md",
-    "Document Metadata/ExifTool.md",
-    "Shells/Exploiting User Account.md",
-    "Shells/Reverse shells.md",
-    "Shells/Socat.md",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Web Shells.md",
-    "Readme.md",
-    "Web Exploitation/SQL/SQL Injection.md",
-    "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Wi-Fi",
-    "Encryption and Hashing/Hashing/John The Ripper/Password Protected Zip & RAR Files.md",
+    "Privesc/Linux Privesc/Enumeration/Find Command.md",
+    "Privesc/Linux Privesc/Enumeration/History, Config and SSH Files.md",
+    "Privesc/Linux Privesc/Exploiting Crontab.md",
+    "Privesc/Linux Privesc/Escaping Vi Editor.md",
+    "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
+    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
     "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
+    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
+    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
+    "Encryption and Hashing/Hashing/md5sum.md",
+    "Encryption and Hashing/Hashing/NTLM.md",
+    "File Inclusion/LFI & RFI.md",
+    "File Inclusion/Log Poisoning.md",
+    "File Inclusion/Session Files.md",
+    "File Inclusion/PHP Wrappers.md",
+    "Web Exploitation/Hydra.md",
+    "Wi-Fi",
     "Attachments/Pasted image 20240509010126.png",
     "Attachments/Pasted image 20240509004540.png",
     "Attachments/Pasted image 20240509004457.png",
