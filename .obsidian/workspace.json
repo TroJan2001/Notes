@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Windows/Passwords Usual Spots.md",
+                "file": "Privesc/Windows/Other ways for Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Windows/Passwords Usual Spots.md",
+                "file": "Privesc/Windows/Other ways for Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Windows/Passwords Usual Spots.md",
+                "file": "Privesc/Windows/Other ways for Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Windows/Passwords Usual Spots.md"
+                "file": "Privesc/Windows/Other ways for Privilege Escalation.md"
               }
             }
           },
@@ -161,13 +161,16 @@
   },
   "active": "d28f474748facec6",
   "lastOpenFiles": [
+    "Privesc/Windows/Passwords Usual Spots.md",
+    "Privesc/Windows/Other ways for Privilege Escalation.md",
+    "Privesc/Linux/CVE/Polkit CVE-2021-3560.md",
+    "Privesc/Linux/CVE/Exim CVE-2016-1531.md",
     "Privesc/Linux/Exploiting PATH Variable.md",
     "Privesc/Linux/Enumeration/Find Command.md",
     "Privesc/Linux/Enumeration/Legacy Packages.md",
     "Privesc/Linux/Enumeration/History, Config and SSH Files.md",
     "Privesc/Linux/Enumeration/Capabilities.md",
     "Privesc/Linux/Enumeration/Basic Enumeration.md",
-    "Privesc/Windows/Passwords Usual Spots.md",
     "Shells/Web Shells.md",
     "Shells/Reverse shells.md",
     "Web Exploitation/Hydra.md",
@@ -185,9 +188,6 @@
     "Virtualization and Containers/Containers.md",
     "Shells/Socat Encrypted Shells.md",
     "Shells/Socat.md",
-    "Shells/Netcat Shell Stabilisation.md",
-    "Shells/Exploiting User Account.md",
-    "Privesc/Linux/MySQL UDF Exploit.md",
     "Wi-Fi",
     "Attachments/Pasted image 20240509010126.png",
     "Attachments/Pasted image 20240509004540.png",
