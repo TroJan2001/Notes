@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1967fff96080a17f",
+        "id": "4f36ce5ba6c4a668",
         "type": "tabs",
         "children": [
           {
-            "id": "6011f0a981ee2a2f",
+            "id": "d28f474748facec6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
+                "file": "Privesc/Windows/Passwords Usual Spots.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
+                "file": "Privesc/Windows/Passwords Usual Spots.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
+                "file": "Privesc/Windows/Passwords Usual Spots.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Linux Privesc/Enumeration/Legacy Packages.md"
+                "file": "Privesc/Windows/Passwords Usual Spots.md"
               }
             }
           },
@@ -159,34 +159,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6011f0a981ee2a2f",
+  "active": "d28f474748facec6",
   "lastOpenFiles": [
-    "Privesc/Linux Privesc/Exploiting PATH Variable.md",
-    "Privesc/Linux Privesc/Enumeration/Legacy Packages.md",
-    "Privesc/Linux Privesc/Exploiting Sudo Environment Variables.md",
-    "Privesc/Linux Privesc/Weak File Permissions.md",
-    "Privesc/Linux Privesc/Privilege Escalation.md",
-    "Privesc/Linux Privesc/NFS.md",
-    "Privesc/Linux Privesc/MySQL UDF Exploit.md",
-    "Privesc/Linux Privesc/Enumeration/LinEnum.md",
-    "Privesc/Linux Privesc/Enumeration/Capabilities.md",
-    "Privesc/Linux Privesc/Enumeration/Basic Enumeration.md",
-    "Privesc/Linux Privesc/Enumeration/Find Command.md",
-    "Privesc/Linux Privesc/Enumeration/History, Config and SSH Files.md",
-    "Privesc/Linux Privesc/Exploiting Crontab.md",
-    "Privesc/Linux Privesc/Escaping Vi Editor.md",
-    "Privesc/Linux Privesc/SUID&SGID Executables/Environment Variables Exploitation.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
-    "Encryption and Hashing/Hashing/md5sum.md",
-    "Encryption and Hashing/Hashing/NTLM.md",
-    "File Inclusion/LFI & RFI.md",
-    "File Inclusion/Log Poisoning.md",
-    "File Inclusion/Session Files.md",
-    "File Inclusion/PHP Wrappers.md",
+    "Privesc/Linux/Exploiting PATH Variable.md",
+    "Privesc/Linux/Enumeration/Find Command.md",
+    "Privesc/Linux/Enumeration/Legacy Packages.md",
+    "Privesc/Linux/Enumeration/History, Config and SSH Files.md",
+    "Privesc/Linux/Enumeration/Capabilities.md",
+    "Privesc/Linux/Enumeration/Basic Enumeration.md",
+    "Privesc/Windows/Passwords Usual Spots.md",
+    "Shells/Web Shells.md",
+    "Shells/Reverse shells.md",
     "Web Exploitation/Hydra.md",
+    "Privesc/Windows",
+    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
+    "Network Exploitation/Network Services/SMB/SMB.md",
+    "Virtualization and Containers/Docker.md",
+    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
+    "DevSecOps/Container Vulnerabilities/Capabilities.md",
+    "File Inclusion/LFI & RFI.md",
+    "Wi-Fi/Wi-Fi Hacking.md",
+    "Web Exploitation/SQL/SQL Injection.md",
+    "Virtualization and Containers/Kubernetes.md",
+    "Virtualization and Containers/Hypervisors.md",
+    "Virtualization and Containers/Containers.md",
+    "Shells/Socat Encrypted Shells.md",
+    "Shells/Socat.md",
+    "Shells/Netcat Shell Stabilisation.md",
+    "Shells/Exploiting User Account.md",
+    "Privesc/Linux/MySQL UDF Exploit.md",
     "Wi-Fi",
     "Attachments/Pasted image 20240509010126.png",
     "Attachments/Pasted image 20240509004540.png",
@@ -203,10 +204,9 @@
     "Attachments/Pasted image 20240107182254.png",
     "Attachments/Pasted image 20240107182226.png",
     "Web Exploitation/SQL",
-    "Privesc/Linux Privesc/SUID&SGID Executables",
-    "Privesc/Linux Privesc/Enumeration",
-    "Privesc/Linux Privesc/CVE",
-    "Privesc/Linux Privesc",
+    "Privesc/Linux/SUID&SGID Executables",
+    "Privesc/Linux/Enumeration",
+    "Privesc/Linux/CVE",
     "Untitled.canvas"
   ]
 }

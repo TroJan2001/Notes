@@ -71,9 +71,6 @@ The target system may be a pivoting point to another network. The `ifconfig` c
 ### netstat
 
 Following an initial check for existing interfaces and network routes, it is worth looking into existing communications. The `netstat` command can be used with several different options to gather information on existing connections.
-
-  
-
 - `netstat -a`: shows all listening ports and established connections.
 - `netstat -at` or `netstat -au` can also be used to list TCP or UDP protocols respectively.
 - `netstat -l`: list ports in “listening” mode. These ports are open and ready to accept incoming connections. This can be used with the “t” option to list only ports that are listening using the TCP protocol.
