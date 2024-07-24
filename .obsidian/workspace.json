@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "4f36ce5ba6c4a668",
+        "id": "1dd742725f3f74a2",
         "type": "tabs",
         "children": [
           {
-            "id": "d28f474748facec6",
+            "id": "0943d053e938cc4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Privesc/Windows/Other ways for Privilege Escalation.md",
+                "file": "Windows/EDR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dd5d97cad1e7fec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "File Inclusion/LFI & RFI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privesc/Windows/Other ways for Privilege Escalation.md",
+                "file": "File Inclusion/LFI & RFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Privesc/Windows/Other ways for Privilege Escalation.md",
+                "file": "File Inclusion/LFI & RFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Privesc/Windows/Other ways for Privilege Escalation.md"
+                "file": "File Inclusion/LFI & RFI.md"
               }
             }
           },
@@ -159,10 +172,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d28f474748facec6",
+  "active": "dd5d97cad1e7fec7",
   "lastOpenFiles": [
-    "Privesc/Windows/Passwords Usual Spots.md",
+    "Document Metadata/pdfinfo.md",
+    "Document Metadata/ExifTool.md",
+    "DevSecOps/Container Vulnerabilities/Exposed Docker Daemon.md",
+    "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
+    "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
+    "DevSecOps/Container Hardening/Over-Privileged Containers.md",
+    "DevSecOps/Container Hardening/Docker Daemon.md",
+    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
+    "Researching/File Discovery & Hidden Files/Foremost.md",
     "Privesc/Windows/Other ways for Privilege Escalation.md",
+    "Privesc/Windows/Passwords Usual Spots.md",
     "Privesc/Linux/CVE/Polkit CVE-2021-3560.md",
     "Privesc/Linux/CVE/Exim CVE-2016-1531.md",
     "Privesc/Linux/Exploiting PATH Variable.md",
@@ -178,16 +200,7 @@
     "Network Exploitation/Network Services/SMB/Enum4Linux.md",
     "Network Exploitation/Network Services/SMB/SMB.md",
     "Virtualization and Containers/Docker.md",
-    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
     "DevSecOps/Container Vulnerabilities/Capabilities.md",
-    "File Inclusion/LFI & RFI.md",
-    "Wi-Fi/Wi-Fi Hacking.md",
-    "Web Exploitation/SQL/SQL Injection.md",
-    "Virtualization and Containers/Kubernetes.md",
-    "Virtualization and Containers/Hypervisors.md",
-    "Virtualization and Containers/Containers.md",
-    "Shells/Socat Encrypted Shells.md",
-    "Shells/Socat.md",
     "Wi-Fi",
     "Attachments/Pasted image 20240509010126.png",
     "Attachments/Pasted image 20240509004540.png",
