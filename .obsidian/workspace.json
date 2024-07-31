@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md",
+                "file": "Researching/OSINT/Wayback Machine.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md",
+                "file": "Researching/OSINT/Wayback Machine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md",
+                "file": "Researching/OSINT/Wayback Machine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File Inclusion/LFI & RFI.md"
+                "file": "Researching/OSINT/Wayback Machine.md"
               }
             }
           },
@@ -174,6 +174,10 @@
   },
   "active": "dd5d97cad1e7fec7",
   "lastOpenFiles": [
+    "Researching/OSINT/Google Hacking, Dorking.md",
+    "Web Exploitation/SQL/Sqlmap.md",
+    "File Inclusion/PHP Wrappers.md",
+    "File Inclusion/LFI & RFI.md",
     "Document Metadata/pdfinfo.md",
     "Document Metadata/ExifTool.md",
     "DevSecOps/Container Vulnerabilities/Exposed Docker Daemon.md",
@@ -197,10 +201,6 @@
     "Shells/Reverse shells.md",
     "Web Exploitation/Hydra.md",
     "Privesc/Windows",
-    "Network Exploitation/Network Services/SMB/Enum4Linux.md",
-    "Network Exploitation/Network Services/SMB/SMB.md",
-    "Virtualization and Containers/Docker.md",
-    "DevSecOps/Container Vulnerabilities/Capabilities.md",
     "Wi-Fi",
     "Attachments/Pasted image 20240509010126.png",
     "Attachments/Pasted image 20240509004540.png",
