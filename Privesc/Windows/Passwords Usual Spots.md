@@ -36,6 +36,7 @@ cmdkey /list
 ```
 
 Although we can't see the actual passwords, we can still utilize these credentials. If we find any credentials worth using, we can execute commands as that user with the `runas` command and the `/savecred` option:
+
 ```shell-session
 runas /savecred /user:<username> cmd.exe
 ```
@@ -49,6 +50,7 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config
 ```
 
 To quickly find database connection strings in the file, use:
+
 ```shell-session
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\web.config | findstr connectionString
 ```

@@ -1,1 +1,0 @@
-https://devhints.io/bash
