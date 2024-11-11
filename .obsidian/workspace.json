@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Tokens.md",
+                "file": "Shells/Windows Shells.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Tokens"
+              "title": "Windows Shells"
             }
           }
         ],
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hydr",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,15 +194,15 @@
   },
   "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
-    "File Inclusion/Session Files.md",
-    "File Inclusion/PHP Wrappers.md",
-    "Shells/Windows Shells.md",
-    "Windows/Windows Tokens.md",
-    "Web Exploitation/Hydra.md",
-    "Privesc/Windows/Abusing vulnerable software.md",
-    "Privesc/Windows/Abusing Windows Privileges.md",
     "Privesc/Windows/Windows Services.md",
     "Privesc/Windows/Other ways for Privilege Escalation.md",
+    "Privesc/Windows/Abusing Windows Privileges.md",
+    "Privesc/Windows/Abusing vulnerable software.md",
+    "Shells/Windows Shells.md",
+    "Web Exploitation/Hydra.md",
+    "File Inclusion/Session Files.md",
+    "File Inclusion/PHP Wrappers.md",
+    "Windows/Windows Tokens.md",
     "Shells/Netcat Shell Stabilisation.md",
     "Network Exploitation/Network Services/Telnet.md",
     "Virtualization and Containers/Containers.md",
