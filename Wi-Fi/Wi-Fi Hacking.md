@@ -7,6 +7,7 @@ First we want to turn on the interface in monitor mode, given that the monitor m
 ```bash
 # Kill the processes that interfere with starting wlan0 in monitor mode
 sudo ifconfig wlan0 down
+# The following 2 commands might be useful (depending on your wlan interface card)
 sudo kill $(pgrep NetworkManager)
 sudo kill $(pgrep wpa_supplicant)
 # Now put the interface in monitor mode, put the interface up and restart network manager and 

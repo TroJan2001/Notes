@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "87348ef9a2c35983",
+        "id": "25c42fd79177fd12",
         "type": "tabs",
         "children": [
           {
-            "id": "392354c9ae1af257",
+            "id": "6a2d4d98c5b0a810",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shells/Netcat Shell Stabilisation.md",
+                "file": "Security Principles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Netcat Shell Stabilisation"
+              "title": "Security Principles"
             }
           },
           {
-            "id": "007d026b2b50865d",
+            "id": "19442c9633ccb416",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shells/Windows Shells.md",
+                "file": "Pivoting & Tunneling/SSH Tunnels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Shells"
+              "title": "SSH Tunnels"
             }
           }
         ],
@@ -55,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -192,54 +193,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "19442c9633ccb416",
   "lastOpenFiles": [
-    "Privesc/Windows/Windows Services.md",
-    "Privesc/Windows/Other ways for Privilege Escalation.md",
-    "Privesc/Windows/Abusing Windows Privileges.md",
-    "Privesc/Windows/Abusing vulnerable software.md",
-    "Shells/Windows Shells.md",
-    "Web Exploitation/Hydra.md",
-    "File Inclusion/Session Files.md",
-    "File Inclusion/PHP Wrappers.md",
-    "Windows/Windows Tokens.md",
+    "Pivoting & Tunneling/Ligolo-NG.md",
+    "Pivoting & Tunneling/SSH Tunnels.md",
+    "Pivoting & Tunneling/Chisel.md",
+    "Attachments/Pasted image 20250322182655.png",
+    "Attachments/Pasted image 20250322180044.png",
+    "Attachments/Pasted image 20250322164020.png",
+    "Attachments/Pasted image 20250322163936.png",
+    "Attachments/Pasted image 20250322163931.png",
+    "Attachments/Pasted image 20250322163820.png",
+    "Shells/Socat Encrypted Shells.md",
+    "Shells/Reverse shells.md",
     "Shells/Netcat Shell Stabilisation.md",
-    "Network Exploitation/Network Services/Telnet.md",
-    "Virtualization and Containers/Containers.md",
-    "DevSecOps/Container Vulnerabilities/Exposed Docker Daemon.md",
-    "DevSecOps/Container Vulnerabilities/Capabilities.md",
-    "DevSecOps/Container Vulnerabilities/Abusing Namespaces.md",
-    "DevSecOps/Container Hardening/Seccomp & AppArmor.md",
-    "DevSecOps/Container Hardening/Over-Privileged Containers.md",
-    "DevSecOps/Container Hardening/Control Groups (cgroups).md",
-    "Researching/File Discovery & Hidden Files/Gobuster.md",
-    "Encryption and Hashing/Hashing/John The Ripper/John Basics.md",
-    "Encryption and Hashing/Hashing/John The Ripper/GPG2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Single Crack Mode.md",
-    "Encryption and Hashing/Hashing/John The Ripper/SSH2John.md",
-    "Encryption and Hashing/Hashing/John The Ripper/Unshadowing.md",
+    "Attachments/Pasted image 20240107182201.png",
+    "Attachments/Pasted image 20240107182254.png",
+    "Attachments/Pasted image 20240113185445.png",
+    "Attachments/Pasted image 20240212141401.png",
+    "Network Exploitation/Linux Firewalls/iptables.md",
+    "Pivoting & Tunneling",
+    "Document Metadata/ExifTool.md",
+    "Document Metadata/pdfinfo.md",
     "File Inclusion/LFI & RFI.md",
-    "Encryption and Hashing/Hashing/md5sum.md",
-    "Attachments/Pasted image 20240810183544.png",
+    "Network Exploitation/Network Services/Telnet.md",
+    "DevSecOps/Kubernetes.md",
+    "DevSecOps/Container Hardening/Over-Privileged Containers.md",
+    "Wi-Fi/Wi-Fi Hacking.md",
+    "Web Exploitation/Hydra.md",
+    "Windows/EDR.md",
+    "Windows/RDP.md",
+    "Windows/TMP & Bitlocker.md",
+    "Windows/WHfB.md",
+    "Windows/Windows Firewall.md",
+    "Windows/Windows Tokens.md",
+    "Windows/Windows Update.md",
+    "Readme.md",
+    "Resources.md",
+    "Web Exploitation/Walking An Application.md",
     "Privesc/Windows",
     "Wi-Fi",
-    "Attachments/Pasted image 20240509010126.png",
-    "Attachments/Pasted image 20240509004540.png",
-    "Attachments/Pasted image 20240509004457.png",
-    "TryHackMe/Complete Beginner.png",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
-    "Attachments/Pasted image 20240427011318.png",
-    "Attachments/Pasted image 20240416074205.png",
     "DevSecOps",
-    "Attachments/Pasted image 20240212141401.png",
     "File Inclusion",
-    "Attachments/Pasted image 20240113185445.png",
-    "Attachments/Pasted image 20240107182254.png",
     "Web Exploitation/SQL",
     "Privesc/Linux/SUID&SGID Executables",
     "Privesc/Linux/Enumeration",
-    "Privesc/Linux/CVE",
     "Untitled.canvas"
   ]
 }

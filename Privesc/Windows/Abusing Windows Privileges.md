@@ -64,7 +64,7 @@ copy cmd.exe utilman.exe
 
 The SeImpersonate and SeAssignPrimaryToken privileges allow a process to impersonate other users, enabling SYSTEM-level access via exploitation tools like RogueWinRM.
 
-Assume we access to an IIS web shell on `http://TARGET_IP/`, and this account holds the `SeImpersonate` privilege.
+Assume we have access to an IIS web shell on `http://TARGET_IP/`, and this account holds the `SeImpersonate` privilege.
 
 First, let's start a listener on 4442:
 

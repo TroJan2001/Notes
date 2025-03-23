@@ -48,7 +48,7 @@ The target system may be configured to allow users to run some (or all) commands
 One of the common commands used in Linux is probably `ls`.
 
 While looking for potential privilege escalation vectors, please remember to always use the `ls` command with the `-la` parameter.
-### Id
+### id
 
 The `id` command will provide a general overview of the user’s privilege level and group memberships.
 
