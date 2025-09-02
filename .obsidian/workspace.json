@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/NTLM (NT LAN Manager).md",
+                "file": "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Flow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NTLM (NT LAN Manager)"
+              "title": "Kerberos Authentication Flow"
             }
           }
         ],
@@ -224,9 +224,11 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
+    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication in Active Directory.md",
+    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Flow.md",
+    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/NTLM (NT LAN Manager).md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Foundation.md",
     "Windows/TMP & Bitlocker.md",
-    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/NTLM (NT LAN Manager).md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)",
     "Windows/Windows Networking Protocols/Foundation.md",
     "Windows/Windows Networking Protocols/From Shares to Pipes, SMB as a Transport for MSRPC.md",
@@ -250,8 +252,6 @@
     "Windows/Windows Networking Protocols.md",
     "Network Exploitation/Nmap/Spoofing and Decoys.md",
     "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
-    "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
-    "Network Exploitation/Nmap/Idle-Zombie Scan.md",
     "Operating System",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
