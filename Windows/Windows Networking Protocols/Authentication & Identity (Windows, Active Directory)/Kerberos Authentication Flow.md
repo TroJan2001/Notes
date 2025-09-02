@@ -1,3 +1,13 @@
+|Acronym|Stands For|Purpose|
+|---|---|---|
+|**AS**|Authentication Service|Logs you in to the domain and gives you a TGT|
+|**TGT**|Ticket Granting Ticket|Proves you logged in — used to get more tickets|
+|**TGS**|Ticket Granting Service|Gives you a **Service Ticket** when you present a TGT|
+|**SPN**|Service Principal Name|The service you want (like `cifs/server01`)|
+|**PAC**|Privilege Attribute Certificate|Contains your SID, groups, etc. — like your badge|
+|**AP**|Application Protocol|The actual connection between you and the service|
+|**KDC**|Key Distribution Center|Lives on the Domain Controller — runs both AS + TGS|
+|**REQ/REP**|Request/Reply|Message types (just like SYN/ACK in TCP)|
 ### ✅ Step 1: AS-REQ — Alice logs into the domain
 
 🧑 **Alice → KDC (UDP/88 or TCP/88)**
