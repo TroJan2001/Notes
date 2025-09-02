@@ -1,23 +1,23 @@
 # 🔹 1. Remote Execution & Lateral Movement
 
-|Tool|Flow|Protocol/Transport|
-|---|---|---|
-|**PsExec / Impacket-psexec**|Authenticates via SMB → creates a Windows Service (`PSEXESVC`) remotely → service runs attacker command → output piped back over SMB named pipe.|**SMB (445/tcp)** + Named Pipes (IPC$)|
-|**SMBExec / Impacket-smbexec**|Same SMB path, but instead of creating a service, it uses a semi-interactive shell via SMB pipes.|**SMB (445/tcp)**|
-|**WMIExec / Impacket-wmiexec**|Connects via DCOM/RPC → issues WMI `Win32_Process.Create` call → process runs remotely → output redirected through SMB backchannel.|**DCOM over MSRPC (135/tcp + dynamic RPC)** with SMB for output|
-|**winexe**|Linux client for SMB service execution (similar to PsExec).|**SMB (445/tcp)**|
-|**Scheduled Task / atexec / DCOMExec**|Connects via RPC/DCOM → schedules a task (Task Scheduler service) on target → task runs attacker command.|**MSRPC (135/tcp + dynamic)**|
-|**WinRM / evil-winrm / PS Remoting**|Uses WS-Management protocol (SOAP over HTTP/S) → remote PowerShell execution.|**WinRM (5985/tcp HTTP, 5986/tcp HTTPS)**|
+| Tool                                   | Flow                                                                                                                                             | Protocol/Transport                                              |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| **PsExec / Impacket-psexec**           | Authenticates via SMB → creates a Windows Service (`PSEXESVC`) remotely → service runs attacker command → output piped back over SMB named pipe. | **SMB (445/tcp)** + Named Pipes (IPC$)                          |
+| **SMBExec / Impacket-smbexec**         | Same SMB path, but instead of creating a service, it uses a semi-interactive shell via SMB pipes.                                                | **SMB (445/tcp)**                                               |
+| **WMIExec / Impacket-wmiexec**         | Connects via DCOM/RPC → issues WMI `Win32_Process.Create` call → process runs remotely → output redirected through SMB backchannel.              | **DCOM over MSRPC (135/tcp + dynamic RPC)** with SMB for output |
+| **winexe**                             | Linux client for SMB service execution (similar to PsExec).                                                                                      | **SMB (445/tcp)**                                               |
+| **Scheduled Task / atexec / DCOMExec** | Connects via RPC/DCOM → schedules a task (Task Scheduler service) on target → task runs attacker command.                                        | **MSRPC (135/tcp + dynamic)**                                   |
+| **WinRM / evil-winrm / PS Remoting**   | Uses WS-Management protocol (SOAP over HTTP/S) → remote PowerShell execution.                                                                    | **WinRM (5985/tcp HTTP, 5986/tcp HTTPS)**                       |
 
 ---
 # 🔹 2. Enumeration & Reconnaissance
 
-|Tool|Flow|Protocol/Transport|
-|---|---|---|
-|**rpcclient**|Talks directly to MSRPC interfaces exposed by SMB/DC (like SAMR, LSARPC, Netlogon) → queries users, groups, policies.|**MSRPC over SMB (445/tcp)**|
-|**smbclient / smbmap**|Enumerates file shares, permissions, contents.|**SMB (445/tcp)**|
-|**enum4linux / enum4linux-ng**|Wrapper around rpcclient, smbclient, LDAP queries → dumps domain info.|**SMB + RPC + LDAP (389/tcp)**|
-|**BloodHound / PlumHound**|Collects LDAP queries (users, groups, ACLs) + SMB sessions + GPOs → graph analysis.|**LDAP (389/tcp), SMB (445/tcp), MSRPC (135/tcp)**|
+| Tool                           | Flow                                                                                                                  | Protocol/Transport                                 |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| **rpcclient**                  | Talks directly to MSRPC interfaces exposed by SMB/DC (like SAMR, LSARPC, Netlogon) → queries users, groups, policies. | **MSRPC over SMB (445/tcp)**                       |
+| **smbclient / smbmap**         | Enumerates file shares, permissions, contents.                                                                        | **SMB (445/tcp)**                                  |
+| **enum4linux / enum4linux-ng** | Wrapper around rpcclient, smbclient, LDAP queries → dumps domain info.                                                | **SMB + RPC + LDAP (389/tcp)**                     |
+| **BloodHound / PlumHound**     | Collects LDAP queries (users, groups, ACLs) + SMB sessions + GPOs → graph analysis.                                   | **LDAP (389/tcp), SMB (445/tcp), MSRPC (135/tcp)** |
 
 ---
 # 🔹 3. Credential Extraction & Abuse
