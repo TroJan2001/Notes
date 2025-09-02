@@ -194,3 +194,6 @@ This section builds on **Operating System IPC** (shared memory, pipes, queues, s
     - NTLM still exists for backward compatibility and certain cross-domain scenarios.
         
     - AD replication uses **RPC** over SMB (e.g., DRSUAPI interface).
+
+**Additional References:**
+https://zwoosh.medium.com/nmap-vs-windows-netbios-ssn-msrpc-microsoft-ds-and-ms-wbt-server-a3fd3781fe74
