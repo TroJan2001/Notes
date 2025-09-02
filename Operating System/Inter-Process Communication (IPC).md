@@ -32,6 +32,9 @@ int shmid = shmget(IPC_PRIVATE, 1024, IPC_CREAT | 0666);
 char *data = shmat(shmid, NULL, 0);
 strcpy(data, "hello from process A");
 ```
+
+**Full Duplex:** ✅ Yes  
+**Bidirectional:** ✅ Yes (but must implement your own synchronization)
 ## 2. Signals (Unix/Linux)
 
 Asynchronous notifications used for control, not data transfer.
@@ -43,8 +46,10 @@ Asynchronous notifications used for control, not data transfer.
 kill -SIGUSR1 1234
 ```
 
-Used for: terminate (`SIGKILL`), pause/resume (`SIGSTOP`, `SIGCONT`), reload configs.
+Used for: terminate (`SIGKILL`), pause/resume (`SIGSTOP`, `SIGCONT`), reload configs
 
+**Full Duplex:** ❌  
+**Bidirectional:** ❌
 ## 3. Semaphores
 
 Counters used to coordinate access to resources (especially shared memory).
@@ -67,6 +72,9 @@ sem_wait(&sem);         // lock
 // critical section 
 sem_post(&sem);         // unlock
 ```
+
+**Full Duplex:** ❌  
+**Bidirectional:** ❌
 ## 4. Memory-Mapped Files
 
 Allows multiple processes to share data through a file mapped into memory.
@@ -94,6 +102,9 @@ ls | grep ".txt"
 ```
 
 The shell creates a pipe: `ls` writes → kernel buffer → `grep` reads.
+
+**Full Duplex:** ❌  
+**Bidirectional:** ⚠️ One-way only (half-duplex). Full duplex needs two pipes.
 ### Named Pipe (FIFO)
 
 - Persistent special file (`p` type).
@@ -109,6 +120,15 @@ echo "hello" > /tmp/mypipe    # writer
 cat < /tmp/mypipe             # reader
 ```
 
+- **On Unix:**
+    
+    > **Full Duplex:** ❌  
+    > **Bidirectional:** ❌ (You need **two FIFOs** for full duplex)
+    
+- **On Windows:**
+    
+    > **Full Duplex:** ✅ Yes  
+    > **Bidirectional:** ✅ Yes (if created with `PIPE_ACCESS_DUPLEX`)
 ---
 
 ## 6. Message Queues
@@ -132,6 +152,9 @@ ipcrm -q <id>
 msgsnd(qid, "hello", ...);
 msgrcv(qid, buf, ...);
 ```
+
+**Full Duplex:** ❌  
+**Bidirectional:** ❌ (unless two queues are created)
 
 ---
 ## 7. Sockets
@@ -159,6 +182,9 @@ nc 127.0.0.1 4444    # terminal 2 (client)
 socat UNIX-LISTEN:/tmp/mysock,fork STDOUT
 socat UNIX-CONNECT:/tmp/mysock -
 ```
+
+**Full Duplex:** ✅ Yes  
+**Bidirectional:** ✅ Yes
 
 ---
 ## 8. Higher-Level IPC
