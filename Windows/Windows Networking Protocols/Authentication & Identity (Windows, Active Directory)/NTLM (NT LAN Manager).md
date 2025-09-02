@@ -38,89 +38,141 @@ But the **hash itself is as good as the password**, which leads to attacks.
 
 ---
 
-## ⚠️ Major NTLM Attacks
+# ⚠️ NTLM Attack Flows (Detailed)
 
-### 1. **Pass-the-Hash (PtH)**
+## 1. 🔑 **Pass-the-Hash (PtH)**
 
-- **Idea:** If you steal a user’s **NT Hash**, you don’t need the password.
-    
-- You can directly calculate responses to any challenge.
-    
-- Works because NTLM authentication only needs the hash, not the cleartext password.
-    
+**Goal:** Use stolen NT Hash instead of password.
 
-**Steps:**
+**Flow:**
 
-1. Attacker dumps hashes from a system (`lsass.exe`, `SAM`, `NTDS.dit`).
+1. Attacker compromises a machine.
     
-2. Uses the hash in tools like `Mimikatz`, `Impacket’s psexec.py`, or `crackmapexec`.
+    - Dumps hashes via `lsass.exe`, `SAM`, or `NTDS.dit`.
+        
+    - Example: `mimikatz sekurlsa::logonpasswords`.
+        
+2. Attacker extracts the **NT Hash** (e.g., `aad3b435b51404eeaad3b435b51404ee:5f4dcc3b5aa765d61d8327deb882cf99`).
     
-3. Authenticates to remote services (SMB, WMI, WinRM) **without knowing the password**.
+3. Attacker uses a tool (`psexec.py`, `crackmapexec`, `wmiexec.py`) that forges the NTLM response:
     
-
----
-
-### 2. **NTLM Relay Attack**
-
-- Instead of cracking hashes, attacker **relays** the victim’s authentication to another service.
-    
-- No need to know the password/hash.
+    - Instead of computing `Encrypt(Challenge, Hash(password))` → they directly use the stolen hash.
+        
+4. Target server accepts the challenge-response as valid, because hash = password equivalent.
     
 
-**Steps:**
-
-1. Attacker runs `Responder` or `ntlmrelayx`.
-    
-2. Victim connects (e.g., via LLMNR/mDNS spoofing).
-    
-3. Attacker forwards challenge-response exchange to a target server.
-    
-4. Attacker is authenticated as the victim.
-    
-
-👉 Often used to pivot into LDAP/SMB to dump AD info.
+✅ Attacker authenticates to SMB, WMI, WinRM, or RPC **without ever knowing the password**.
 
 ---
 
-### 3. **Pass-the-Ticket (NTLM Edition)**
+## 2. 🔄 **NTLM Relay Attack**
 
-_(more common in Kerberos, but NTLM also has token abuse)_
+**Goal:** Trick a victim into authenticating and relay their NTLM response to another service.
 
-- Attacker steals a cached NTLM session token (Windows stores it in LSASS).
-    
-- Can impersonate the user until token expires.
-    
----
+**Flow:**
 
-### 4. **Brute Force / Cracking NTLM Hashes**
+1. Attacker poisons name resolution (LLMNR/mDNS/NBT-NS spoofing with `Responder`).
+    
+    - Victim asks: _“Who is FILESERVER?”_
+        
+    - Attacker responds: _“That’s me!”_
+        
+2. Victim sends NTLM Negotiate → Challenge → Authenticate to attacker.
+    
+3. Attacker doesn’t crack the hash — instead **relays the blobs** to a real target server (e.g., LDAP, SMB).
+    
+4. Target server verifies with DC → trusts attacker as the victim.
+    
 
-- Since NTLM hashes are unsalted **MD4(password)**, they can be brute-forced offline.
-    
-- Tools: `hashcat`, `John the Ripper`.
-    
-- Rainbow tables are effective against weak passwords.
-    
-
----
-
-### 5. **NTLM Downgrade**
-
-- If Kerberos is available, Windows should prefer it.
-    
-- Attacker can trick client/server into **falling back to NTLM** (e.g., blocking Kerberos traffic).
-    
-- Now PtH or Relay attacks become possible.
-    
+✅ Attacker gets **authenticated session** on the relay target, often with domain user privileges.
 
 ---
 
-### 6. **NTLMv1 vs NTLMv2 Weakness**
+## 3. 🪪 **Pass-the-Ticket (NTLM Token Abuse)**
 
-- **NTLMv1** (old) uses DES-based responses → very weak.
+_(Different from Kerberos PtT — here it’s token theft)_
+
+**Goal:** Reuse cached NTLM session tokens.
+
+**Flow:**
+
+1. Windows caches user tokens (in `lsass.exe`) for SSO.
     
-- **NTLMv2** (modern) is stronger (HMAC-MD5 + challenge + timestamp), but still relayable.
+2. Attacker dumps memory (e.g., Mimikatz `sekurlsa::tickets` or `sekurlsa::msv`).
     
-- Many attacks specifically target environments where NTLMv1 is still allowed.
+3. Extracts NTLM session token (not just hash).
+    
+4. Injects token into own process (`token::elevate`).
+    
+5. OS accepts it → attacker impersonates user until token expiry.
+    
+
+✅ Used for **lateral movement** when Kerberos tickets aren’t available.
+
+---
+
+## 4. 💥 **Brute-Force / Cracking NTLM Hashes**
+
+**Goal:** Recover plaintext password from NT Hash.
+
+**Flow:**
+
+1. Attacker obtains NTLM hash (same as PtH step 1).
+    
+2. Loads into cracking tool (`hashcat`, `john`).
+    
+3. Because NTLM = **unsalted MD4(password)**:
+    
+    - Pre-computed rainbow tables are effective.
+        
+    - GPU brute force is very fast (billions of guesses/sec).
+        
+4. Once cracked, attacker has the **cleartext password** → can authenticate via Kerberos, RDP, VPN, etc.
+    
+
+✅ Strong passwords resist, but weak/short ones fall quickly.
+
+---
+
+## 5. 📉 **NTLM Downgrade Attack**
+
+**Goal:** Force system to use NTLM instead of Kerberos.
+
+**Flow:**
+
+1. Normally, domain clients prefer Kerberos (port 88).
+    
+2. Attacker blocks Kerberos traffic (e.g., drop/DoS to KDC).
+    
+3. Client retries using NTLM (fallback).
+    
+4. Attacker now applies **Relay** or **Pass-the-Hash**.
+    
+
+✅ Downgrade = enabler for other NTLM abuses.
+
+---
+
+## 6. ⏳ **NTLMv1 vs NTLMv2 Weakness**
+
+- **NTLMv1**
+    
+    - Challenge response uses DES on only parts of the password hash.
+        
+    - Easily cracked with rainbow tables (`halflmchall`).
+        
+- **NTLMv2**
+    
+    - Uses HMAC-MD5 with challenge + timestamp.
+        
+    - Stronger, but still vulnerable to **Relay** (since server accepts relayed tokens blindly).
+        
+
+**Flow (NTLMv1 attack):**
+
+1. Capture NTLMv1 handshake with `Responder`.
+    
+2. Crack offline in seconds/minutes with `hashcat -m 5500`.
     
 
 ---
