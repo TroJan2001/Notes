@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Tools and Techniques/Enumeration & Reconnaissance.md",
+                "file": "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Enumeration & Reconnaissance"
+              "title": "Credential Extraction & Abuse"
             }
           }
         ],
@@ -224,10 +224,10 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
-    "Windows/Windows Networking Protocols/Tools and Techniques/Remote Execution & Lateral Movement.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Summary.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Enumeration & Reconnaissance.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques/Remote Execution & Lateral Movement.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
     "Operating Systems/Inter-Process Communication (IPC).md",
     "Operating Systems/Sessions and Full-Duplex Communication.md",
     "Windows/Windows Networking Protocols/Foundation.md",

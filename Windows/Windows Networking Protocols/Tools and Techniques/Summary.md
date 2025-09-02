@@ -18,9 +18,14 @@
 | **RID Cycling**                | Abuse SAMR by iterating RIDs → discover valid domain users/groups.                   | **MSRPC (SAMR) over SMB (445)**                   |
 | **smbclient / smbmap**         | Enumerates SMB shares, permissions, file contents.                                   | **SMB (445/tcp)**                                 |
 | **enum4linux / enum4linux-ng** | Wrapper for rpcclient, smbclient, net, nmblookup, LDAP → dumps domain info.          | **SMB + RPC + LDAP (389/tcp)**                    |
+| **Impacket Scripts**           | Python scripts (`samrdump`, `lookupsid`, `GetUserSPNs`) for SMB/MSRPC/Kerberos enum. | **SMB (445), MSRPC (135), Kerberos (88)**         |
+| **Keimpx**                     | Validate creds/hashes against SMB hosts, list accessible shares.                     | **SMB (445)**                                     |
+| **Nmap NSE**                   | Automates SMB/LDAP enumeration and brute-force with NSE scripts.                     | **SMB (445), LDAP (389), LDAPS (636)**            |
 | **ldapsearch**                 | Direct LDAP queries to AD DS → enumerate users, groups, policies, computers.         | **LDAP (389/tcp), LDAPS (636/tcp)**               |
+| **Manspider / SMBcrunch**      | Crawl/search SMB shares for sensitive files (passwords, secrets, keys).              | **SMB (445)**                                     |
 | **nxc (NetExec/CME)**          | Swiss-army: enumerate shares/sessions/users, spray creds, execute via SMB/WMI/WinRM. | **SMB (445), RPC, WinRM (5985/5986), WMI (135)**  |
 | **BloodHound / PlumHound**     | Collects AD data (LDAP, SMB, RPC) → graph analysis of paths and relationships.       | **LDAP (389), SMB (445), MSRPC (135)**            |
+| **Kerberos Tools**             | Kerbrute (userenum/spray), Rubeus (roasting, ticket extraction/injection).           | **Kerberos (88/tcp & udp)**                       |
 
 ---
 # 🔹 3. Credential Extraction & Abuse
@@ -47,12 +52,12 @@
 ---
 # 🔹 5. Attack Delegation & Ticketing
 
-|Technique|Flow|Protocol/Transport|
-|---|---|---|
-|**Golden Ticket**|Forge TGT with krbtgt hash → use in Kerberos flow → valid everywhere.|**Kerberos (88/tcp)**|
-|**Silver Ticket**|Forge TGS with service account hash → present directly to service.|**Kerberos (88/tcp)**|
-|**Unconstrained Delegation / PetitPotam**|Force machine with delegation to request TGT → attacker steals forwarded ticket.|**MSRPC (EFSRPC, LSARPC) + Kerberos**|
-|**Ticket Theft & Abuse**|Export from LSASS → inject into session → single sign-on bypass.|**Kerberos (88/tcp)**|
+| Technique                                 | Flow                                                                             | Protocol/Transport                    |
+| ----------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------- |
+| **Golden Ticket**                         | Forge TGT with krbtgt hash → use in Kerberos flow → valid everywhere.            | **Kerberos (88/tcp)**                 |
+| **Silver Ticket**                         | Forge TGS with service account hash → present directly to service.               | **Kerberos (88/tcp)**                 |
+| **Unconstrained Delegation / PetitPotam** | Force machine with delegation to request TGT → attacker steals forwarded ticket. | **MSRPC (EFSRPC, LSARPC) + Kerberos** |
+| **Ticket Theft & Abuse**                  | Export from LSASS → inject into session → single sign-on bypass.                 | **Kerberos (88/tcp)**                 |
 
 ---
 # 🔹 6. Active Directory Privilege Escalation

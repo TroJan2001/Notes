@@ -292,3 +292,117 @@ Rubeus asktgt /user:Administrator /rc4:<NTLM_hash> /domain:domain.local
 
 **Transport Stack:**  
 `Kerberos (88/tcp)`
+
+## Silver Ticket
+
+**Flow:**
+
+1. Steal the **NTLM hash of a service account** (e.g., SQL service, IIS app pool, computer account).
+    
+2. Forge a **Service Ticket (TGS)** using that hash.
+    
+3. Present the fake TGS directly to the service (CIFS, HTTP, MSSQL, etc.).
+    
+    - No contact with the Domain Controller.
+        
+4. Access that specific service as any user you choose.
+    
+
+- **Requires:** Service account NTLM hash.
+    
+- **Impact:** Limited to one service, but stealthy since DC never sees the request.
+    
+
+**Example Commands:**
+
+```bash
+# Mimikatz example
+mimikatz # kerberos::golden /user:attacker /domain:domain.local /sid:S-1-5-21-... \
+/target:host.domain.local /service:cifs /rc4:<service_NTLM_hash> /id:500
+```
+
+**Transport Stack:**  
+`Kerberos (88/tcp)`
+
+---
+
+## Golden Ticket
+
+**Flow:**
+
+1. Dump the **krbtgt account hash** from a Domain Controller (requires DA initially).
+    
+2. Forge your own **Ticket Granting Tickets (TGTs)** for _any user_ in the domain.
+    
+3. Since the TGT is encrypted/signed with krbtgt’s hash, the DC accepts it as valid.
+    
+4. Use forged TGTs to request TGS tickets for any service.
+    
+5. Persistence: works until krbtgt password is changed (usually very rare).
+    
+
+- **Requires:** krbtgt account NTLM hash (Domain Admin level compromise).
+    
+- **Impact:** Full domain compromise with indefinite persistence.
+    
+
+**Example Commands:**
+
+```bash
+# Mimikatz example
+mimikatz # kerberos::golden /user:Administrator /domain:domain.local /sid:S-1-5-21-... \
+/krbtgt:<krbtgt_NTLM_hash> /id:500
+```
+
+**Transport Stack:**  
+`Kerberos (88/tcp)`
+
+## Potential Attack Flow:
+
+### 1. **Initial Cred Discovery**
+
+- **Kerbrute** → enumerate valid usernames, spray passwords.
+    
+- **AS-REP Roasting** → if “Do not require pre-auth” is set, crackable AS-REPs.
+    
+- **Kerberoasting** → request service tickets with low-priv user, crack offline.
+    
+
+👉 _Goal: get a valid domain user credential or service account hash._
+
+---
+
+### 2. **Dumping & Extraction**
+
+- **Mimikatz** (local execution) → dump creds/hashes/tickets from LSASS.
+    
+- **secretsdump.py** (remote) → extract NTDS.dit or SAM hashes if admin.
+    
+- **Rubeus** → pull Kerberos tickets, request new TGTs.
+    
+
+👉 _Goal: escalate from one compromised host or user → capture more creds._
+
+---
+
+### 3. **Credential Reuse**
+
+- **Pass-the-Hash (PtH)** → reuse NTLM hash against SMB/RPC/WinRM.
+    
+- **Pass-the-Ticket (PtT)** → inject stolen Kerberos tickets.
+    
+- **Overpass-the-Hash** → turn NTLM hash into Kerberos TGT (pivot NTLM → Kerberos).
+    
+
+👉 _Goal: laterally move inside the network using stolen creds/tickets._
+
+---
+
+### 4. **Ticket Forgery (Persistence / Privilege Escalation)**
+
+- **Silver Ticket** → forge service tickets with service account hash (stealthy, DC not contacted).
+    
+- **Golden Ticket** → forge TGTs with `krbtgt` hash (full domain persistence).
+    
+
+👉 _Goal: maintain long-term access and impersonate anyone indefinitely._
