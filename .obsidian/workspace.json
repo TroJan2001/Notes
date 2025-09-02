@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/SMB.md",
+                "file": "Windows/Windows Networking Protocols/Tools and Techniques (In Progress).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SMB"
+              "title": "Tools and Techniques (In Progress)"
             }
           }
         ],
@@ -224,8 +224,9 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/NFS.md",
     "Windows/Windows Networking Protocols/SMB.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques (In Progress).md",
+    "Windows/Windows Networking Protocols/NFS.md",
     "Network Exploitation/Network Services/NFS/NFS.md",
     "Network Exploitation/Network Services/NFS/NFS-Common.md",
     "Windows/Windows Networking Protocols/Transport.md",
@@ -251,7 +252,6 @@
     "Privesc/Linux/Exploiting PATH Variable.md",
     "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "Encryption and Hashing/Encryption/PKI.md",
-    "Encryption and Hashing/Encryption/HMAC.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",
