@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/From Shares to Pipes, SMB as a Transport for MSRPC.md",
+                "file": "Windows/Windows Networking Protocols/RPC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "From Shares to Pipes, SMB as a Transport for MSRPC"
+              "title": "RPC"
             }
           }
         ],
@@ -224,8 +224,9 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/SMB.md",
     "Windows/Windows Networking Protocols/From Shares to Pipes, SMB as a Transport for MSRPC.md",
+    "Windows/Windows Networking Protocols/RPC.md",
+    "Windows/Windows Networking Protocols/SMB.md",
     "Windows/Windows Networking Protocols/RDP.md",
     "Windows/Windows Networking Protocols/Foundation.md",
     "Windows/Windows Networking Protocols/NetBIOS.md",
@@ -251,7 +252,6 @@
     "Web Exploitation/Hydra.md",
     "Web Exploitation/HTTP Server.md",
     "Privesc/Linux/NFS.md",
-    "Privesc/Linux/Exploiting PATH Variable.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",
