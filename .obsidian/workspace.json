@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Foundation.md",
+                "file": "Windows/Windows Networking Protocols/NetBIOS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Foundation"
+              "title": "NetBIOS"
             }
           }
         ],
@@ -224,8 +224,11 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Operating System/Inter-Process Communication (IPC).md",
+    "Windows/Windows Networking Protocols/Name Resolution.md",
+    "Windows/Windows Networking Protocols/NetBIOS.md",
     "Windows/Windows Networking Protocols/Foundation.md",
+    "Windows/WHfB.md",
+    "Operating System/Inter-Process Communication (IPC).md",
     "Windows/Windows Networking Protocols/RDP.md",
     "Windows/Windows Networking Protocols",
     "Windows/Windows Networking Protocols.md",
@@ -249,9 +252,6 @@
     "Document Metadata/pdfinfo.md",
     "File Inclusion/LFI & RFI.md",
     "File Inclusion/Session Files.md",
-    "File Inclusion/PHP Wrappers.md",
-    "File Inclusion/Log Poisoning.md",
-    "Privesc/Linux/MySQL UDF Exploit.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",

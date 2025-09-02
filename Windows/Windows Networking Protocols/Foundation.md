@@ -38,10 +38,11 @@ This section builds on **Operating System IPC** (shared memory, pipes, queues, s
 ├── File Sharing Protocols  
 │ • SMB (native Windows file/print/IPC)  
 │ • NFS (cross-platform, RPC-based)  
-└── Services  
-• SMB (file/print/IPC)  
-• RDP (3389/tcp, remote desktop)  
-• RPC-based services (SAMR, LSA, DCOM, Spooler, WMI)
+├── Services 
+│ • SMB (file/print/IPC)  
+│ • RDP (3389/tcp, remote desktop)
+│ • RPC-based services (SAMR, LSA, WMI, DCOM, Spooler) 
+└──
 ```
 
 ---
