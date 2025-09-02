@@ -1,4 +1,3 @@
-
 This section builds on **Operating System IPC** (shared memory, pipes, queues, sockets) and explains how Microsoft layered those concepts into **network-facing services**. The result is a hierarchy that moves from local IPC → remote IPC → enterprise services like SMB, RPC, and Active Directory components.
 
 ---
