@@ -90,6 +90,7 @@ Example Suffixes:
 | 1B           | Domain Master Browser     |
 
 > 📘 Tip: You can see suffixes using `nbtstat -A <IP>` or `nbtstat -n` in Windows.
+> Recon tools like **nbtscan** or `nmblookup` dump these suffixes and map out what role each machine plays in the network.
 
 ---
 
