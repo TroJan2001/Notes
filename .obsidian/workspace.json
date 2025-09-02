@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/LPC and ALPC in Windows.md",
+                "file": "Windows/Windows Networking Protocols/Windows Print Spooler Service.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LPC and ALPC in Windows"
+              "title": "Windows Print Spooler Service"
             }
           }
         ],
@@ -225,8 +225,10 @@
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
     "Windows/Windows Networking Protocols/Foundation.md",
-    "Windows/Windows Networking Protocols/LPC and ALPC in Windows.md",
+    "Windows/Windows Networking Protocols/Windows Print Spooler Service.md",
     "Windows/Windows Networking Protocols/From Shares to Pipes, SMB as a Transport for MSRPC.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques (In Progress).md",
+    "Windows/Windows Networking Protocols/LPC and ALPC in Windows.md",
     "Windows/Windows Networking Protocols/Name Resolution.md",
     "Windows/Windows Networking Protocols/RPC.md",
     "Windows/Windows Networking Protocols/SMB.md",
@@ -235,7 +237,6 @@
     "Windows/Windows Networking Protocols/NFS.md",
     "Windows/Windows Networking Protocols/Transport.md",
     "Windows/EDR.md",
-    "Windows/Windows Networking Protocols/Tools and Techniques (In Progress).md",
     "Network Exploitation/Network Services/NFS/NFS.md",
     "Network Exploitation/Network Services/NFS/NFS-Common.md",
     "Operating System/Sessions and Full-Duplex Communication.md",
@@ -251,7 +252,6 @@
     "Network Exploitation/Linux Firewalls/Netfilter.md",
     "Operating System",
     "Web Exploitation/Hydra.md",
-    "Web Exploitation/HTTP Server.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",
