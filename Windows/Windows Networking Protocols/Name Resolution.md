@@ -181,6 +181,7 @@ That’s called **multicast DNS (mDNS)**, it's like shouting out the question to
 **Purpose:** Device discovery (printers, cameras, etc.)  
 **Protocol:** Based on SOAP over UDP/TCP
 
+**Note:** WSD is for **finding services** like printers, scanners, and cameras — not just resolving hostnames.
 ### 🧩 How It Works
 
 - Windows sends a SOAP-based probe:
