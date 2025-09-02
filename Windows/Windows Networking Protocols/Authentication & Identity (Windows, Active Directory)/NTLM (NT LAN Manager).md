@@ -235,20 +235,66 @@ _(Different from Kerberos PtT — here it’s token theft)_
 
 **Goal:** Reuse cached NTLM session tokens.
 
-**Flow:**
+## 🔑 What is a Logon Token?
 
-1. Windows caches user tokens (in `lsass.exe`) for SSO.
+- In Windows, when you log in (via NTLM or Kerberos), LSASS (Local Security Authority Subsystem Service) creates a **logon session**.
     
-2. Attacker dumps memory (e.g., Mimikatz `sekurlsa::tickets` or `sekurlsa::msv`).
+- That session contains a **token** = a kernel object describing:
     
-3. Extracts NTLM session token (not just hash).
-    
-4. Injects token into own process (`token::elevate`).
-    
-5. OS accepts it → attacker impersonates user until token expiry.
+    - Your **user SID** (identity)
+        
+    - Your **group memberships**
+        
+    - Your **privileges** (SeDebugPrivilege, etc.)
+        
+- Every process you start gets a copy of that token → that’s how Windows knows “this program runs as Alice, member of Domain Admins.”
     
 
-✅ Used for **lateral movement** when Kerberos tickets aren’t available.
+So instead of re-authenticating constantly, Windows reuses that cached token.
+
+---
+
+## 🧩 Normal NTLM Flow (with token creation)
+
+```text
+1. Client authenticates with NTLM (Negotiate → Challenge → Authenticate).
+2. Server verifies with DC → success.
+3. LSASS creates a logon session.
+4. A logon token is generated for the user.
+5. Any process the user spawns inherits that token.
+```
+
+---
+
+## ⚠️ Attack: NTLM Token Abuse
+
+**Goal:** Attacker doesn’t have to steal a password or hash, just grab an _existing token_ and reuse it.
+
+### Step-by-Step Flow
+
+```text
+[Victim Workstation]
+  - User Alice is logged in.
+  - LSASS holds Alice’s NTLM logon session and access token.
+
+[Attacker on same box]
+  Step 1. Attacker dumps LSASS memory.
+          Tool: mimikatz "sekurlsa::msv" or "sekurlsa::logonpasswords".
+
+  Step 2. Extracts Alice’s access token (handle or in-memory structure).
+          This contains SID, groups, privileges.
+
+  Step 3. Attacker injects token into their own process.
+          Tool: mimikatz "token::elevate" or "incognito.exe".
+
+  Step 4. OS kernel accepts it (because it’s a valid cached token).
+          Now attacker’s process = Alice.
+
+[Target Server]
+  Step 5. Attacker connects to remote service (SMB/RPC).
+  Step 6. Windows uses Alice’s token to present identity.
+  Step 7. Target trusts it → attacker is Alice.
+```
 
 ---
 
