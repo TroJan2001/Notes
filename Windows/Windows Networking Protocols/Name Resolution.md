@@ -1,4 +1,4 @@
-# Windows Name Resolution Stack (Detailed)
+# Windows Name Resolution Stack
 
 Before any remote protocol can communicate (like SMB, RPC, or LDAP), the system needs to **resolve the target hostname to an IP address**.
 

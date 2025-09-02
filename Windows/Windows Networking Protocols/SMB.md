@@ -8,7 +8,6 @@
     
 - Equivalent in concept to **NFS** on Unix, but much more integrated with Windows (authentication, Active Directory, RPC).
     
-
 ---
 
 # 🔹 How SMB Works
@@ -96,23 +95,3 @@
         
 
 ---
-
-# 🔹 Example Recon / Attack Flow
-
-1. **Discover SMB**:
-    
-    `nmap -p445 --script smb-os-discovery,smb-enum-shares 10.0.0.10`
-    
-2. **Enumerate shares**:
-    
-    `smbmap -H 10.0.0.10 -u guest`
-    
-3. **Query users via RPC** (over IPC$):
-    
-    `rpcclient -U "" -N 10.0.0.10 > enumdomusers`
-    
-4. **Move laterally**:
-    
-    - Copy tools to `\\TARGET\C$\Temp\`
-        
-    - Execute via `psexec`, `wmiexec`, or `smbexec`.
