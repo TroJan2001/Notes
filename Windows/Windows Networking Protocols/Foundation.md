@@ -14,9 +14,11 @@ This section builds on **Operating System IPC** (shared memory, pipes, queues, s
 
 [Windows Remote IPC Stack]  
 ├── Name Resolution  
-│ • NBT-NS (137/udp)  
+│ • HOSTS
+│ • DNS  
+│ • mDNS (5353/udp)  
 │ • LLMNR (5355/udp)  
-│ • mDNS, WSD (modern discovery)  
+│ • NBT-NS (137/udp)    
 ├── Transport  
 │ • NetBIOS-SSN (139/tcp)  
 │ • SMB (445/tcp)  
