@@ -4,88 +4,229 @@ It does **not use tickets** (like Kerberos) but instead relies on proving knowle
 
 ---
 
-## 🧩 How NTLM Authentication Works
+# 🔐 Legitimate NTLM Authentication Flow
 
-1. **Negotiate**
+**Actors:**
+
+- **Client** (the user’s workstation or application)
     
-    - Client says: _“I support NTLM.”_
-        
-    - Server agrees.
-        
-2. **Challenge**
+- **Server** (the resource: SMB file server, HTTP server, SQL server, etc.)
     
-    - Server sends a random 16-byte **nonce** (`NTLM_CHALLENGE`).
-        
-3. **Authenticate**
+- **Domain Controller (DC)** (if domain-joined; otherwise the server validates locally)
     
-    - Client calculates:
-        
-        `Response = Encrypt(Challenge, NT Hash)`
-        
-        where **NT Hash = MD4(UTF-16LE(password))**.
-        
-    - Client sends username + domain + response.
-        
-4. **Validation**
+
+**Ports / Transport:**
+
+- SMB (445/tcp or 139/tcp)
     
-    - Server forwards this to the Domain Controller.
+- RPC (135/tcp + dynamic)
+    
+- HTTP (80/443, WebDAV/WinRM)
+    
+- LDAP (389/636)
+    
+- Other apps (MSSQL, mail protocols, etc.)
+    
+
+NTLM is carried **inside these protocols** using the `NTLMSSP` (NTLM Security Support Provider).
+
+---
+
+## 🧩 Detailed Flow (NTLMv2)
+
+### 1. **Negotiate Message (from Client → Server)**
+
+- The client starts by sending a message saying:
+    
+    - “I support NTLM”
         
-    - DC recomputes the expected response using the stored hash and compares.
+    - Lists capabilities (e.g., NTLMv1/NTLMv2, session security options).
         
 
-👉 The **password is never sent**—only the challenge response.  
-But the **hash itself is as good as the password**, which leads to attacks.
+📡 Example inside SMB2 `Session Setup Request`:
+
+`NTLMSSP_NEGOTIATE   Flags: NTLMv2, 128-bit encryption, signing`
+
+---
+### 2. **Challenge Message (from Server → Client)**
+
+- Server responds with:
+    
+    - A **random 8 or 16-byte nonce** (the “challenge”)
+        
+    - Target information (domain name, NetBIOS name, etc.)
+        
+
+📡 Example inside SMB2 `Session Setup Response`:
+
+`NTLMSSP_CHALLENGE   ServerChallenge: 0x1122334455667788   TargetInfo: DOMAIN\SERVER`
+
+---
+
+### 3. **Authenticate Message (from Client → Server)**
+
+- The client now proves it knows the user’s password hash.
+    
+- Steps:
+    
+    1. Compute **NT Hash** = `MD4(UTF-16-LE(password))`.
+        
+    2. Derive **NTLMv2 hash** = `HMAC-MD5(NT Hash, Username + Domain)`.
+        
+    3. Compute **NTLMv2 Response** = `HMAC-MD5(NTLMv2 hash, ServerChallenge + ClientNonce + Timestamp + TargetInfo)`.
+        
+    4. Send:
+        
+        - Username
+            
+        - Domain name
+            
+        - NTLMv2 Response blob
+            
+
+📡 Example inside SMB2 `Session Setup Request`:
+
+`NTLMSSP_AUTHENTICATE   User: Alice   Domain: ACME   NTLMv2 Response: <16-byte HMAC + client data>`
+
+---
+
+### 4. **Validation (Server → DC)**
+
+- The server itself usually doesn’t know the user’s password.
+    
+- So it **forwards the username + challenge + response** to the **Domain Controller** (via Netlogon RPC).
+    
+- The DC:
+    
+    1. Looks up the stored hash for the user in AD.
+        
+    2. Recomputes the expected response using the same math.
+        
+    3. If they match → authentication succeeds.
+        
+
+📡 RPC call: `NetrLogonSamLogonEx` with NTLM challenge/response.
+
+---
+
+### 5. **Result**
+
+- DC returns success/failure.
+    
+- Server tells the client “Access granted” or “Access denied.”
+    
+- If granted, the client gets a session token (access token) tied to that identity.
+    
+
+---
+
+## 📊 Summary (Message Flow)
+
+[Client] → [Server]       NTLM NEGOTIATE
+[Server] → [Client]       NTLM CHALLENGE (nonce)
+[Client] → [Server]       NTLM AUTHENTICATE (username + HMAC response)
+[Server] → [DC]           Validate with stored hash (if domain joined)
+[DC]     → [Server]       OK / Fail (if domain joined)
+[Server] → [Client]       Access granted/denied
 
 ---
 
 # ⚠️ NTLM Attack Flows (Detailed)
 
-## 1. 🔑 **Pass-the-Hash (PtH)**
+## 🔑 Attack 1: Pass-the-Hash (PtH)
 
-**Goal:** Use stolen NT Hash instead of password.
+Actors:
 
-**Flow:**
-
-1. Attacker compromises a machine.
+- **Attacker** (already compromised machine, has stolen NT Hash)
     
-    - Dumps hashes via `lsass.exe`, `SAM`, or `NTDS.dit`.
-        
-    - Example: `mimikatz sekurlsa::logonpasswords`.
-        
-2. Attacker extracts the **NT Hash** (e.g., `aad3b435b51404eeaad3b435b51404ee:5f4dcc3b5aa765d61d8327deb882cf99`).
+- **Target Server**
     
-3. Attacker uses a tool (`psexec.py`, `crackmapexec`, `wmiexec.py`) that forges the NTLM response:
-    
-    - Instead of computing `Encrypt(Challenge, Hash(password))` → they directly use the stolen hash.
-        
-4. Target server accepts the challenge-response as valid, because hash = password equivalent.
+- **DC**
     
 
-✅ Attacker authenticates to SMB, WMI, WinRM, or RPC **without ever knowing the password**.
+```text
+Step 0. Attacker compromises workstation, dumps NT Hash of Alice.
+
+Step 1. Attacker → Target Server: NTLM NEGOTIATE
+         "I want to log in as Alice"
+
+Step 2. Target Server → Attacker: NTLM CHALLENGE
+         "Here’s my random nonce"
+
+Step 3. Attacker (forges response with stolen NT Hash):
+         Response = HMAC(ServerNonce, Alice_NT_Hash)
+
+Step 4. Attacker → Target Server: NTLM AUTHENTICATE
+         "Alice + forged response"
+
+Step 5. Target Server → DC: Validate
+Step 6. DC → Target Server: OK
+Step 7. Target Server → Attacker: Access granted (as Alice)
+```
+
+👉 Why it works: the hash _is_ the password equivalent. The DC doesn’t know this is forged — it just recomputes with the stored hash and sees a match.
 
 ---
 
-## 2. 🔄 **NTLM Relay Attack**
+## 🔄 Attack 2: NTLM Relay
 
-**Goal:** Trick a victim into authenticating and relay their NTLM response to another service.
+Actors:
 
-**Flow:**
-
-1. Attacker poisons name resolution (LLMNR/mDNS/NBT-NS spoofing with `Responder`).
+- **Victim Client** (legitimate domain user)
     
-    - Victim asks: _“Who is FILESERVER?”_
-        
-    - Attacker responds: _“That’s me!”_
-        
-2. Victim sends NTLM Negotiate → Challenge → Authenticate to attacker.
+- **Attacker/MITM** (Responder/ntlmrelayx)
     
-3. Attacker doesn’t crack the hash — instead **relays the blobs** to a real target server (e.g., LDAP, SMB).
+- **Target Server** (e.g., LDAP, SMB)
     
-4. Target server verifies with DC → trusts attacker as the victim.
+- **DC**
+    
+---
+### Why does the Victim Authenticate?
+
+Because Windows services **automatically try to authenticate** when connecting to a resource that looks like a file share, printer, or HTTP site using “Integrated Windows Authentication (IWA).”
+
+The attacker tricks the victim into connecting:
+
+- **LLMNR/NBT-NS spoofing**: Victim looks for `\\fileserver\share`, attacker answers “that’s me.”
+    
+- **Malicious link/email**: Victim clicks `\\ATTACKER\share`.
+    
+- **Rogue HTTP site**: Victim browses to site that requests NTLM auth.
     
 
-✅ Attacker gets **authenticated session** on the relay target, often with domain user privileges.
+Windows will automatically send NTLM credentials without asking the user (single sign-on).
 
+---
+
+### Full Relay Flow
+
+```text
+Step 1. Victim Client → Attacker: NTLM NEGOTIATE
+         (Victim thinks Attacker = FILESERVER)
+
+Step 2. Attacker → Target Server: NTLM NEGOTIATE
+         (Forwards Victim’s negotiate to real server)
+
+Step 3. Target Server → Attacker: NTLM CHALLENGE
+Step 4. Attacker → Victim Client: NTLM CHALLENGE
+         (Forwards challenge to Victim)
+
+Step 5. Victim Client → Attacker: NTLM AUTHENTICATE
+         "Here is my username + HMAC(TargetNonce, NT Hash)"
+
+Step 6. Attacker → Target Server: NTLM AUTHENTICATE
+         (Forwards Victim’s authenticate)
+
+Step 7. Target Server → DC: Validate Victim’s response
+Step 8. DC → Target Server: OK
+Step 9. Target Server → Attacker: Access granted (as Victim)
+```
+
+👉 The **victim never knows** this happened. They were tricked into authenticating because:
+
+- Windows will happily send NTLM when connecting to file shares, HTTP sites, etc.
+    
+- The attacker “posed” as that service (via spoofing or redirection).
 ---
 
 ## 3. 🪪 **Pass-the-Ticket (NTLM Token Abuse)**
