@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/NetBIOS.md",
+                "file": "Windows/Windows Networking Protocols/SMB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NetBIOS"
+              "title": "SMB"
             }
           }
         ],
@@ -224,18 +224,20 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/Foundation.md",
+    "Windows/Windows Networking Protocols/NFS.md",
+    "Windows/Windows Networking Protocols/SMB.md",
+    "Network Exploitation/Network Services/NFS/NFS.md",
+    "Network Exploitation/Network Services/NFS/NFS-Common.md",
+    "Windows/Windows Networking Protocols/Transport.md",
     "Windows/Windows Networking Protocols/Name Resolution.md",
     "Windows/Windows Networking Protocols/NetBIOS.md",
-    "Windows/Windows Networking Protocols/Transport.md",
+    "Windows/Windows Networking Protocols/Foundation.md",
+    "Windows/Windows Networking Protocols/RDP.md",
     "Operating System/Sessions and Full-Duplex Communication.md",
     "Operating System/Inter-Process Communication (IPC).md",
     "Windows/WHfB.md",
-    "Windows/Windows Networking Protocols/RDP.md",
     "Windows/Windows Networking Protocols",
     "Windows/Windows Networking Protocols.md",
-    "Network Exploitation/Network Services/NFS/NFS-Common.md",
-    "Network Exploitation/Network Services/NFS/NFS.md",
     "Network Exploitation/Nmap/Spoofing and Decoys.md",
     "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
     "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
@@ -250,8 +252,6 @@
     "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "Encryption and Hashing/Encryption/PKI.md",
     "Encryption and Hashing/Encryption/HMAC.md",
-    "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
-    "Document Metadata/pdfinfo.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",
