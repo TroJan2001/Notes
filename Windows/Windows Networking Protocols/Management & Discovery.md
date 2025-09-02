@@ -10,7 +10,7 @@
         
 - **Protocol:** WS-Management (SOAP over HTTP/S)
     
-- **Purpose:** Standards-based remote administration (replacement for DCOM/WMI over RPC in many cases).
+- **Purpose:** Standards-based remote administration (replacement for WMI/DCOM over RPC in many cases).
     
 - **Usage Examples:**
     
@@ -18,9 +18,18 @@
         
     - Group Policy uses it for remote querying.
         
-- **Flow (simplified):**
+- **Flow:**
     
-    `Client → HTTP[S] request (SOAP WS-Man) Server (WinRM service) → responds with requested WMI/PowerShell/management data`
+```text
+Client → SOAP/XML request (WS-Management)
+       → over HTTP (5985) or HTTPS (5986)
+       → received by WinRM service
+       → parsed and mapped to local providers (e.g., WMI/DCOM, PowerShell)
+         [Note: no RPC/DCOM on the wire; only SOAP/HTTP/S]
+       → provider executes request locally
+       → result mapped back into SOAP/XML
+       → returned over HTTP/S to client
+```
     
 - **Security Notes:**
     
@@ -35,7 +44,7 @@
 
 ## 2. WMI (Windows Management Instrumentation)
 
-- **Transport:** RPC/DCOM (TCP 135 + high ports)
+- **Transport:** WMI uses **DCOM**, which rides on **MSRPC** (TCP 135 + dynamic high ports, or SMB named pipes).
     
 - **Purpose:** System management framework (query OS info, processes, services, etc.).
     
@@ -47,7 +56,26 @@
         
 - **Flow:**
     
-    `Client → RPC bind to WMI (135/tcp, dynamic port) Server → returns CIM data (Common Information Model objects)`
+```text
+Client → WMI API call (CIM query or method)
+       → marshalled into COM/DCOM call
+       → DCOM serializes request into MSRPC
+       → RPC transport opens via Endpoint Mapper (135/tcp)
+       → dynamic high TCP port assigned
+       → request delivered to WMI provider on target
+       → provider executes (returns CIM objects)
+       → CIM objects → DCOM marshals response → RPC transport → back to client
+
+#Or
+
+Client → WMI API call
+       → COM/DCOM marshalling
+       → RPC carried over SMB (445/tcp)
+       → named pipe (e.g., \pipe\winreg)
+       → WMI provider executes
+       → response marshalled back over SMB pipe to client
+
+```
     
 - **Security Notes:**
     
@@ -76,7 +104,15 @@
         
 - **Flow:**
     
-    `Client → UDP multicast “Probe: who has a print service?” Devices → respond with metadata + endpoint (IP/port)`
+```text
+Client → WS-Discovery Probe (SOAP/XML message)
+       → over UDP multicast (3702/udp)
+       → all devices on subnet receive query
+Devices with matching service → respond with Hello/ProbeMatch
+       → SOAP/XML response over UDP (or TCP 3702 if required)
+       → response contains metadata (service type, endpoint address)
+       → client uses provided IP/port to connect (usually via HTTP/SOAP)
+```
     
 - **Security Notes:**
     
