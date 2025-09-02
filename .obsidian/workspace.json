@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Tools and Techniques/Enumeration & Reconnaissance.md",
+                "file": "Windows/MindMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Enumeration & Reconnaissance"
+              "title": "MindMap"
             }
           }
         ],
@@ -224,12 +224,13 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
+    "Windows/Windows Networking Protocols/Tools and Techniques/Summary.md",
+    "Windows/MindMap.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Remote Execution & Lateral Movement.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Enumeration & Reconnaissance.md",
-    "Windows/Windows Networking Protocols/Tools and Techniques/Summary.md",
+    "Windows/Windows Networking Protocols/Foundation.md",
     "Windows/Windows Networking Protocols/From Shares to Pipes, SMB as a Transport for MSRPC.md",
     "Windows/Windows Networking Protocols/SMB.md",
-    "Windows/Windows Networking Protocols/Foundation.md",
     "Windows/Windows Networking Protocols/Tools and Techniques",
     "Windows/Windows Networking Protocols/Management & Discovery.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/LDAP.md",
@@ -251,7 +252,6 @@
     "Network Exploitation/Network Services/NFS/NFS.md",
     "Network Exploitation/Network Services/NFS/NFS-Common.md",
     "Operating System/Sessions and Full-Duplex Communication.md",
-    "Operating System/Inter-Process Communication (IPC).md",
     "Windows/Windows Networking Protocols",
     "Operating System",
     "Attachments/Pasted image 20250322182655.png",
