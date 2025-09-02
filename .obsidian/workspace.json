@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/NetBIOS.md",
+                "file": "Operating System/Inter-Process Communication (IPC).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NetBIOS"
+              "title": "Inter-Process Communication (IPC)"
             }
           }
         ],
@@ -224,11 +224,12 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/Name Resolution.md",
+    "Operating System/Sessions and Full-Duplex Communication.md",
+    "Operating System/Inter-Process Communication (IPC).md",
     "Windows/Windows Networking Protocols/NetBIOS.md",
+    "Windows/Windows Networking Protocols/Name Resolution.md",
     "Windows/Windows Networking Protocols/Foundation.md",
     "Windows/WHfB.md",
-    "Operating System/Inter-Process Communication (IPC).md",
     "Windows/Windows Networking Protocols/RDP.md",
     "Windows/Windows Networking Protocols",
     "Windows/Windows Networking Protocols.md",
@@ -251,7 +252,6 @@
     "Encryption and Hashing/Encryption/DH - Asymmetric Encryption.md",
     "Document Metadata/pdfinfo.md",
     "File Inclusion/LFI & RFI.md",
-    "File Inclusion/Session Files.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",

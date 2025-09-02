@@ -64,6 +64,15 @@ No connection is required, just a message fired off to the local subnet.
 
 > ⚠️ TCP 139 is how SMB worked before SMB over port 445 was introduced. Still sometimes seen in segmented or older networks.
 
+|Application or Service|Notes|
+|---|---|
+|**Messenger Service**|Net send messages (`net send`) used NetBIOS sessions|
+|**Remote administration tools**|Like early Radmin or LANDesk over NetBIOS|
+|**DOS-based chat tools**|Early tools that did chat/file transfer using `NetBIOSSend()`|
+|**MS NetDDE (Dynamic Data Exchange)**|Used NetBIOS to sync spreadsheet data over the LAN|
+|**LAN Manager**|Microsoft's pre-Windows NT network OS|
+|**Lotus Notes (early versions)**|Some deployments used NetBIOS
+
 ---
 ## 🧠 NetBIOS Name Details
 
