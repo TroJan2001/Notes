@@ -79,13 +79,15 @@ No connection is required, just a message fired off to the local subnet.
 - **Name length**: 16 bytes (15 characters + 1-byte suffix)
     
 - **Suffix** identifies service type (e.g., <20> = File Server)
-    
-|Suffix (Hex)|Meaning|
-|---|---|
-|00|Workstation Service|
-|03|Messenger Service|
-|20|File Server Service (SMB)|
-|1B|Domain Master Browser|
+
+Example Suffixes:
+
+| Suffix (Hex) | Meaning                   |
+| ------------ | ------------------------- |
+| 00           | Workstation Service       |
+| 03           | Messenger Service         |
+| 20           | File Server Service (SMB) |
+| 1B           | Domain Master Browser     |
 
 > 📘 Tip: You can see suffixes using `nbtstat -A <IP>` or `nbtstat -n` in Windows.
 
