@@ -12,24 +12,27 @@
 ---
 # 🔹 2. Enumeration & Reconnaissance
 
-| Tool                           | Flow                                                                                                                  | Protocol/Transport                                 |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| **rpcclient**                  | Talks directly to MSRPC interfaces exposed by SMB/DC (like SAMR, LSARPC, Netlogon) → queries users, groups, policies. | **MSRPC over SMB (445/tcp)**                       |
-| **smbclient / smbmap**         | Enumerates file shares, permissions, contents.                                                                        | **SMB (445/tcp)**                                  |
-| **enum4linux / enum4linux-ng** | Wrapper around rpcclient, smbclient, LDAP queries → dumps domain info.                                                | **SMB + RPC + LDAP (389/tcp)**                     |
-| **BloodHound / PlumHound**     | Collects LDAP queries (users, groups, ACLs) + SMB sessions + GPOs → graph analysis.                                   | **LDAP (389/tcp), SMB (445/tcp), MSRPC (135/tcp)** |
+| Tool / Technique               | Flow                                                                                 | Protocol/Transport                                |
+| ------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| **rpcclient**                  | Queries MSRPC services (SAMR, LSARPC, Netlogon) for users, groups, SIDs, trusts.     | **MSRPC over SMB named pipes (445) or TCP (135)** |
+| **RID Cycling**                | Abuse SAMR by iterating RIDs → discover valid domain users/groups.                   | **MSRPC (SAMR) over SMB (445)**                   |
+| **smbclient / smbmap**         | Enumerates SMB shares, permissions, file contents.                                   | **SMB (445/tcp)**                                 |
+| **enum4linux / enum4linux-ng** | Wrapper for rpcclient, smbclient, net, nmblookup, LDAP → dumps domain info.          | **SMB + RPC + LDAP (389/tcp)**                    |
+| **ldapsearch**                 | Direct LDAP queries to AD DS → enumerate users, groups, policies, computers.         | **LDAP (389/tcp), LDAPS (636/tcp)**               |
+| **nxc (NetExec/CME)**          | Swiss-army: enumerate shares/sessions/users, spray creds, execute via SMB/WMI/WinRM. | **SMB (445), RPC, WinRM (5985/5986), WMI (135)**  |
+| **BloodHound / PlumHound**     | Collects AD data (LDAP, SMB, RPC) → graph analysis of paths and relationships.       | **LDAP (389), SMB (445), MSRPC (135)**            |
 
 ---
 # 🔹 3. Credential Extraction & Abuse
 
-|Tool|Flow|Protocol/Transport|
-|---|---|---|
-|**mimikatz**|Local only → extracts from LSASS, SAM, tickets in memory.|**Local (no network)**|
-|**secretsdump.py (Impacket)**|Uses DRSUAPI (MSRPC replication service) or SMB/SAMR to dump password hashes remotely.|**MSRPC over SMB (445/tcp)**|
-|**Rubeus**|Kerberos ticket request/renew/inject → abuses KDC flows.|**Kerberos (88/tcp & udp)**|
-|**Kerbrute**|Brute-force user/password via Kerberos pre-auth.|**Kerberos (88/tcp & udp)**|
-|**Kerberoasting / AS-REP Roasting**|Asks KDC for TGS (Kerberoast) or AS-REP (no preauth) → crack offline.|**Kerberos (88/tcp)**|
-|**Pass-the-Hash (PsExec, WMIExec, etc.)**|Reuses NTLM hash in authentication handshake over SMB/DCOM.|**SMB, RPC, WinRM depending on tool**|
+| Tool                                      | Flow                                                                                   | Protocol/Transport                    |
+| ----------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------- |
+| **mimikatz**                              | Local only → extracts from LSASS, SAM, tickets in memory.                              | **Local (no network)**                |
+| **secretsdump.py (Impacket)**             | Uses DRSUAPI (MSRPC replication service) or SMB/SAMR to dump password hashes remotely. | **MSRPC over SMB (445/tcp)**          |
+| **Rubeus**                                | Kerberos ticket request/renew/inject → abuses KDC flows.                               | **Kerberos (88/tcp & udp)**           |
+| **Kerbrute**                              | Brute-force user/password via Kerberos pre-auth.                                       | **Kerberos (88/tcp & udp)**           |
+| **Kerberoasting / AS-REP Roasting**       | Asks KDC for TGS (Kerberoast) or AS-REP (no preauth) → crack offline.                  | **Kerberos (88/tcp)**                 |
+| **Pass-the-Hash (PsExec, WMIExec, etc.)** | Reuses NTLM hash in authentication handshake over SMB/DCOM.                            | **SMB, RPC, WinRM depending on tool** |
 
 ---
 # 🔹 4. Post-Exploitation Frameworks & Agents
