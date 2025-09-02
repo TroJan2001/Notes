@@ -226,12 +226,12 @@ That’s called **multicast DNS (mDNS)**, it's like shouting out the question to
 
 # 📊 Summary Table: Comparison
 
-|Protocol|Port|Scope|Use|Modern?|Risks|
-|---|---|---|---|---|---|
-|**NBT-NS**|137/udp|Broadcast|NetBIOS → IP|❌ Legacy|Spoofable|
-|**LLMNR**|5355/udp|Multicast|Hostname → IP (DNS fallback)|✅ Vista+|Spoofable|
-|**mDNS**|5353/udp|Multicast|`.local` hostnames|✅ Win10+|Recon|
-|**WSD**|3702/udp|Multicast (query), TCP (reply)|Devices (printers)|✅|Low risk|
+| Protocol   | Port     | Scope                          | Use                                                                       | Modern?  | Risks     |
+| ---------- | -------- | ------------------------------ | ------------------------------------------------------------------------- | -------- | --------- |
+| **NBT-NS** | 137/udp  | Broadcast                      | NetBIOS → IP                                                              | ❌ Legacy | Spoofable |
+| **LLMNR**  | 5355/udp | Multicast                      | Resolve hostnames (like printer1) when DNS fails                          | ✅ Vista+ | Spoofable |
+| **mDNS**   | 5353/udp | Multicast                      | Resolve `.local` names (e.g. `printer.local`) like DNS, but via multicast | ✅ Win10+ | Recon     |
+| **WSD**    | 3702/udp | Multicast (query), TCP (reply) | Discover **devices** and their **services** (like printers/scanners)      | ✅        | Low risk  |
 
 ---
 
