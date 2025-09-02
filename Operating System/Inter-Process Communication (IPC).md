@@ -1,186 +1,179 @@
-It is important to understand IPC because **processes cannot directly access each other’s memory**. The operating system provides mechanisms to allow processes to **exchange data, coordinate actions, and share resources**.
 
-Primarily, we are concerned with two broad approaches:
+It is important to understand IPC because **processes cannot directly access each other’s memory**.  
+The operating system provides mechanisms to allow processes to **exchange data, coordinate actions, and share resources**.
 
-- **Shared Memory** (fastest, but requires synchronization)
-    
-- **Message Passing** (kernel-mediated, safer, includes pipes, message queues and sockets)
+Two main categories:  
+
+- **Shared Memory** (fastest, requires synchronization)  
+- **Message Passing** (kernel-mediated, safer, includes pipes, message queues, sockets)  
+
+Additional IPC forms: **signals, semaphores, memory-mapped files, and higher-level frameworks (COM, D-Bus).**
 
 ---
 
-# Shared Memory
+## 1. Shared Memory
 
-Shared memory allows two or more processes to map the same portion of **RAM** into their address space. Once mapped, they can read/write directly without system calls.
+Processes map the same region of RAM into their address space.  
+- Very fast (no copying).  
+- Needs synchronization (mutexes, semaphores).  
 
-**Useful Commands (Linux System V style):**
-
-`# Create a new shared memory segment
+**Commands (Linux System V style):**
 ```bash
-ipcmk -M 1M  
-# List all shared memory segments
+# Create 1 MB shared memory segment
+ipcmk -M 1M
+# List existing shared memory segments
 ipcs -m
-# Attach/detach shared memory (programmatically: shmat/shmdt)`
-```  
+```
 
-|**Tag**|**Function**|
-|---|---|
-|`ipcmk -M`|Create shared memory|
-|`ipcs -m`|Show current shared memory|
-|`shmget/shmat`|System calls for creating and attaching segments|
+```c
+# Program Example (C):
+# Copy code
+int shmid = shmget(IPC_PRIVATE, 1024, IPC_CREAT | 0666);
+char *data = shmat(shmid, NULL, 0);
+strcpy(data, "hello from process A");
+```
+## 2. Signals (Unix/Linux)
 
-**Note:** Synchronization must be done separately using semaphores/mutexes; otherwise, race conditions occur.
+Asynchronous notifications used for control, not data transfer.
 
----
+**Example:**
 
-# Message Passing
+```bash
+# Send SIGUSR1 to process with PID 1234
+kill -SIGUSR1 1234
+```
 
-Processes exchange data via **kernel buffers**. Data is copied: sender → kernel → receiver. Safer than shared memory but slower.
+Used for: terminate (`SIGKILL`), pause/resume (`SIGSTOP`, `SIGCONT`), reload configs.
 
-**Forms of message passing:**
+## 3. Semaphores
 
-- **Pipes (stream of bytes)**
-    
-- **Message Queues (discrete structured messages)**
-    
-- **Sockets (local/network)**
-    
+Counters used to coordinate access to resources (especially shared memory).
 
----
+**Commands:**
 
-# Pipes
+```bash
+# Create a semaphore 
+ipcmk -S 
+# List semaphores 
+ipcs -s`
+```
+
+```c
+# Program Example (C):
+sem_t sem; 
+sem_init(&sem, 0, 1);   
+// binary semaphore 
+sem_wait(&sem);         // lock 
+// critical section 
+sem_post(&sem);         // unlock
+```
+## 4. Memory-Mapped Files
+
+Allows multiple processes to share data through a file mapped into memory.
+
+```c
+#Program Example:
+int fd = open("sharedfile", O_RDWR | O_CREAT, 0666);
+char *addr = mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0); 
+strcpy(addr, "shared via file mapping");`
+```
+Use case: databases, large logs, shared caches.
+
+## 5. Pipes
 
 ### Unnamed Pipe
 
-- Created with `pipe(fd)` inside a program.
+- Temporary, kernel-only.
     
-- Exists only in **kernel memory**.
-    
-- Works between **related processes** (parent-child).
-    
-- Example:
-    
+- Between related processes (parent-child).
+
+**Example:**
 
 ```bash
 ls | grep ".txt"
 ```
 
-The shell creates an **unnamed pipe** to connect `ls` output to `grep` input.
-
+The shell creates a pipe: `ls` writes → kernel buffer → `grep` reads.
 ### Named Pipe (FIFO)
 
-- Created with `mkfifo` or `mknod`.
+- Persistent special file (`p` type).
     
-- Appears in filesystem as special file (type `p`).
+- Can be used by unrelated processes.
     
-- Used by **any processes** (even unrelated).
-    
-- Example:
-    
+
+**Example:**
 
 ```bash
-mkfifo /tmp/mypipe
-echo "hello" > /tmp/mypipe   # writer
-cat < /tmp/mypipe            # reader
+mkfifo /tmp/mypipe 
+echo "hello" > /tmp/mypipe    # writer 
+cat < /tmp/mypipe             # reader
 ```
-
-|**Tag**|**Function**|
-|---|---|
-|`mkfifo`|Create a named pipe|
-|`ls -l`|See type `p` for FIFO|
-|`read/write`|Consume/produce bytes|
-
-**Note:** Data is consumed once read. Unlike files, you cannot re-read old content.
 
 ---
 
-# Message Queues
+## 6. Message Queues
 
-Unlike pipes, message queues preserve **message boundaries**. Each send = one receive. Metadata (type/priority) is supported.
+Preserve **message boundaries** (one send = one receive).  
+Support metadata (type, priority).
 
-**Useful Commands:**
+**Commands:**
 
 ```bash
-# Create a message queue
-ipcmk -Q
-
-# List message queues
-ipcs -q
-
-# Remove a queue
+# Create queue 
+ipcmk -Q 
+# List queues
+ipcs -q 
+# Remove queue
 ipcrm -q <id>
 ```
 
-| **Tag**         | **Function**                          |
-| --------------- | ------------------------------------- |
-| `ipcmk -Q`      | Create a queue                        |
-| `ipcs -q`       | List queues                           |
-| `msgsnd/msgrcv` | System calls to send/receive messages |
-
-**Note:** Queues persist in the kernel until explicitly removed (`ipcrm`). They support multiple producers and consumers.
+```c
+# Program Example (C):
+msgsnd(qid, "hello", ...);
+msgrcv(qid, buf, ...);
+```
 
 ---
+## 7. Sockets
 
-# Sockets
+Endpoints for communication. Work locally (UNIX sockets) or across networks (TCP/UDP).
 
-Sockets are **endpoints for communication**. Unlike pipes and queues, they allow processes to communicate **locally or over a network**.
+**Types:**
 
-**Types of sockets:**
-- **Stream (SOCK_STREAM)** → connection-oriented, reliable (TCP).
-- **Datagram (SOCK_DGRAM)** → connectionless, fast but unreliable (UDP).
-- **Raw (SOCK_RAW)** → direct packet access (requires root).
-- **UNIX Domain** → local-only, use filesystem pathnames (e.g., `/tmp/socket`).
+- Stream (SOCK_STREAM) → connection-oriented (like TCP).
+    
+- Datagram (SOCK_DGRAM) → connectionless (like UDP).
+    
+- Raw (SOCK_RAW) → direct packets (root only).
+    
+- UNIX domain → local only, path-based (`/tmp/socket`).
+    
 
-**Useful Commands:**
+**Examples:**
+
 ```bash
-# Start a TCP listener on port 4444
-nc -lvp 4444
-
-# Connect to it
-nc <IP> 4444
-
-# UNIX domain socket example
+# TCP socket 
+nc -lvp 4444         # terminal 1 (server) 
+nc 127.0.0.1 4444    # terminal 2 (client)  
+# UNIX domain socket
 socat UNIX-LISTEN:/tmp/mysock,fork STDOUT
 socat UNIX-CONNECT:/tmp/mysock -
 ```
 
-|**Tag**|**Function**|
-|---|---|
-|`socket()`|Create a socket|
-|`bind()`|Assign address/port|
-|`listen()`|Wait for incoming connections|
-|`accept()`|Accept a connection|
-|`connect()`|Connect to another socket|
-# File vs Pipe
-
-| Feature  | **File**                | **Unnamed Pipe**       | **Named Pipe (FIFO)**   |
-| -------- | ----------------------- | ---------------------- | ----------------------- |
-| Storage  | Disk (persistent)       | RAM (temporary)        | RAM (temporary)         |
-| Data     | Persistent, re-readable | Consumed after read    | Consumed after read     |
-| Access   | Random access (`lseek`) | Sequential only        | Sequential only         |
-| Relation | Any process, any time   | Related (parent-child) | Any process, concurrent |
-| Lifetime | Until deleted           | Until both ends closed | Until removed           |
-
 ---
+## 8. Higher-Level IPC
 
-# File Descriptors (FDs)
+### Windows
 
-Every open file, pipe, or socket is accessed via a **file descriptor** (an integer).
-
-- Standard FDs:
+- **Mailslots** → one-way, broadcast messages.
     
-    - `0` = stdin
-        
-    - `1` = stdout
-        
-    - `2` = stderr
-        
-
-**Pipe Example in Shell:**
-
-- `pipe(fd)` creates `fd[0]` (read) and `fd[1]` (write).
+- **COM/DCOM** → object-based IPC (DCOM supports remote calls).
     
-- Shell uses `dup2()` so one process’s stdout becomes the pipe write end, and another process’s stdin becomes the pipe read end.
+- **Clipboard/DDE** → GUI data exchange.
+    
 
-**Analogy:** Like a **ticket number** — you don’t hold the file/pipe itself, only a reference number that OS resolves.
+### Unix/Linux
 
----
+- **D-Bus** → message bus (used by NetworkManager, systemd).
+    
+- **TIPC** → cluster IPC, service discovery.
