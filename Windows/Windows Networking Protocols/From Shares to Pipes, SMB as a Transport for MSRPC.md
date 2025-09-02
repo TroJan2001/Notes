@@ -92,3 +92,116 @@ So when Wireshark or tools show “SMB → IPC$,” it looks like a **protocol**
     
 
 ---
+# 🔹 Default SMB Shares in Windows
+
+Windows automatically creates some hidden administrative shares. Hidden means they end with a `$` and don’t show up in Explorer, but they exist unless explicitly disabled.
+
+|Share|Purpose|
+|---|---|
+|**C$**|Root of the C: drive (same for D$, E$, etc. for each local drive)|
+|**ADMIN$**|Points to `%SystemRoot%` (usually `C:\Windows`), used for remote admin tasks|
+|**IPC$**|Inter-Process Communication share, used for **named pipes** (SAMR, LSA, Spooler, etc.)|
+|**PRINT$**|Exposes printer driver files (for clients to download drivers)|
+|**NETLOGON**|(On Domain Controllers) Contains logon scripts and policies|
+|**SYSVOL**|(On Domain Controllers) Stores domain-wide public files, Group Policy, scripts|
+
+---
+
+# 🔹 Default Access Permissions
+
+### 1. **C$, D$, E$ (Drive Shares)**
+
+- **Default Access**:
+    
+    - Only **Administrators** group (local or domain).
+        
+    - **No access** for normal users.
+        
+- **Use Case**: Remote file system management by admins.
+    
+
+---
+
+### 2. **ADMIN$**
+
+- **Default Access**:
+    
+    - Only **Administrators** group.
+        
+- **Use Case**:
+    
+    - Remote admin tools (e.g., copying files into `%SystemRoot%`, running updates, PsExec uses this).
+        
+
+---
+
+### 3. **IPC$**
+
+- **Default Access**:
+    
+    - Any authenticated user can connect.
+        
+    - **Anonymous access** was allowed by default in very old Windows versions (→ Null Session vulnerabilities).
+        
+- **Use Case**:
+    
+    - Named pipe access (`\pipe\samr`, `\pipe\lsarpc`, `\pipe\netlogon`).
+        
+    - Remote administration, RPC calls, AD enumeration.
+        
+
+👉 This is why IPC$ is such a big recon surface: even low-priv users can open it and query things like user lists.
+
+---
+
+### 4. **PRINT$**
+
+- **Default Access**:
+    
+    - Authenticated users → read (to fetch drivers).
+        
+    - Admins → full access.
+        
+- **Use Case**:
+    
+    - Printer driver distribution.
+        
+    - Unfortunately, this has been abused in attacks (e.g., **PrintNightmare**).
+        
+
+---
+
+### 5. **NETLOGON** (DC Only)
+
+- **Default Access**:
+    
+    - Authenticated domain users → read access.
+        
+    - Domain Admins → full access.
+        
+- **Use Case**:
+    
+    - Logon scripts, policies.
+        
+- **Abuse**:
+    
+    - Can leak plaintext passwords in misconfigured logon scripts.
+        
+
+---
+
+### 6. **SYSVOL** (DC Only)
+
+- **Default Access**:
+    
+    - Authenticated domain users → read access.
+        
+    - Domain Admins → full access.
+        
+- **Use Case**:
+    
+    - Group Policy distribution.
+        
+- **Abuse**:
+    
+    - Attackers harvest GPO scripts for creds, secrets.
