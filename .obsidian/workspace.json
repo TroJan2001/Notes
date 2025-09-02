@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Windows Print Spooler Service.md",
+                "file": "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/NTLM (NT LAN Manager).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Print Spooler Service"
+              "title": "NTLM (NT LAN Manager)"
             }
           }
         ],
@@ -224,9 +224,13 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
+    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Foundation.md",
+    "Windows/TMP & Bitlocker.md",
+    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/NTLM (NT LAN Manager).md",
+    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)",
     "Windows/Windows Networking Protocols/Foundation.md",
-    "Windows/Windows Networking Protocols/Windows Print Spooler Service.md",
     "Windows/Windows Networking Protocols/From Shares to Pipes, SMB as a Transport for MSRPC.md",
+    "Windows/Windows Networking Protocols/Windows Print Spooler Service.md",
     "Windows/Windows Networking Protocols/Tools and Techniques (In Progress).md",
     "Windows/Windows Networking Protocols/LPC and ALPC in Windows.md",
     "Windows/Windows Networking Protocols/Name Resolution.md",
@@ -248,10 +252,7 @@
     "Network Exploitation/Nmap/Nmap Basic Port Scans.md",
     "Network Exploitation/Nmap/Nmap Live Host Discovery.md",
     "Network Exploitation/Nmap/Idle-Zombie Scan.md",
-    "Network Exploitation/Common Protocols Ports.md",
-    "Network Exploitation/Linux Firewalls/Netfilter.md",
     "Operating System",
-    "Web Exploitation/Hydra.md",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",
@@ -269,7 +270,6 @@
     "DevSecOps/Container Vulnerabilities",
     "DevSecOps",
     "File Inclusion",
-    "Web Exploitation/SQL",
     "Untitled.canvas"
   ]
 }
