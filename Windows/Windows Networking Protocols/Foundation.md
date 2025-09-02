@@ -20,7 +20,7 @@ This section builds on **Operating System IPC** (shared memory, pipes, queues, s
 ├── Transport  
 │ • NetBIOS-SSN (139/tcp)  
 │ • SMB (445/tcp)  
-│ • Named Pipes (IPC$ share)  
+│ • Named Pipes (IPC$ share in SMB)  
 ├── RPC Framework  
 │ • MSRPC (135/tcp + dynamic ports)  
 │ • RPC over SMB, TCP, HTTP  
