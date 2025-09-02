@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
+                "file": "Operating Systems/Inter-Process Communication (IPC).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Credential Extraction & Abuse"
+              "title": "Inter-Process Communication (IPC)"
             }
           }
         ],
@@ -222,10 +222,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f31ec7a7cbf86e2a",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/Foundation.md",
+    "Operating Systems/Sessions and Full-Duplex Communication.md",
+    "Operating Systems/Inter-Process Communication (IPC).md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
+    "Windows/Windows Networking Protocols/Foundation.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Remote Execution & Lateral Movement.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Summary.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Enumeration & Reconnaissance.md",
@@ -250,10 +252,8 @@
     "Windows/Windows Networking Protocols/RPC.md",
     "Windows/Windows Networking Protocols/NFS.md",
     "Windows/EDR.md",
-    "Network Exploitation/Network Services/NFS/NFS.md",
-    "Network Exploitation/Network Services/NFS/NFS-Common.md",
     "Windows/Windows Networking Protocols",
-    "Operating System",
+    "Operating Systems",
     "Attachments/Pasted image 20250322182655.png",
     "Attachments/Pasted image 20250322180044.png",
     "Attachments/Pasted image 20250322164020.png",
