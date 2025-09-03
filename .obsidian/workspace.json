@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
+                "file": "Windows/Windows Networking Protocols/Tools and Techniques/Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Credential Extraction & Abuse"
+              "title": "Privilege Escalation"
             }
           }
         ],
@@ -224,10 +224,11 @@
   },
   "active": "f31ec7a7cbf86e2a",
   "lastOpenFiles": [
-    "Windows/Windows Networking Protocols/Tools and Techniques/Summary.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques/Privilege Escalation.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Enumeration & Reconnaissance.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Remote Execution & Lateral Movement.md",
-    "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
+    "Windows/Windows Networking Protocols/Tools and Techniques/Summary.md",
     "Operating Systems/Inter-Process Communication (IPC).md",
     "Operating Systems/Sessions and Full-Duplex Communication.md",
     "Windows/Windows Networking Protocols/Foundation.md",
@@ -251,7 +252,6 @@
     "Windows/Windows Networking Protocols/LPC and ALPC in Windows.md",
     "Windows/Windows Networking Protocols/RPC.md",
     "Windows/Windows Networking Protocols/NFS.md",
-    "Windows/EDR.md",
     "Windows/Windows Networking Protocols",
     "Operating Systems",
     "Attachments/Pasted image 20250322182655.png",

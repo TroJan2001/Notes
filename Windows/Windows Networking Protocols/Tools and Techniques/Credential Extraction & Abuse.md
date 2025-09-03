@@ -7,7 +7,6 @@ Like remote execution, **credential extraction may or may not require administra
 - **Kerberos abuses** (e.g., roasting, brute force) usually need only a low-privileged domain account.
     
 - **Pass-the-Hash / Overpass** need a stolen NTLM hash, not the plaintext password.
-    
 
 ---
 
