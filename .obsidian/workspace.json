@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Exploitation/Web Security Headers and Techniques.md",
+                "file": "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web Security Headers and Techniques"
+              "title": "Linux Sandboxing & Access Control"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "armor",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,8 +181,12 @@
   },
   "active": "b06d939f4e2d3765",
   "lastOpenFiles": [
-    "Web Exploitation/XML.md",
+    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
+    "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
     "Web Exploitation/Web Security Headers and Techniques.md",
+    "Shells/Exploiting User Account.md",
+    "Untitled",
+    "Web Exploitation/XML.md",
     "Security Principles.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Privilege Escalation.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
@@ -205,10 +209,7 @@
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Attacks in Active Directory.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Flow.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Foundation.md",
-    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/NTLM (NT LAN Manager).md",
-    "Windows/TMP & Bitlocker.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)",
-    "Windows/Windows Networking Protocols/Windows Print Spooler Service.md",
     "Windows/Windows Networking Protocols",
     "Operating Systems",
     "Attachments/Pasted image 20250322182655.png",
@@ -226,7 +227,6 @@
     "Wi-Fi",
     "DevSecOps/Container Hardening",
     "DevSecOps/Container Vulnerabilities",
-    "DevSecOps",
     "Untitled.canvas"
   ]
 }
