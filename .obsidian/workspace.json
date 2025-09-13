@@ -179,14 +179,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b06d939f4e2d3765",
+  "active": "3a1d3bed8daae7e8",
   "lastOpenFiles": [
     "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
-    "Web Exploitation/Web Security Headers and Techniques.md",
+    "Web Pentesting/Web Security Headers and Techniques.md",
     "Shells/Exploiting User Account.md",
     "Untitled",
-    "Web Exploitation/XML.md",
+    "Web Pentesting/XML.md",
     "Security Principles.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Privilege Escalation.md",
     "Windows/Windows Networking Protocols/Tools and Techniques/Credential Extraction & Abuse.md",
