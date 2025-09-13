@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Pentesting/Open Redirect.md",
+                "file": "Web Pentesting/HTTP Parameter Pollution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Open Redirect"
+              "title": "HTTP Parameter Pollution"
             }
           }
         ]
@@ -181,8 +181,9 @@
   },
   "active": "b06d939f4e2d3765",
   "lastOpenFiles": [
-    "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
     "Web Pentesting/Open Redirect.md",
+    "Web Pentesting/HTTP Parameter Pollution.md",
+    "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
     "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "Web Pentesting/Web Security Headers and Techniques.md",
     "Shells/Exploiting User Account.md",
@@ -208,7 +209,6 @@
     "Windows/Windows Networking Protocols/Name Resolution.md",
     "Windows/Windows Networking Protocols/NetBIOS.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Attacks in Active Directory.md",
-    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Flow.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)",
     "Windows/Windows Networking Protocols",
     "Operating Systems",
