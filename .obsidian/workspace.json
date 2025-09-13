@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
+                "file": "Web Pentesting/Open Redirect.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Sandboxing & Access Control"
+              "title": "Open Redirect"
             }
           }
         ]
@@ -179,10 +179,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a1d3bed8daae7e8",
+  "active": "b06d939f4e2d3765",
   "lastOpenFiles": [
-    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "DevSecOps/Container Hardening/Linux Sandboxing & Access Control.md",
+    "Web Pentesting/Open Redirect.md",
+    "Encryption and Hashing/Encryption/Symmetric Encryption.md",
     "Web Pentesting/Web Security Headers and Techniques.md",
     "Shells/Exploiting User Account.md",
     "Untitled",
@@ -208,7 +209,6 @@
     "Windows/Windows Networking Protocols/NetBIOS.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Attacks in Active Directory.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Kerberos Authentication Flow.md",
-    "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)/Foundation.md",
     "Windows/Windows Networking Protocols/Authentication & Identity (Windows, Active Directory)",
     "Windows/Windows Networking Protocols",
     "Operating Systems",
