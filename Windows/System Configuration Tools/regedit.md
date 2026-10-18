@@ -1,3 +1,10 @@
+---
+title: "regedit"
+created: 2026-03-11
+type: concept
+tags: [concept, sysadmin, windows]
+---
+
 The ==**Windows Registry**== (per Microsoft) is a central hierarchical database used to store information necessary to configure the system for one or more users, applications, and hardware devices.
 
 The registry contains information that Windows continually references during operation, such as:

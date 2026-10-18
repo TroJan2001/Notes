@@ -1,3 +1,10 @@
+---
+title: "msinfo32"
+created: 2026-03-11
+type: concept
+tags: [concept, sysadmin, windows]
+---
+
 ==msinfo32== tool gathers information about your computer and displays a comprehensive view of your hardware.
 
 The information displayed in ==**Hardware Resources**== is not for the average computer user. If you want to learn more about this section, refer to the official Microsoft [page](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/hardware-resources#:~:text=Hardware%20resources%20are%20the%20assignable,of%20bus%2Drelative%20memory%20addresses.).

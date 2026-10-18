@@ -1,3 +1,10 @@
+---
+title: "RSA - Asymmetric Encryption"
+created: 2026-03-11
+type: concept
+tags: [concept, crypto, encryption, linux]
+---
+
  The RSA algorithm (Rivest-Shamir-Adleman) is the basis of a cryptosystem -- a suite of cryptographic algorithms that are used for specific security services or purposes -- which enables public key encryption and is widely used to secure sensitive data, particularly when it is being sent over an insecure network such as the interne
 # The math(s) side
 

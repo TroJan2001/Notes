@@ -1,3 +1,10 @@
+---
+title: "HMAC"
+created: 2026-03-11
+type: concept
+tags: [concept, crypto, encryption, linux]
+---
+
 Hash-based message authentication code (HMAC) is a message authentication code (MAC) that uses a cryptographic key in addition to a hash function.
 
 According to [RFC2104](https://www.rfc-editor.org/rfc/rfc2104), HMAC needs:

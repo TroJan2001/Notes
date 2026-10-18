@@ -1,3 +1,10 @@
+---
+title: "Capabilities"
+created: 2026-03-11
+type: concept
+tags: [concept, enumeration, linux, privesc, windows]
+---
+
 Capabilities help manage privileges at a more granular level.
 # Exploiting Capabilities
 

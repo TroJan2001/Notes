@@ -1,3 +1,10 @@
+---
+title: "Kerberos Authentication Flow"
+created: 2026-03-11
+type: concept
+tags: [active-directory, concept, network, protocols, windows]
+---
+
 | Acronym     | Stands For                      | Purpose                                               |
 | ----------- | ------------------------------- | ----------------------------------------------------- |
 | **AS**      | Authentication Service          | Logs you in to the domain and gives you a TGT         |

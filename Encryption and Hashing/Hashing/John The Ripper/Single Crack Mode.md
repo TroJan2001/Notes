@@ -1,3 +1,10 @@
+---
+title: "Single Crack Mode"
+created: 2026-03-11
+type: technique
+tags: [cracking, crypto, hashing, linux, technique]
+---
+
 In this mode, John uses only the information provided in the username, to try and work out possible passwords heuristically, by slightly changing the letters and numbers contained within the username.
 
 To use single crack mode, and if we wanted to crack the password of the user named "Mike", we'd use:  

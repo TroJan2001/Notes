@@ -1,3 +1,10 @@
+---
+title: "Inter-Process Communication (IPC)"
+created: 2026-03-11
+type: concept
+tags: [concept, fundamentals, linux, windows]
+---
+
 
 It is important to understand IPC because **processes cannot directly access each other’s memory**.  
 The operating system provides mechanisms to allow processes to **exchange data, coordinate actions, and share resources**.

@@ -1,3 +1,10 @@
+---
+title: "Summary"
+created: 2026-03-11
+type: technique
+tags: [active-directory, exploitation, linux, network, protocols, technique, windows]
+---
+
 # 🔹 1. Remote Execution & Lateral Movement
 
 | Tool                                   | Flow                                                                                                                                             | Protocol/Transport                                              |

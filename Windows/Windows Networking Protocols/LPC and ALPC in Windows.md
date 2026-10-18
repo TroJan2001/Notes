@@ -1,3 +1,10 @@
+---
+title: "LPC and ALPC in Windows"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 
 ## 1. What is LPC?
 

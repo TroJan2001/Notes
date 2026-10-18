@@ -1,3 +1,10 @@
+---
+title: "Socat Encrypted Shells"
+created: 2026-03-11
+type: technique
+tags: [linux, shells, technique, windows]
+---
+
 Suffice to say that any time `TCP` was used as part of a command, this should be replaced with `OPENSSL` when working with encrypted shells.
 # Useful Commands:
 

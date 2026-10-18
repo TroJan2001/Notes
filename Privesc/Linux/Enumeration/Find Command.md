@@ -1,3 +1,10 @@
+---
+title: "Find Command"
+created: 2026-03-11
+type: tool
+tags: [enumeration, linux, privesc, tool]
+---
+
 Searching the target system for important information and potential privilege escalation vectors can be fruitful. The built-in “find” command is useful and worth keeping in your arsenal.
 
 Below are some useful examples for the “find” command.

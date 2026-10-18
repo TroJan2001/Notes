@@ -1,3 +1,10 @@
+---
+title: "System"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
+
 The first Windows process on the list is **System**. It was mentioned in a previous section that a PID for any given process is assigned at random, but that is not the case for the System process. The PID for System is always 4. What does this process do exactly?
 
 The official definition from Windows Internals 6th Edition:

@@ -1,3 +1,10 @@
+---
+title: "Abusing vulnerable software"
+created: 2026-03-11
+type: technique
+tags: [privesc, technique, windows]
+---
+
 
 Software installed on the target system can present various privilege escalation opportunities. As with drivers, organisations and users may not update them as often as they update the operating system. You can use the `wmic` tool to list software installed on the target system and its versions.
 

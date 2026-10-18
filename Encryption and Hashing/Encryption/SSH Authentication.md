@@ -1,3 +1,10 @@
+---
+title: "SSH Authentication"
+created: 2026-03-11
+type: concept
+tags: [concept, crypto, encryption, linux]
+---
+
 By default, SSH is authenticated using usernames and passwords. But. we can also authenticate using public and private keys, using `ssh-keygen` program to generate the pair.
 
 We can encrypt the private key with a passphrase too so in case a baddie got an access to this file he wouldn't access the private key itself but an encrypted version of it to make it more secure. Using tools like John the Ripper, you can attack an encrypted SSH key to attempt to find the passphrase, which highlights the importance of using a secure passphrase and keeping your private key private.

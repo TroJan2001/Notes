@@ -1,4 +1,11 @@
-The **Windows Initialization Process**, **wininit.exe**, is responsible for launching services.exe (Service Control Manager), lsass.exe (Local Security Authority), and lsaiso.exe within Session 0. It is another critical Windows process that runs in the background, along with its child processes.
+---
+title: "wininit.exe"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
+
+The **Windows Initialization Process**, **wininit.exe**, is responsible for launching [[services.exe]] (Service Control Manager), [[lsass.exe]] (Local Security Authority), and lsaiso.exe within Session 0. It is another critical Windows process that runs in the background, along with its child processes.
 
 ==Note: lsaiso.exe is a process associated with **Credential Guard and KeyGuard**. You will only see this process if Credential Guard is enabled.==
 ### Normal State:
@@ -6,7 +13,7 @@ The **Windows Initialization Process**, **wininit.exe**, is responsible for la
 ![](../../Attachments/Pasted%20image%2020231105010238.png)
 
 **Image Path**:  %SystemRoot%\System32\wininit.exe
-**Parent Process**:  Created by an instance of smss.exe
+**Parent Process**:  Created by an instance of [[smss.exe]]
 **Number of Instances**:  One
 **User Account**:  Local System
 **Start Time**:  Within seconds of boot time

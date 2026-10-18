@@ -1,3 +1,10 @@
+---
+title: "Escaping Vi Editor"
+created: 2026-03-11
+type: technique
+tags: [linux, privesc, technique]
+---
+
 One of the first things you should always check when looking for privesc openings is what sudo permissions the user has available to them. This could be simply done by using the `sudo -l` command.
 ### Misconfigured Binaries and GTFOBins  
 

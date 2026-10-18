@@ -1,3 +1,10 @@
+---
+title: "EDR"
+created: 2026-03-11
+type: concept
+tags: [concept, windows]
+---
+
 Endpoint detection and response (EDR) is a series of tools that monitor devices for activity that could indicate a threat.
 ### What is EDR?
 

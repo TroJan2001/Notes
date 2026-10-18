@@ -1,3 +1,10 @@
+---
+title: "Password Protected Zip & RAR Files"
+created: 2026-03-11
+type: technique
+tags: [cracking, crypto, hashing, linux, technique]
+---
+
 We can use John to crack the password on password protected Zip or RAR files. Again, we're going to be using a separate part of the john suite of tools to convert the zip or RAR file into a format that John will understand.
 ### Zip Files
 

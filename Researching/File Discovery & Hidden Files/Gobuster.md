@@ -1,3 +1,10 @@
+---
+title: "Gobuster"
+created: 2026-03-11
+type: tool
+tags: [enumeration, linux, recon, tool]
+---
+
 ### Find directories & hidden website pages
 
 Gobuster is a tool used to brute-force: URIs (directories and files) in web sites, DNS subdomains (with wildcard support), Virtual Host names on target web servers, Open Amazon S3 buckets, Open Google Cloud buckets and TFTP servers.

@@ -1,3 +1,10 @@
+---
+title: "Credential Extraction & Abuse"
+created: 2026-03-11
+type: technique
+tags: [active-directory, exploitation, linux, network, protocols, technique, windows]
+---
+
 Like remote execution, **credential extraction may or may not require administrative privileges** depending on the technique:
 
 - **Local-only tools** (e.g., Mimikatz) require code execution on the machine with SYSTEM/SeDebugPrivilege.
@@ -397,7 +404,7 @@ mimikatz # kerberos::golden /user:Administrator /domain:domain.local /sid:S-1-5-
 
 ---
 
-### 4. **Ticket Forgery (Persistence / Privilege Escalation)**
+### 4. **Ticket Forgery (Persistence / [[Privilege Escalation]])**
 
 - **Silver Ticket** → forge service tickets with service account hash (stealthy, DC not contacted).
     

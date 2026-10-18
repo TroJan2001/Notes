@@ -1,6 +1,13 @@
-**(wininit.exe > services.exe > svchost.exe)**
+---
+title: "svchost.exe"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
 
-The **Service Host** (Host Process for Windows Services), or **svchost.exe**, is responsible for hosting and managing Windows services.
+**([[wininit.exe]] > [[services.exe]] > svchost.exe)**
+
+The **Service Host** (Host Process for [[Windows Services]]), or **svchost.exe**, is responsible for hosting and managing Windows services.
 
 The services running in this process are implemented as DLLs. The DLL to implement is stored in the registry for the service under the ==`Parameters`== subkey in ==`ServiceDLL`==. The full path is ==`HKLM\SYSTEM\CurrentControlSet\Services\SERVICE NAME\Parameters`==
 

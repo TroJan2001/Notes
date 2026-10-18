@@ -1,3 +1,10 @@
+---
+title: "SSH Tunnels"
+created: 2026-03-11
+type: technique
+tags: [linux, network, pivoting, technique]
+---
+
 SSH port forwarding is a mechanism in SSH for tunneling application ports from the client machine to the server machine, or vice versa.
 # Local Port Forwarding
 
@@ -108,7 +115,7 @@ This tells ProxyChains to use the SOCKS proxy at `127.0.0.1` on port `1080`.
 No we can use ProxyChains to route applications' traffic through the SOCKS proxy. For example, to route `curl` through the proxy:
 
 ```bash
-proxychains curl http://example.com
+proxychains [[curl]] http://example.com
 ```
 
 This will make `curl` send all its traffic through the SOCKS proxy on port `1080`, which tunnels the requests securely through `host147.aws.example.com`.

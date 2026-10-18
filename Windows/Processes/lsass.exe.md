@@ -1,3 +1,10 @@
+---
+title: "lsass.exe"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
+
 Per Wikipedia, "Local Security Authority Subsystem Service (**LSASS**) is a process in Microsoft Windows operating systems that is responsible for enforcing the security policy on the system. It verifies users logging on to a Windows computer or server, handles password changes, and creates access tokens. It also writes to the Windows Security Log."
 
 It creates security tokens for SAM (Security Account Manager), AD (Active Directory), and NETLOGON. It uses authentication packages specified in ==`HKLM\System\CurrentControlSet\Control\Lsa`.==
@@ -10,7 +17,7 @@ Lsass.exe is another process adversaries target. Common tools such as **mimikat
 ![](../../Attachments/Pasted%20image%2020231105010038.png)
 
 **Image Path**:  %SystemRoot%\System32\lsass.exe
-**Parent Process**:  wininit.exe
+**Parent Process**:  [[wininit.exe]]
 **Number of Instances**:  One
 **User Account**:  Local System
 **Start Time**:  Within seconds of boot time

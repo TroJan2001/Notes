@@ -1,3 +1,10 @@
+---
+title: "Log Poisoning"
+created: 2026-03-11
+type: technique
+tags: [lfi, technique, web]
+---
+
 Log Poisoning involves reading a log file through a “file inclusion” (LFI) and modifying the text of the headers (e.g., User-agent) to write arbitrary code and achieve its execution (RCE) on the victim machine.
 
 **Perquisites: LFI**

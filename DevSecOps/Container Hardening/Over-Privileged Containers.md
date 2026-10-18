@@ -1,3 +1,10 @@
+---
+title: "Over-Privileged Containers"
+created: 2026-03-11
+type: technique
+tags: [containers, devsecops, hardening, linux, technique]
+---
+
 Running containers in "privileged” mode is a big problem, since this will assign all the capabilities to the container which allows an attacker to get full control over the host if he could compromise the container "easy to escape".
 
 ![](../../Attachments/Pasted%20image%2020240509004540.png)

@@ -1,3 +1,10 @@
+---
+title: "LDAP"
+created: 2026-03-11
+type: concept
+tags: [active-directory, concept, linux, network, protocols, windows]
+---
+
 # 🧾 What is LDAP?
 
 **LDAP = Lightweight Directory Access Protocol**

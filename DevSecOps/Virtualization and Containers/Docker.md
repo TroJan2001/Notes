@@ -1,3 +1,10 @@
+---
+title: "Docker"
+created: 2026-03-11
+type: concept
+tags: [concept, containers, devsecops, linux]
+---
+
 Docker is a container platform and engine that is used to run Docker "images" as containers.
 
 Each Docker image is built of a base image, such as Alpine or Ubuntu, that is specifically built for use in containers and is lightweight. To build a Docker image, a Dockerfile must be created, which defines the base image for a container and any commands to be run.

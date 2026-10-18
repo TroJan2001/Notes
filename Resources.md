@@ -1,3 +1,10 @@
+---
+title: "Resources"
+created: 2026-03-11
+type: tool
+tags: [linux, tool]
+---
+
 OWASP favicon database: https://wiki.owasp.org/index.php/OWASP_favicon_database
 
 SecLists: https://github.com/danielmiessler/SecLists/tree/master

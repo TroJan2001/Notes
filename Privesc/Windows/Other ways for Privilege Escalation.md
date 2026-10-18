@@ -1,3 +1,10 @@
+---
+title: "Other ways for Privilege Escalation"
+created: 2026-03-11
+type: technique
+tags: [privesc, technique, windows]
+---
+
 Privilege escalation can sometimes arise from misconfigurations, allowing access to higher privileges, including administrator access.
 # Scheduled Tasks
 

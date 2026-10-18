@@ -1,3 +1,10 @@
+---
+title: "Windows Services"
+created: 2026-03-11
+type: technique
+tags: [linux, privesc, technique, windows]
+---
+
 Windows services are managed by the Service Control Manager (SCM), which is responsible for overseeing the state of services, monitoring their current status, and providing a means to configure them as necessary.
 
 To better understand the structure of a service, we can use the `sc qc` command:

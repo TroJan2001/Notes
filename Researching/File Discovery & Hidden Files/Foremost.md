@@ -1,3 +1,10 @@
+---
+title: "Foremost"
+created: 2026-03-11
+type: tool
+tags: [enumeration, linux, recon, tool]
+---
+
 #### ==**Recover lost files based on their headers, footers, and internal data structures**==
 
 Foremost is a program that recovers files based on their headers , footers and internal data structures , I find it useful when dealing with png images.

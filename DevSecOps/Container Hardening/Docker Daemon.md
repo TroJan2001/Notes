@@ -1,3 +1,10 @@
+---
+title: "Docker Daemon"
+created: 2026-03-11
+type: concept
+tags: [concept, containers, devsecops, hardening, linux]
+---
+
 Docker Daemon is a persistent background process that manages Docker images, containers, networks, and storage volumes. The Docker daemon constantly listens for Docker API requests and processes them.
 # Using SSH and docker context
 

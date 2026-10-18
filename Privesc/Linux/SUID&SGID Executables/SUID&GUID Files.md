@@ -1,3 +1,10 @@
+---
+title: "SUID&GUID Files"
+created: 2026-03-11
+type: technique
+tags: [linux, privesc, suid, technique]
+---
+
 As we all know in Linux everything is a file, including directories and devices which have permissions to allow or restrict three operations i.e. read/write/execute. So when you set permission for any file, you should be aware of the Linux users to whom you allow or restrict all three permissions. Take a look at the following demonstration of how maximum privileges (rwx-rwx-rwx) look:
 
 r = read
@@ -28,7 +35,7 @@ GUID:
 rwx-rws-rwx  
 ### Finding SUID Binaries  
 
-We already know that there is SUID capable files on the system, thanks to our LinEnum scan. However, if we want to do this manually we can use the following command to search the file system for SUID/GUID files:
+We already know that there is SUID capable files on the system, thanks to our [[LinEnum]] scan. However, if we want to do this manually we can use the following command to search the file system for SUID/GUID files:
 
 ```bash
 find / -perm -u=s -type f 2>/dev/null

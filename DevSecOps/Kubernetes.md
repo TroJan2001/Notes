@@ -1,3 +1,10 @@
+---
+title: "Kubernetes"
+created: 2026-03-11
+type: concept
+tags: [concept, devsecops, linux]
+---
+
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
 # Kubernetes Architecture 
 

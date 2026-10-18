@@ -1,3 +1,10 @@
+---
+title: "LFI & RFI"
+created: 2026-03-11
+type: technique
+tags: [lfi, linux, technique, web]
+---
+
 # LFI
 
 LFI attacks against web applications are often due to a developers' lack of security awareness. With PHP, using functions such as include, require, include_once, and require_once often contribute to vulnerable web applications
@@ -39,7 +46,7 @@ Remote File Inclusion (RFI) is a technique to include remote files and into a vu
 The risk of RFI is higher than LFI since RFI vulnerabilities allow an attacker to gain Remote Command Execution (RCE) on the server. Other consequences of a successful RFI attack include:
 
 - Sensitive Information Disclosure
-- Cross-site Scripting (XSS)
+- Cross-site Scripting ([[XSS]])
 - Denial of Service (DoS)
 
 An external server must communicate with the application server for a successful RFI attack where the attacker hosts malicious files on their server. Then the malicious file is injected into the include function via HTTP requests, and the content of the malicious file executes on the vulnerable application server.

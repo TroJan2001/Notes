@@ -1,3 +1,10 @@
+---
+title: "Windows Tokens"
+created: 2026-03-11
+type: concept
+tags: [concept, windows]
+---
+
 Windows uses access tokens to assign the necessary privileges to accounts for performing specific actions. These tokens are created when users log in or are authenticated, typically by LSASS.exe (the authentication process).
 
 An access token consists of:

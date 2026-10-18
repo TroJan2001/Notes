@@ -1,3 +1,10 @@
+---
+title: "PKI"
+created: 2026-03-11
+type: concept
+tags: [concept, crypto, encryption, linux]
+---
+
 # Useful Commands
 
  To generate a certificate signing request we use this command:

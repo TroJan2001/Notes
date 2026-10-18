@@ -1,3 +1,10 @@
+---
+title: "ExifTool"
+created: 2026-03-11
+type: tool
+tags: [forensics, linux, recon, tool]
+---
+
 # Saving metadata to image files
 
 ExifTool is used to read and write metadata in various file types, such as JPEG images.
@@ -8,7 +15,7 @@ The following are examples of metadata that can be found in the original digital
 - Photo settings such as focal length, aperture, shutter speed, and ISO settings
 ### Useful commands:
 
-To install pdfinfo :
+To install [[pdfinfo]] :
 
 ```bash
 sudo apt install libimage-exiftool-perl

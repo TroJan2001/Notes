@@ -1,3 +1,10 @@
+---
+title: "compmgmt"
+created: 2026-03-11
+type: concept
+tags: [concept, sysadmin, windows]
+---
+
 We're continuing with Tools that are available through the System Configuration panel.  
 
 The **Computer Management** (==`compmgmt`==) utility has three primary sections: System Tools, Storage, and Services and Applications.

@@ -1,3 +1,10 @@
+---
+title: "NFS"
+created: 2026-03-11
+type: concept
+tags: [concept, linux, privesc]
+---
+
 Files created via NFS inherit the **remote** user's ID. If the user is root, and root squashing is enabled, the ID will instead be set to the "nobody" user.
 
 Check the NFS share configuration on the Debian VM:

@@ -1,3 +1,10 @@
+---
+title: "Name Resolution"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 # Windows Name Resolution Stack
 
 Before any remote protocol can communicate (like SMB, RPC, or LDAP), the system needs to **resolve the target hostname to an IP address**.
@@ -9,7 +16,7 @@ Windows follows this approximate order:
 2. DNS
 3. mDNS (UDP 5353)
 4. LLMNR (UDP 5355)
-5. NetBIOS Name Service (NBT-NS, UDP 137)
+5. [[NetBIOS]] Name Service (NBT-NS, UDP 137)
 ```
 
 We’ll now go into each one.

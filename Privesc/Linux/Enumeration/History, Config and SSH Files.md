@@ -1,3 +1,10 @@
+---
+title: "History, Config and SSH Files"
+created: 2026-03-11
+type: reference
+tags: [enumeration, linux, privesc, reference]
+---
+
 ### History Files
 
 If a user accidentally types their password on the command line instead of into a password prompt, it may get recorded in a history file.

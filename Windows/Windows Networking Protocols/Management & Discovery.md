@@ -1,3 +1,10 @@
+---
+title: "Management & Discovery"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 # 🗂 Management & Discovery
 
 ## 1. WinRM (Windows Remote Management)

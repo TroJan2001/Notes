@@ -1,3 +1,10 @@
+---
+title: "resmon"
+created: 2026-03-11
+type: concept
+tags: [concept, sysadmin, windows]
+---
+
 **Resource Monitor**
 
 Per Microsoft, "_Resource Monitor displays per-process and aggregate CPU, memory, disk, and network usage information, in addition to providing details about which processes are using individual file handles and modules. Advanced filtering allows users to isolate the data related to one or more processes (either applications or services), start, stop, pause, and resume services, and close unresponsive applications from the user interface. It also includes a process analysis feature that can help identify deadlocked processes and file locking conflicts so that the user can attempt to resolve the conflict instead of closing an application and potentially losing data._"

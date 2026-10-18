@@ -1,3 +1,10 @@
+---
+title: "Auditing"
+created: 2026-03-11
+type: concept
+tags: [concept, linux, recon]
+---
+
 One of the efficient command-line tools to audit system logs on a Linux system is `aureport`.
 # Useful Commands
 

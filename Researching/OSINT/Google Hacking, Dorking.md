@@ -1,3 +1,10 @@
+---
+title: "Google Hacking, Dorking"
+created: 2026-03-11
+type: technique
+tags: [osint, recon, technique]
+---
+
 Google hacking / Dorking is to use advances search techniques to search for a custom content.
 
 # Useful Filters:

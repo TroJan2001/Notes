@@ -1,3 +1,10 @@
+---
+title: "Steganography"
+created: 2026-03-11
+type: technique
+tags: [enumeration, linux, recon, technique]
+---
+
 # Hidden files inside images
  
  Steganography is hiding a file or a message inside of another file , there are many fun steganography CTF challenges out there where the flag is hidden in an image , audio file or even other types of files.

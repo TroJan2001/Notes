@@ -1,3 +1,10 @@
+---
+title: "GPG2John"
+created: 2026-03-11
+type: tool
+tags: [cracking, crypto, hashing, linux, tool]
+---
+
 # Useful Commands
 
 To crack a an asc file so you can access a pgp file, we use the following commands:

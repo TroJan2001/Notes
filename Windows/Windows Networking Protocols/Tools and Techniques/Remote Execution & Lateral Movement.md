@@ -1,3 +1,10 @@
+---
+title: "Remote Execution & Lateral Movement"
+created: 2026-03-11
+type: technique
+tags: [active-directory, exploitation, linux, network, protocols, technique, windows]
+---
+
 All of the following remote execution techniques **require administrative credentials** on the target host.
 
 - This can be either a **local Administrator** account or a **domain account** that is a member of the target’s **Administrators group**.

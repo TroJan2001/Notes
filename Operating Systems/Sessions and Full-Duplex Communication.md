@@ -1,3 +1,10 @@
+---
+title: "Sessions and Full-Duplex Communication"
+created: 2026-03-11
+type: concept
+tags: [concept, fundamentals, windows]
+---
+
 ### 🔹 What Is a Session?
 
 A **session** is a logical, stateful connection between two endpoints (e.g., processes, sockets, systems), maintained over time to exchange data.

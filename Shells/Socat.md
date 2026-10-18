@@ -1,3 +1,10 @@
+---
+title: "Socat"
+created: 2026-03-11
+type: tool
+tags: [linux, shells, tool, windows]
+---
+
 Socat is similar to netcat in some ways, but fundamentally different in many others. The easiest way to think about socat is as a connector between two points. In the interests of this room, this will essentially be a listening port and the keyboard, however, it could also be a listening port and a file, or indeed, two listening ports. All socat does is provide a link between two points -- much like the portal gun from the Portal games!
 # Useful Commands:
 ## Reverse Shells

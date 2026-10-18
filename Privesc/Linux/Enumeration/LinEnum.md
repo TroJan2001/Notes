@@ -1,3 +1,10 @@
+---
+title: "LinEnum"
+created: 2026-03-11
+type: tool
+tags: [enumeration, linux, privesc, tool]
+---
+
 LinEnum is a simple bash script that performs common commands related to privilege escalation, saving time and allowing more effort to be put toward getting root
 ### How do I get LinEnum on the target machine?
 

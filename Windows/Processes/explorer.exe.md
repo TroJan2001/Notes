@@ -1,3 +1,10 @@
+---
+title: "explorer.exe"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
+
 **Windows Explorer**, **explorer.exe**. This process gives the user access to their folders and files. It also provides functionality for other features, such as the Start Menu and Taskbar.
 
 As mentioned previously, the ==Winlogon== process runs userinit.exe, which launches the value in ==`HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell`.== ==Userinit.exe== exits after spawning ==explorer.exe==. Because of this, the parent process is non-existent.

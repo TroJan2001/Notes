@@ -1,3 +1,10 @@
+---
+title: "RPC"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 # 🔹 RPC (Remote Procedure Call)
 
 RPC = a mechanism that allows a program on one computer to execute a procedure (function) on another computer **as if it were local**.

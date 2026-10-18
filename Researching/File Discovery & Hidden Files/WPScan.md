@@ -1,3 +1,10 @@
+---
+title: "WPScan"
+created: 2026-03-11
+type: tool
+tags: [enumeration, linux, recon, tool]
+---
+
 The WPScan framework is capable of enumerating & researching a few security vulnerability categories present in WordPress sites - including - but not limited to:
 
 - Sensitive Information Disclosure (Plugin & Theme installation versions for disclosed vulnerabilities or CVE's)

@@ -1,3 +1,10 @@
+---
+title: "Kubernetes"
+created: 2026-03-11
+type: concept
+tags: [concept, containers, devsecops, linux]
+---
+
 **Kubernetes**, also shortened to "**K8s**," is one such solution known as an **orchestration platform**. An orchestration platform aims to integrate into other products, such as Docker, and extend their capabilities or "synchronize" them with other products or applications.
 
 Kubernetes relies on these traditional virtualization models like hypervisors and containers and extends their uses, features, and capabilities.

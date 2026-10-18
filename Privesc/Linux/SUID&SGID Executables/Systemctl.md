@@ -1,3 +1,10 @@
+---
+title: "Systemctl"
+created: 2026-03-11
+type: concept
+tags: [concept, linux, privesc, suid]
+---
+
 If we have a `Systemctl` command with enabled SUID bit we can exploit it to get a root shell using the following command:
 
 ```bash

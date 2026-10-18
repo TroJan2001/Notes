@@ -1,3 +1,10 @@
+---
+title: "NetBIOS"
+created: 2026-03-11
+type: concept
+tags: [concept, linux, network, protocols, windows]
+---
+
 **NetBIOS** is a legacy API and protocol suite originally designed for small networks in the 1980s. It allows applications on separate computers to communicate over a LAN (Local Area Network). Microsoft later adapted it to work over TCP/IP, even though it was originally designed for non-routable protocols like NetBEUI.
 
 - **Not a protocol by itself** — it's an API used by programs, and protocols like **NetBIOS over TCP/IP (NBT)** implement the functionality.
@@ -126,7 +133,7 @@ python3 Responder.py -I eth0
 
 - **Broadcast-based name resolution is spoofable**
     
-- **Responder, Metasploit, and NBNS Spoof** tools rely on this
+- **Responder, [[Metasploit]], and NBNS Spoof** tools rely on this
     
 - **NetBIOS over TCP/IP (NBT)** should be disabled unless required
     

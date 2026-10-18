@@ -1,3 +1,10 @@
+---
+title: "Hypervisors"
+created: 2026-03-11
+type: concept
+tags: [concept, containers, devsecops]
+---
+
 Hypervisors are separated into two categories that are determined by their position relative to the hardware. They can either directly create a lightweight operating system on top of the hardware that is the hypervisor or add a hypervisor as an application on top of a pre-existing operating system.
 ### Type 1 Hypervisors
 

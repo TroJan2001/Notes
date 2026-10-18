@@ -1,4 +1,11 @@
-## 1. NetBIOS Session Service (NetBIOS-SSN, **139/tcp**)
+---
+title: "Transport"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
+## 1. [[NetBIOS]] Session Service (NetBIOS-SSN, **139/tcp**)
 
 - **Legacy role**: Before SMB ran directly over TCP (445), it used the **NetBIOS API**.
     

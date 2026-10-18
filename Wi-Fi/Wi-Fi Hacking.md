@@ -1,3 +1,10 @@
+---
+title: "Wi-Fi Hacking"
+created: 2026-03-11
+type: technique
+tags: [linux, technique, wireless]
+---
+
 Since WPA is a strong protocol we can't simply hack it, but we can bruteforce it!
 
 ### Useful Commands

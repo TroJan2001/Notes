@@ -1,3 +1,10 @@
+---
+title: "Linux Sandboxing & Access Control"
+created: 2026-03-11
+type: concept
+tags: [concept, containers, devsecops, hardening, linux]
+---
+
 ## 1️⃣ Access Control Models
 
 ### **1.1 Discretionary Access Control (DAC)**

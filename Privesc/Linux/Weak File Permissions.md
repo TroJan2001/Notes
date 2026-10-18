@@ -1,3 +1,10 @@
+---
+title: "Weak File Permissions"
+created: 2026-03-11
+type: technique
+tags: [linux, privesc, technique]
+---
+
 Lets talk about wild vulnerabilities that take place in security due to weak file permissions:
 # Readable /etc/shadow
 
@@ -17,7 +24,7 @@ mkpasswd -m sha-512 newpasswordhere
 and then we use `nano` or `vim` to edit the `/etc/shadow` file
 # Writable /etc/passwd
 
-After Enumerating using LinEnum or linpeas, we might find some misconfigured file configuration, like making a specific user a a member of root group noting that the `/etc/passwd` file is writable by users of the root group. This allow us to add a new entry to the `/etc/passwd` file by accessing that user which has high privileges (member of the root group) and making the new entry a root user.
+After Enumerating using [[LinEnum]] or linpeas, we might find some misconfigured file configuration, like making a specific user a a member of root group noting that the `/etc/passwd` file is writable by users of the root group. This allow us to add a new entry to the `/etc/passwd` file by accessing that user which has high privileges (member of the root group) and making the new entry a root user.
 
 Before we add our new user, we first need to create a compliant password hash to add! We do this by using the command: 
 

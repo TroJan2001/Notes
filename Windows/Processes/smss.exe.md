@@ -1,6 +1,13 @@
+---
+title: "smss.exe"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
+
 This process which is also known as Session Manager Subsystem is responsible for creating new sessions. and it is a ==user-mode Process==.
 
-Also it starts ==csrss.exe== and ==wininit.exe== in session 0, ==csrss.exe== and ==winlogon.exe== for Session 1.
+Also it starts ==[[csrss.exe]]== and ==[[wininit.exe]]== in session 0, ==csrss.exe== and ==[[winlogon.exe]]== for Session 1.
 
 Any other subsystem listed in the `Required` value of `HKLM\System\CurrentControlSet\Control\Session Manager\Subsystems` is also launched.
 

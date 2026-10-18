@@ -1,3 +1,10 @@
+---
+title: "cmd"
+created: 2026-03-11
+type: concept
+tags: [concept, sysadmin, windows]
+---
+
 With the command shell, you can directly interact with the operating system. Think command prompt as an interpreter that accepts the commands or the user’s inputs and translates them into machine language.
 ### Useful commands:
 

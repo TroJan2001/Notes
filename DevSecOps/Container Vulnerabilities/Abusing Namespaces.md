@@ -1,3 +1,10 @@
+---
+title: "Abusing Namespaces"
+created: 2026-03-11
+type: technique
+tags: [containers, devsecops, exploitation, linux, technique]
+---
+
 ### How Can We Abuse Namespaces
 
 This exploit takes advantage of situations where a container shares the same namespace as the host operating system, allowing the container to interact with processes on the host.

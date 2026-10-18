@@ -1,3 +1,10 @@
+---
+title: "Enumeration & Reconnaissance"
+created: 2026-03-11
+type: technique
+tags: [active-directory, exploitation, linux, network, protocols, technique, windows]
+---
+
 Unlike remote execution, **most enumeration and recon tools do _not_ require administrative credentials.**
 
 - Many work with **low-privileged domain users** or even **anonymous/null sessions** (if allowed).

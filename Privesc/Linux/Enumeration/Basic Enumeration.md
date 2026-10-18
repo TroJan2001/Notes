@@ -1,3 +1,10 @@
+---
+title: "Basic Enumeration"
+created: 2026-03-11
+type: technique
+tags: [enumeration, linux, privesc, technique]
+---
+
 Enumeration is the first step you have to take once you gain access to any system. You may have accessed the system by exploiting a critical vulnerability that resulted in root-level access or just found a way to send commands using a low privileged account.
 ### hostname
 

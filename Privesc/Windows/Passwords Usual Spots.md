@@ -1,3 +1,10 @@
+---
+title: "Passwords Usual Spots"
+created: 2026-03-11
+type: technique
+tags: [privesc, technique, windows]
+---
+
 This module explores common locations and methods for storing passwords. Understanding where passwords are typically kept can help improve security practices and identify potential vulnerabilities.
 # Unattended Windows Installations
 
@@ -66,4 +73,4 @@ reg query HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\ /f "Proxy" /s
 ```
 
 **Note:** "Simon Tatham" refers to the creator of PuTTY, not the username.
-Similarly, other software that stores passwords—such as browsers, email clients, FTP clients, and VNC software—also has methods for recovering saved passwords.
+Similarly, other software that stores passwords—such as browsers, email clients, [[FTP]] clients, and VNC software—also has methods for recovering saved passwords.

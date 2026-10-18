@@ -1,3 +1,10 @@
+---
+title: "ffuf"
+created: 2026-03-11
+type: tool
+tags: [enumeration, linux, recon, tool]
+---
+
 #### ==**Find directories & hidden website pages**==
 
 ffuf is a fest web fuzzer written in Go that allows typical directory discovery, virtual host discovery (without DNS records) and GET and POST parameter fuzzing.
@@ -47,7 +54,7 @@ ffuf -w names.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/
 The PHP `$_REQUEST` variable is an array that contains data received from the query string and POST data. If the same key name is used for both the query string and POST data, the application logic for this variable favours POST data fields rather than the query string, so if we add another parameter to the POST form, we can control where the password reset email gets delivered.
 
 ```bash
-curl -X POST 'http://10.10.122.98/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email={username}@customer.acmeitsupport.thm'
+[[curl]] -X POST 'http://10.10.122.98/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email={username}@customer.acmeitsupport.thm'
 ```
 
 Mock cookie http request:

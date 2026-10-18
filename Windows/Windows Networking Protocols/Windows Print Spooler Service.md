@@ -1,3 +1,10 @@
+---
+title: "Windows Print Spooler Service"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 ## 1. Overview
 
 - **Service Name:** Print Spooler (`spoolsv.exe`)
@@ -57,7 +64,7 @@
     
 - **Historic vulnerabilities:**
     
-    - **PrintNightmare (CVE-2021-34527):** Remote Code Execution & Privilege Escalation.
+    - **PrintNightmare (CVE-2021-34527):** Remote Code Execution & [[Privilege Escalation]].
         
     - **MS08-070:** Buffer overflow in spooler RPC.
         

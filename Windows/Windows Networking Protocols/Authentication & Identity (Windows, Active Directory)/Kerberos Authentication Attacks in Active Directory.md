@@ -1,3 +1,10 @@
+---
+title: "Kerberos Authentication Attacks in Active Directory"
+created: 2026-03-11
+type: technique
+tags: [active-directory, network, protocols, technique, windows]
+---
+
 ## What is Kerberos?
 
 Kerberos is a **network authentication protocol**.  
@@ -64,7 +71,7 @@ Its purpose is simple:
 ### 🧩 Step-by-Step
 
 ```text
-# 🧩 Legitimate Kerberos Authentication Flow (Windows AD)
+# 🧩 Legitimate [[Kerberos Authentication Flow]] (Windows AD)
 
 Actors:
 - Client = Alice's machine

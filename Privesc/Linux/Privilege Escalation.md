@@ -1,3 +1,10 @@
+---
+title: "Privilege Escalation"
+created: 2026-03-11
+type: technique
+tags: [linux, privesc, technique]
+---
+
 Privilege Escalation usually involves going from a lower permission to a higher permission. More technically, it's the exploitation of a vulnerability, design flaw or configuration oversight in an operating system or application to gain unauthorized access to resources that are usually restricted from the users.
 
 **There are two main privilege escalation variants:**

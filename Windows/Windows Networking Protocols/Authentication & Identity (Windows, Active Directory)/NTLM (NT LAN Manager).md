@@ -1,3 +1,10 @@
+---
+title: "NTLM (NT LAN Manager)"
+created: 2026-03-11
+type: concept
+tags: [active-directory, concept, network, protocols, windows]
+---
+
 NTLM is Microsoft’s **challenge–response authentication protocol**. It was designed before Kerberos and is still present in modern Windows for **backward compatibility**.
 
 It does **not use tickets** (like Kerberos) but instead relies on proving knowledge of a password hash.
@@ -54,7 +61,7 @@ NTLM is carried **inside these protocols** using the `NTLMSSP` (NTLM Security Su
     
     - A **random 8 or 16-byte nonce** (the “challenge”)
         
-    - Target information (domain name, NetBIOS name, etc.)
+    - Target information (domain name, [[NetBIOS]] name, etc.)
         
 
 📡 Example inside SMB2 `Session Setup Response`:

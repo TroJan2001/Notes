@@ -1,3 +1,10 @@
+---
+title: "Control Groups (cgroups)"
+created: 2026-03-11
+type: concept
+tags: [concept, containers, devsecops, hardening]
+---
+
 cgroups enable the allocation or prioritization of resources for containers, preventing the possibility of faulty or malicious containers monopolizing system resources.
 
 Example: Without implementing cgroups, a poorly designed container might consume excessive CPU or memory, leading to a scenario where critical system processes struggle to execute, ultimately causing system instability or failure.

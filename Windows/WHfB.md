@@ -1,3 +1,10 @@
+---
+title: "WHfB"
+created: 2026-03-11
+type: concept
+tags: [concept, windows]
+---
+
 Windows Hello is an authentication technology that allows users to sign in to their Windows devices using biometric data, or a PIN, instead of a traditional password. It provides enhanced security through phish-resistant two-factor authentication, and built-in brute force protection. With FIDO/WebAuthn, Windows Hello can also be used to sign in to supported websites, reducing the need to remember multiple complex passwords.
 ### Windows Hello for Business
 

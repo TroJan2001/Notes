@@ -1,3 +1,10 @@
+---
+title: "DH - Asymmetric Encryption"
+created: 2026-03-11
+type: concept
+tags: [concept, crypto, encryption, linux]
+---
+
 Diffie–Hellman key exchange establishes a shared secret between two parties that can be used for secret communication for exchanging data over a public network.
 ### The math(s) side:
 

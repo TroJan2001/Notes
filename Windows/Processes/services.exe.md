@@ -1,4 +1,11 @@
-**(wininit.exe > services.exe)**
+---
+title: "services.exe"
+created: 2026-03-11
+type: concept
+tags: [concept, processes, windows]
+---
+
+**([[wininit.exe]] > services.exe)**
 
 **Service Control Manager** (SCM) or **services.exe**. Its primary responsibility is to handle system services: loading services, interacting with services and starting or ending services. It maintains a database that can be queried using a Windows built-in utility, ==sc.exe==.
 
@@ -12,7 +19,7 @@ This process also loads device drivers marked as auto-start into memory. 
 
 When a user logs into a machine successfully, this process is responsible for setting the value of the Last Known Good control set (Last Known Good Configuration), ==`HKLM\System\Select\LastKnownGood`==, to that of the CurrentControlSet.
 
-This process is the parent to several other key processes: ==svchost.exe==, ==spoolsv.exe==, ==msmpeng.exe==, and ==dllhost.exe==, to name a few. You can read more about this process [here](https://en.wikipedia.org/wiki/Service_Control_Manager).
+This process is the parent to several other key processes: ==[[svchost.exe]]==, ==spoolsv.exe==, ==msmpeng.exe==, and ==dllhost.exe==, to name a few. You can read more about this process [here](https://en.wikipedia.org/wiki/Service_Control_Manager).
 ### Normal State :
 
 ![](../../Attachments/Pasted%20image%2020231105010106.png)

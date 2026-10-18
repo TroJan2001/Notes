@@ -1,3 +1,10 @@
+---
+title: "From Shares to Pipes, SMB as a Transport for MSRPC"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 # 🔹 What Is a Share?
 
 - A **share** in SMB is just a **named entry point** that clients can connect to.

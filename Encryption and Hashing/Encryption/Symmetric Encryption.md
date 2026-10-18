@@ -1,3 +1,10 @@
+---
+title: "Symmetric Encryption"
+created: 2026-03-11
+type: concept
+tags: [concept, crypto, encryption]
+---
+
 Symmetric encryption **uses a single key to encrypt and decrypt**. If you encrypt a zip file, then decrypt with the same key, you are using symmetric encryption. Symmetric encryption is also called “secret key” encryption because the key must be kept secret from third parties.
 
 Here are many programs available for symmetric encryption. We will focus on two, which are widely used for asymmetric encryption as well:

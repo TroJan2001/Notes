@@ -1,3 +1,10 @@
+---
+title: "RDP"
+created: 2026-03-11
+type: concept
+tags: [concept, network, protocols, windows]
+---
+
 RDP is based on, and is an extension of, the T-120 family of protocol standards. A multichannel capable protocol allows for separate virtual channels for carrying the following information:
 
 - presentation data
