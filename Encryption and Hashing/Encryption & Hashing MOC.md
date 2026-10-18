@@ -36,7 +36,7 @@ tags: [moc, crypto, hashing]
 > [!info] All notes in this section, auto-updated by Dataview
 
 ```dataview
-TABLE type AS Type, tags AS Tags
+LIST WITHOUT ID file.link + " — *" + type + "*"
 FROM "Encryption and Hashing"
 WHERE type != null AND !contains(file.name, "MOC")
 SORT file.name ASC

@@ -48,7 +48,7 @@ tags: [home, index]
 
 ### Recently Modified
 ```dataview
-TABLE type AS Type, dateformat(file.mtime, "yyyy-MM-dd") AS Modified
+LIST WITHOUT ID file.link + " — *" + type + "*"
 FROM ""
 WHERE type != null
 SORT file.mtime DESC
