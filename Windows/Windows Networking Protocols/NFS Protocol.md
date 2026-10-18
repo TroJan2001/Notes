@@ -1,5 +1,5 @@
 ---
-title: "NFS"
+title: "NFS Protocol"
 created: 2026-03-11
 type: concept
 tags: [concept, linux, network, protocols, windows]

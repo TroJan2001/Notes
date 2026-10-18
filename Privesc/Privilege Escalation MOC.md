@@ -36,7 +36,7 @@ tags: [moc, privesc]
 - [[Weak File Permissions]]
 
 ### Network
-- [[NFS]]
+- [[NFS Privesc|NFS]]
 - [[MySQL UDF Exploit]]
 
 ### CVEs

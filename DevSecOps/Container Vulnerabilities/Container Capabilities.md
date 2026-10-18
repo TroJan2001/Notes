@@ -1,5 +1,5 @@
 ---
-title: "Capabilities"
+title: "Container Capabilities"
 created: 2026-03-11
 type: concept
 tags: [concept, containers, devsecops, exploitation, linux]

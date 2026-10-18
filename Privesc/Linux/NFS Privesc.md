@@ -1,5 +1,5 @@
 ---
-title: "NFS"
+title: "NFS Privesc"
 created: 2026-03-11
 type: concept
 tags: [concept, linux, privesc]

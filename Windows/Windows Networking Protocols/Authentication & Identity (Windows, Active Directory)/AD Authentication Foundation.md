@@ -1,5 +1,5 @@
 ---
-title: "Foundation"
+title: "AD Authentication Foundation"
 created: 2026-03-11
 type: concept
 tags: [active-directory, concept, linux, network, protocols, windows]

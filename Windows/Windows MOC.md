@@ -23,8 +23,8 @@ tags: [moc, windows]
 - [[Local User and Group Management]]
 
 ## Networking Protocols
-- [[NetBIOS]] / [[SMB]] / [[RPC]] / [[RDP]]
-- [[NFS]] / [[Transport]]
+- [[NetBIOS]] / [[SMB Protocol|SMB]] / [[RPC]] / [[RDP]]
+- [[NFS Protocol|NFS]] / [[Transport]]
 - [[Name Resolution]]
 - [[Windows Print Spooler Service]]
 - [[LPC and ALPC in Windows]]
@@ -41,12 +41,12 @@ tags: [moc, windows]
 - [[Credential Extraction & Abuse]]
 - [[Enumeration & Reconnaissance]]
 - [[Remote Execution & Lateral Movement]]
-- [[Privilege Escalation]]
+- [[Windows AD Privilege Escalation|Privilege Escalation]]
 - [[Summary|AD Attack Techniques Summary]]
 
 ## Foundations
-- [[Foundation|Networking Foundation]]
-- [[Foundation|AD Authentication Foundation]]
+- [[Windows Networking Foundation]]
+- [[AD Authentication Foundation]]
 
 ## Reference
 - [[OSC Cheatsheet and Map]]

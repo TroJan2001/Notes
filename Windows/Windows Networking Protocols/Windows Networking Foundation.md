@@ -1,5 +1,5 @@
 ---
-title: "Foundation"
+title: "Windows Networking Foundation"
 created: 2026-03-11
 type: concept
 tags: [concept, network, protocols, windows]

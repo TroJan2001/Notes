@@ -18,7 +18,7 @@ tags: [moc, devsecops, containers]
 
 ## Container Vulnerabilities
 - [[Abusing Namespaces]]
-- [[Capabilities]]
+- [[Container Capabilities|Capabilities]]
 - [[Exposed Docker Daemon]]
 
 ---
