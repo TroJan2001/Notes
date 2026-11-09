@@ -64,6 +64,7 @@ tags: [concept, pentesting, methodology, fundamentals]
 
 ## Related
 
+- [[Penetration Testing Frameworks]]
 - [[Risk Management]]
 - [[Incident Response]]
 - [[Security Principles]]
