@@ -100,3 +100,8 @@ The **BITS** service connects to the attacker’s rogue WinRM service on port **
 When the attacker’s rogue WinRM service receives the connection from the BITS service, it can now leverage the **SeImpersonate** privilege if the attacker has it.
 
 Using **SeImpersonate**, the attacker can impersonate the **SYSTEM** account (the account under which BITS is running).
+
+## Related
+
+- [[IIS Attacks]] — landing a shell on IIS gives you `SeImpersonatePrivilege` by default via the Application Pool identity, the usual entry point to this privilege class
+- [[Windows AD Privilege Escalation]] — JuicyPotato/RoguePotato/PrintSpoofer, the other tools abusing this same privilege
