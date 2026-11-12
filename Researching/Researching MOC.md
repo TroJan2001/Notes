@@ -6,6 +6,8 @@ tags: [moc, recon, osint]
 
 ## Vulnerability Research
 - [[Vulnerability Searching]]
+- [[Vulnerability Databases]]
+- [[Vulnerability Scanning]]
 - [[ExpliotDB]]
 - [[Auditing]]
 
