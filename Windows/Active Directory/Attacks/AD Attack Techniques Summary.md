@@ -1,5 +1,5 @@
 ---
-title: "Summary"
+title: "AD Attack Techniques Summary"
 created: 2026-03-11
 type: technique
 tags: [active-directory, exploitation, linux, network, protocols, technique, windows]

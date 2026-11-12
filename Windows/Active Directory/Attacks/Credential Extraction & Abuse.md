@@ -62,7 +62,7 @@ mimikatz # sekurlsa::tickets
     
 2. Supports multiple dump methods:
     
-    - **DRSUAPI**: Use Directory Replication Service to dump NTDS.dit (DC only).
+    - **DRSUAPI (DCSync)**: Abuses the Directory Replication Service — requests password hashes from the DC as if you were another Domain Controller. See [[Windows AD Privilege Escalation]] for a full DCSync breakdown.
         
     - **SAMR/LSARPC**: Extract local SAM hashes from registry over SMB.
         
@@ -122,6 +122,14 @@ Rubeus asreproast
 Rubeus ptt /ticket:<base64_ticket>
 Rubeus asktgt /user:Administrator /rc4:<NTLM_hash>
 ```
+
+### tgtdeleg Trick
+
+```bash
+Rubeus tgtdeleg
+```
+
+Extracts a usable TGT from the current logon session. You can't directly read your own TGT from LSASS — it's encrypted with a key you don't have. Rubeus works around this by **faking a Kerberos delegation request**: it tells the DC "I need to forward my TGT to another service." The DC responds with a copy encrypted using a negotiated session key Rubeus can read. This is a legitimate protocol feature (unconstrained delegation) abused to extract credentials you're not supposed to access directly. Used in the [[BadSuccessor Attack]] chain and other scenarios where you need a raw TGT on a machine you already control.
 
 **Transport Stack:**  
 `Kerberos (88/tcp & udp)`

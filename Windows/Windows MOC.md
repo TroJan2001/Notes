@@ -31,23 +31,29 @@ tags: [moc, windows]
 - [[From Shares to Pipes, SMB as a Transport for MSRPC]]
 - [[Management & Discovery]]
 
-## Active Directory
+### Authentication Protocols
 - [[Kerberos Authentication Flow]]
-- [[Kerberos Authentication Attacks in Active Directory]]
 - [[NTLM (NT LAN Manager)]]
 - [[LDAP]]
-- [[Managed Service Accounts and BadSuccessor]]
 
-## Attack Techniques
+## Active Directory
+
+### Concepts
+- [[AD Authentication Foundation]]
+- [[Organizational Units and DACLs]]
+- [[Managed Service Accounts]]
+
+### Attacks & Techniques
+- [[Kerberos Authentication Attacks in Active Directory]]
 - [[Credential Extraction & Abuse]]
 - [[Enumeration & Reconnaissance]]
 - [[Remote Execution & Lateral Movement]]
 - [[Windows AD Privilege Escalation|Privilege Escalation]]
-- [[Summary|AD Attack Techniques Summary]]
+- [[BadSuccessor Attack]]
+- [[AD Attack Techniques Summary|Summary Table]]
 
 ## Foundations
 - [[Windows Networking Foundation]]
-- [[AD Authentication Foundation]]
 
 ## Reference
 - [[OSC Cheatsheet and Map]]

