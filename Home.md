@@ -13,6 +13,7 @@ tags: [home, index]
 - [[Encryption & Hashing MOC]] — Crypto, John the Ripper, hashing
 - [[Windows MOC]] — Processes, AD, Kerberos, networking protocols
 - [[Binary Exploitation MOC]] — Heap overflows, memory corruption, RCE
+- [[Social Engineering MOC]] — Phishing, psychology, credential harvesting
 - [[DevSecOps MOC]] — Docker, Kubernetes, container security
 - [[Researching MOC]] — OSINT, vulnerability research, file discovery
 
