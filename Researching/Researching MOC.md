@@ -4,36 +4,34 @@ tags: [moc, recon, osint]
 
 # Researching & OSINT
 
-## Vulnerability Research
-- [[Vulnerability Searching]]
-- [[Vulnerability Databases]]
-- [[Vulnerability Scanning]]
-- [[Vulnerability Identification]]
-- [[ExpliotDB]]
-- [[Auditing]]
-
-## File Discovery & Hidden Files
-- [[Gobuster]] / [[dirb]] / [[ffuf]]
-- [[Nikto]]
-- [[Steganography]]
-- [[Foremost]]
-- [[WPScan]]
-
-## OSINT
+## Reconnaissance
 - [[Google Hacking, Dorking]]
 - [[S3 Buckets]]
 - [[Wappalyzer]]
 - [[Wayback Machine]]
-- [[Custom Wordlists]] — CeWL, crunch, OSINT-based wordlist building
-
-## Document Metadata
-- [[ExifTool]]
-- [[pdfinfo]]
-
-## Web Basics
 - [[robots.txt]]
 - [[Sitemap.xml]]
 - [[curl]]
+
+## Enumeration
+- [[Custom Wordlists]] — OSINT-based wordlist building strategy
+- [[CeWL]] — website word scraping
+- [[Crunch]] — pattern-based password generation
+- [[ffuf]] / [[Gobuster]] / [[dirb]]
+- [[Nikto]]
+- [[WPScan]]
+
+## Vulnerability Research
+- [[Vulnerability Searching]]
+- [[Vulnerability Databases]]
+- [[Vulnerability Identification]]
+- [[Vulnerability Scanning]]
+- [[ExpliotDB]]
+- [[Auditing]]
+
+## Forensics
+- [[Foremost]]
+- [[Steganography]]
 
 ---
 
@@ -43,7 +41,7 @@ tags: [moc, recon, osint]
 
 ```dataview
 LIST WITHOUT ID file.link + " — *" + type + "*"
-FROM "Researching" OR "Document Metadata"
+FROM "Researching"
 WHERE type != null AND !contains(file.name, "MOC")
 SORT file.name ASC
 ```

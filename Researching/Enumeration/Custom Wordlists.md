@@ -23,22 +23,9 @@ Generic wordlists like `rockyou.txt` cast a wide net. **Custom wordlists** built
 
 ## OSINT Gathering Techniques
 
-### CeWL — Website Word Scraper
+### Website Crawling
 
-Spiders a website and extracts unique words. Also harvests emails with `-e`.
-
-```bash
-cewl -d 2 -m 3 --lowercase --with-numbers -e --email_file emails.txt -w words.txt http://target.com
-```
-
-| Flag | Purpose |
-|------|---------|
-| `-d 2` | Spider depth (2 levels) |
-| `-m 3` | Minimum word length |
-| `--lowercase` | Normalize case |
-| `--with-numbers` | Include words containing digits |
-| `-e` | Extract emails |
-| `--email_file` | Save emails to separate file |
+Use [[CeWL]] to spider the target website and extract unique words + email addresses from page content.
 
 ### Document Harvesting
 
@@ -61,13 +48,8 @@ sort -u emails_docs.txt > emails_unique.txt
 Turn full names into common username formats with `awk`:
 
 ```bash
-# "Alex Johnson" → alex.johnson
 awk '{print tolower($1)"."tolower($2)}' names.txt > users_first.last.txt
-
-# "Alex Johnson" → ajohnson
 awk '{print tolower(substr($1,1,1))tolower($2)}' names.txt > users_flast.txt
-
-# "Alex Johnson" → alexj
 awk '{print tolower($1)tolower(substr($2,1,1))}' names.txt > users_firstl.txt
 ```
 
@@ -85,10 +67,8 @@ awk '{print tolower($1)tolower(substr($2,1,1))}' names.txt > users_firstl.txt
 Raw lists are messy. Clean them before use:
 
 ```bash
-# Merge sources, deduplicate
 cat words1.txt words2.txt | sort -u > words_raw.txt
 
-# Normalize: lowercase, strip Windows line endings, filter junk
 cat words_raw.txt \
   | tr '[:upper:]' '[:lower:]' \
   | tr -d '\r' \
@@ -105,22 +85,9 @@ This removes PDF garbage, HTML tags, and short noise.
 
 ---
 
-## Pattern-Based Generation with Crunch
+## Pattern-Based Generation
 
-When you know the password format, crunch generates every possibility:
-
-```bash
-crunch 11 11 -t Helios20%%! -o passwords.txt
-```
-
-| Template Char | Meaning |
-|---------------|---------|
-| `%` | Digit (0–9) |
-| `@` | Lowercase letter |
-| `,` | Uppercase letter |
-| `^` | Symbol |
-
-`Helios20%%!` generates 100 passwords: `Helios2000!` through `Helios2099!`.
+Use [[Crunch]] when you know the password format — it generates every possible combination matching a template.
 
 ---
 
@@ -135,6 +102,8 @@ crunch 11 11 -t Helios20%%! -o passwords.txt
 
 ## Related Notes
 
+- [[CeWL]] — website word scraping
+- [[Crunch]] — pattern-based password generation
 - [[ffuf]] — directory and subdomain fuzzing
 - [[Gobuster]] — directory brute-forcing
 - [[Hydra]] — login brute-forcing
