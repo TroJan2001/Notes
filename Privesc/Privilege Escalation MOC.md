@@ -4,6 +4,9 @@ tags: [moc, privesc]
 
 # Privilege Escalation
 
+## Methodology
+- [[Privesc Methodology]] — structured enumeration framework, six misconfiguration categories, chaining findings
+
 ## Linux Privilege Escalation
 - [[Privilege Escalation]] — Overview & Concepts
 
