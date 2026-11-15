@@ -30,7 +30,7 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt \
      -H "Host: FUZZ.target.com" -u http://target.com -fs 0
 ```
 
-`-fs 0` filters out empty responses (non-existent subdomains that still return 200).
+`-fs 0` filters out empty responses. If subdomains return varied content, use the two-pass technique: run once without `-fs`, note the response size that most results share (the "default" page), then re-run with `-fs {size}` to filter those out and surface real subdomains.
 
 ## Parameter Fuzzing
 
