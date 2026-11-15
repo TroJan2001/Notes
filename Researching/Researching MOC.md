@@ -24,6 +24,7 @@ tags: [moc, recon, osint]
 - [[S3 Buckets]]
 - [[Wappalyzer]]
 - [[Wayback Machine]]
+- [[Custom Wordlists]] — CeWL, crunch, OSINT-based wordlist building
 
 ## Document Metadata
 - [[ExifTool]]
