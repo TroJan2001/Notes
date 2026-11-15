@@ -4,19 +4,14 @@ tags: [moc, shells]
 
 # Shells
 
-## Reverse Shells
-- [[Reverse shells]] — Netcat, Metasploit, one-liners
-- [[Socat]] / [[Socat Encrypted Shells]]
-- [[Netcat Shell Stabilisation]] — Python, rlwrap, stty
+## Core
+- [[Shells and Listeners]] — reverse/bind shells, netcat, socat, stabilisation, encryption, one-liners
 
 ## Web Shells
-- [[Web Shells]]
-
-## Windows
-- [[Windows Shells]]
+- [[Web Shells]] — PHP, ASP, JSP webshells for HTTP-based access
 
 ## Post-Access
-- [[Exploiting User Account]]
+- [[Post-Shell Actions]] — credential hunting, persistent accounts after landing a shell
 
 ---
 
