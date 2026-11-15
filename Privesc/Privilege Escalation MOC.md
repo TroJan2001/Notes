@@ -39,9 +39,14 @@ tags: [moc, privesc]
 - [[NFS Privesc|NFS]]
 - [[MySQL UDF Exploit]]
 
+### Kernel Concepts
+- [[Page Cache]]
+- [[User Namespaces]]
+
 ### CVEs
 - [[Dirty COW (CVE-2016-5195)]]
 - [[Exim CVE-2016-1531]]
+- [[Fragnesia Page Cache Corruption|Fragnesia (CVE-2026-46300)]]
 - [[Polkit CVE-2021-3560]]
 - [[Polkit CVE-2021-4034 (Pwnkit)]]
 
