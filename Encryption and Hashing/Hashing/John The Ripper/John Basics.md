@@ -2,38 +2,119 @@
 title: "John Basics"
 created: 2026-03-11
 type: tool
-tags: [cracking, crypto, hashing, linux, tool]
+tags: [tool, cracking, hashing]
 ---
 
-John the Ripper is one of the most well known, well-loved and versatile hash cracking tools out there. It combines a fast cracking speed, with an extraordinary range of compatible hash types. This room will assume no previous knowledge, so we must first cover some basic terms and concepts before we move into practical hash cracking.
-# Useful Commands
+# John the Ripper
 
-### Basic Commands
+Versatile CPU-based password cracker. Handles a wide range of hash formats, including many non-standard ones. Good auto-detection, excellent for Unix shadow files and quick attempts.
 
-The basic syntax of John the Ripper commands is as follows. We will cover the specific options and modifiers used as we use them.  
+---
 
-```bash
-john [options] [path to file]
-```
-
-An example of basic command is as follows:
+## Basic Syntax
 
 ```bash
-john --wordlist=[path to wordlist] [path to file]
+john [options] <hash_file>
 ```
 
-To determine the type of the hash we want to crack, we can use the `hashid` command like so:
+---
+
+## Dictionary Attack
 
 ```bash
-hashid hash.txt
+john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 ```
 
-Now we know our most likely type of hashing algorithm used, so we can specify the hashing crack algorithm like so:
+Always specify `--format=` when you know the hash type. Auto-detect can guess wrong — it once defaulted to LM for an MD5 hash and cracked nothing.
+
+## Auto-Detect (when unsure)
 
 ```bash
-john --format=[format] --wordlist=[path to wordlist] [path to file]
+john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 ```
 
-**A very important note on Formats:**
+If it picks the wrong format, re-run with explicit `--format=`.
 
-When you are telling john to use formats, if you're dealing with a standard hash type, e.g. md5 as in the example above, you have to prefix it with`raw-` to tell john you're just dealing with a standard hash type, though this doesn't always apply. To check if you need to add the prefix or not, you can list all of John's formats using `john --list=formats` and either check manually, or grep for your hash type using something like `john --list=formats | grep -iF "md5"`.
+## Rule-Based Attack
+
+```bash
+john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt --rules=wordlist hashes.txt
+```
+
+| Rule Set | Description |
+|----------|-------------|
+| `--rules=wordlist` | Default mutations (capitalize, append numbers, etc.) |
+| `--rules=single` | Name/username-based mutations |
+
+---
+
+## Common Formats (`--format=`)
+
+| Algorithm | Format |
+|-----------|--------|
+| MD5 | `raw-md5` |
+| SHA-1 | `raw-sha1` |
+| SHA-256 | `raw-sha256` |
+| SHA-512 | `raw-sha512` |
+| NTLM | `nt` |
+| bcrypt | `bcrypt` |
+
+Standard hash types need the `raw-` prefix. Check available formats:
+
+```bash
+john --list=formats | grep -iF "md5"
+```
+
+---
+
+## Viewing Cracked Passwords
+
+```bash
+john --show --format=raw-md5 hashes.txt
+```
+
+Always include `--format` with `--show` — otherwise John may not find the entries in the potfile.
+
+Potfile location: `/usr/local/john/run/john.pot`
+
+---
+
+## Hash Identification
+
+```bash
+hashid '<hash_string>'
+```
+
+For 32-char hex hashes (MD5 vs NTLM), use context: Windows SAM/AD → NTLM, web app → likely MD5.
+
+---
+
+## Specialized Converters
+
+John includes `*2john` tools that convert protected files into crackable hash format:
+
+| Tool | Converts |
+|------|----------|
+| [[SSH2John]] | SSH private keys |
+| [[GPG2John]] | GPG/PGP keys |
+| `zip2john` | Password-protected ZIP files |
+| `rar2john` | Password-protected RAR files |
+| `keepass2john` | KeePass databases |
+
+Usage pattern:
+
+```bash
+ssh2john id_rsa > ssh_hash.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt ssh_hash.txt
+```
+
+---
+
+## Related Notes
+
+- [[Password Hashing]] — how passwords are stored, algorithm comparison
+- [[Hashcat]] — GPU-accelerated alternative
+- [[Hydra]] — online brute-forcing (live services)
+- [[Unshadowing]] — combining /etc/passwd and /etc/shadow
+- [[Single Crack Mode]] — username-based mutations
+- [[Custom Rules]] — writing custom John rules

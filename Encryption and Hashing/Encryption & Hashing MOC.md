@@ -19,12 +19,13 @@ tags: [moc, crypto, hashing]
 - [[LKUS]]
 
 ## Hashing & Cracking
-- [[John Basics]]
+- [[Password Hashing]] — how passwords are stored, salting, algorithm comparison, identification
+- [[Hashcat]] — GPU-accelerated cracking (dictionary, rules, masks)
+- [[John Basics]] — CPU-based cracking
 - [[Single Crack Mode]]
 - [[Custom Rules]]
 - [[Unshadowing]]
-- [[SSH2John]]
-- [[GPG2John]]
+- [[SSH2John]] / [[GPG2John]]
 - [[Password Protected Zip & RAR Files]]
 - [[md5sum]]
 - [[NTLM]]
