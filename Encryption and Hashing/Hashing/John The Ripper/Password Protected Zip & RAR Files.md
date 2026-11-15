@@ -2,47 +2,76 @@
 title: "Password Protected Zip & RAR Files"
 created: 2026-03-11
 type: technique
-tags: [cracking, crypto, hashing, linux, technique]
+tags: [technique, cracking, hashing]
 ---
 
-We can use John to crack the password on password protected Zip or RAR files. Again, we're going to be using a separate part of the john suite of tools to convert the zip or RAR file into a format that John will understand.
-### Zip Files
+# Password Protected Zip & RAR Files
 
-For zip files we will be using `Zip2John` tool, and the syntax is as follows:
+John's `zip2john` and `rar2john` tools convert password-protected archives into crackable hash format. Same workflow as [[SSH2John]] and [[GPG2John]] — convert first, crack second.
 
-```bash
-zip2john [options] [zip file] > [output file]
-```
+---
 
-**Note:** `[options]` - Allows you to pass specific checksum options to zip2john, this shouldn't often be necessary.
+## Zip Files
 
-Example:
+### 1. Extract the hash
 
 ```bash
-zip2john zipfile.zip > zip_hash.txt
+zip2john protected.zip > zip_hash.txt
 ```
 
-Now its ready to be cracked using the following command:
+### 2. Crack it
 
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
 ```
-### RAR Files
 
-its almost the same for RAR files unless the tool is different, we will be using `Rar2John`, and the syntax is as follows 
-
-```bash
-rar2john [rar file] > [output file]
-```
-
-Example:
+### 3. Extract the archive
 
 ```bash
-rar2john rarfile.rar > rar_hash.txt
+unzip protected.zip
+# Enter the cracked password
 ```
 
-Now its ready to be cracked using the following command:
-``
+---
+
+## RAR Files
+
+### 1. Extract the hash
+
+```bash
+rar2john protected.rar > rar_hash.txt
+```
+
+### 2. Crack it
+
 ```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt
 ```
+
+### 3. Extract the archive
+
+```bash
+unrar x protected.rar
+# Enter the cracked password
+```
+
+---
+
+## Other Archive Types
+
+The same pattern works for other formats:
+
+| Tool | Archive Type |
+|------|-------------|
+| `zip2john` | ZIP |
+| `rar2john` | RAR |
+| `7z2john` | 7-Zip |
+| `keepass2john` | KeePass databases |
+| `bitlocker2john` | BitLocker volumes |
+
+---
+
+## Related Notes
+
+- [[John Basics]] — cracking commands
+- [[SSH2John]] / [[GPG2John]] — same workflow for keys
