@@ -12,6 +12,7 @@ tags: [home, index]
 - [[Shells MOC]] — Reverse shells, web shells, stabilisation
 - [[Encryption & Hashing MOC]] — Crypto, John the Ripper, hashing
 - [[Windows MOC]] — Processes, AD, Kerberos, networking protocols
+- [[Binary Exploitation MOC]] — Heap overflows, memory corruption, RCE
 - [[DevSecOps MOC]] — Docker, Kubernetes, container security
 - [[Researching MOC]] — OSINT, vulnerability research, file discovery
 
