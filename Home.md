@@ -31,8 +31,8 @@ tags: [home, index]
 - [[LFI & RFI]] / [[Log Poisoning]]
 - [[Reverse shells]] / [[SSH Tunnels]]
 
-### Privesc Cheat Sheet
-- [[SUID&GUID Files]] / [[Exploiting Crontab]] / [[Exploiting PATH Variable]]
+### Privilege Escalation Cheat Sheet
+- [[SUID & SGID Files]] / [[Exploiting Crontab]] / [[Exploiting PATH Variable]]
 - [[LinEnum]] / [[Basic Enumeration]]
 
 ## Other Topics

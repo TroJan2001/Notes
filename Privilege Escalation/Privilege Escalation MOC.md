@@ -4,11 +4,11 @@ tags: [moc, privesc]
 
 # Privilege Escalation
 
-## Methodology
-- [[Privesc Methodology]] — structured enumeration framework, six misconfiguration categories, chaining findings
+## Core
+- [[Overview]] — horizontal vs vertical escalation concepts
+- [[Methodology]] — structured enumeration framework, six misconfiguration categories, chaining findings
 
 ## Linux Privilege Escalation
-- [[Privilege Escalation]] — Overview & Concepts
 
 ### Enumeration
 - [[Basic Enumeration]]
@@ -18,16 +18,15 @@ tags: [moc, privesc]
 - [[Legacy Packages]]
 - [[LinEnum]]
 
-### SUID/SGID
-- [[SUID&GUID Files]]
+### SUID / SGID
+- [[SUID & SGID Files]]
 - [[Environment Variables Exploitation]]
 - [[Known Exploits]]
 - [[Shared Object Injection Exploitation]]
 - [[Systemctl]]
 
 ### Sudo Abuse
-- [[Escaping Vi Editor]]
-- [[Exploiting Sudo Environment Variables]]
+- [[Sudo Exploitation]]
 
 ### Scheduled Tasks
 - [[Exploiting Crontab]]
@@ -45,6 +44,9 @@ tags: [moc, privesc]
 ### Kernel Concepts
 - [[Page Cache]]
 - [[User Namespaces]]
+
+### Other
+- [[Process Snooping]]
 
 ### CVEs
 - [[Dirty COW (CVE-2016-5195)]]
@@ -68,7 +70,7 @@ tags: [moc, privesc]
 
 ```dataview
 LIST WITHOUT ID file.link + " — *" + type + "*"
-FROM "Privesc"
+FROM "Privilege Escalation"
 WHERE type != null AND !contains(file.name, "MOC")
 SORT file.name ASC
 ```

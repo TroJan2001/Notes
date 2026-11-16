@@ -1,12 +1,12 @@
 ---
-title: "Privesc Methodology"
+title: "Methodology"
 created: 2026-11-16
 updated: 2026-11-16
 type: methodology
 tags: [methodology, privesc, enumeration]
 ---
 
-# Privesc Methodology
+# Privilege Escalation Methodology
 
 A structured approach to privilege escalation on any host. Check every category, chain findings across them, and exploit the most direct path first.
 
@@ -170,9 +170,9 @@ What defenders use to harden is exactly what you use to enumerate. The same chec
 
 ## Related Notes
 
-- [[Privilege Escalation]] — Linux privesc overview
+- [[Overview]] — privilege escalation concepts
 - [[Basic Enumeration]] — Linux enumeration commands
-- [[SUID&GUID Files]] — finding and exploiting SUID binaries
+- [[SUID & SGID Files]] — finding and exploiting SUID binaries
 - [[Exploiting Crontab]] — cron job exploitation
 - [[Windows Services]] — Windows service misconfigurations
 - [[Passwords Usual Spots]] — Windows credential locations
