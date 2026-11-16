@@ -16,7 +16,10 @@ tags: [moc, privesc]
 - [[Capabilities]]
 - [[History, Config and SSH Files]]
 - [[Legacy Packages]]
-- [[LinEnum]]
+
+### Tools
+- [[Automated Enumeration Tools]] — LinPEAS, LinEnum, LES, pspy
+- [[Process Snooping]] — event-driven process monitoring with pspy
 
 ### SUID / SGID
 - [[SUID & SGID Files]]
@@ -44,9 +47,6 @@ tags: [moc, privesc]
 ### Kernel Concepts
 - [[Page Cache]]
 - [[User Namespaces]]
-
-### Other
-- [[Process Snooping]]
 
 ### CVEs
 - [[Dirty COW (CVE-2016-5195)]]
