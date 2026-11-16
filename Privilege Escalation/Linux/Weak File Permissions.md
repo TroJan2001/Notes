@@ -62,14 +62,14 @@ Being in a group that grants write access to a file lets you modify its **conten
 This matters for PATH hijacks: if a file in a privileged PATH directory is group-writable but not executable, you can change what's inside it but can't make it executable unless you're the owner. The workaround is to delete the file (requires write on the **directory**) and create a new one — the new file is owned by you, so you can chmod it.
 
 ```bash
-# You're in dev_user group, file is group-writable but you don't own it
-echo '#!/bin/bash' > /opt/dev/bin/ps    # works (group write)
-chmod +x /opt/dev/bin/ps                 # FAILS (not owner)
+# You're in target_group, file is group-writable but you don't own it
+echo '#!/bin/bash' > /opt/bin/script.sh    # works (group write)
+chmod +x /opt/bin/script.sh                # FAILS (not owner)
 
 # If you have write on the PARENT directory, delete and recreate
-rm /opt/dev/bin/ps                       # works (dir write)
-echo '#!/bin/bash' > /opt/dev/bin/ps     # new file, YOU own it
-chmod +x /opt/dev/bin/ps                 # works (you're the owner now)
+rm /opt/bin/script.sh                      # works (dir write)
+echo '#!/bin/bash' > /opt/bin/script.sh    # new file, YOU own it
+chmod +x /opt/bin/script.sh                # works (you're the owner now)
 ```
 
 # SSH Key Planting
