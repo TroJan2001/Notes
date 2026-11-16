@@ -36,7 +36,7 @@ tags: [home, index]
 - [[LinEnum]] / [[Basic Enumeration]]
 
 ## Other Topics
-- [[Wi-Fi Hacking]] — Wireless network attacks
+- [[Wireless Security MOC]] — Wi-Fi, Bluetooth, RFID/NFC, IoT protocols
 - [[Inter-Process Communication (IPC)]] / [[Sessions and Full-Duplex Communication]] — OS fundamentals
 
 ## Resources
