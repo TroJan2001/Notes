@@ -31,9 +31,11 @@ We might encounter a useful information such as credentials, for example:
 
 We can check Powershell history using the following command:
 
-```shell-session
-%userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 ```
+type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+```
+
+From PowerShell, use `$Env:userprofile` instead of `%userprofile%`.
 # Saved Windows Credentials
 
 Windows enables us to use and store other users' credentials on the system. To list these saved credentials, we can use the following command:

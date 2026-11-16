@@ -56,11 +56,24 @@ tags: [moc, privesc]
 - [[Polkit CVE-2021-4034 (Pwnkit)]]
 
 ## Windows Privilege Escalation
-- [[Windows Services]]
-- [[Abusing vulnerable software]]
-- [[Abusing Windows Privileges]]
-- [[Passwords Usual Spots]]
-- [[Other ways for Privilege Escalation]]
+
+### Credential Harvesting
+- [[Passwords Usual Spots]] — Unattend.xml, PowerShell history, saved creds, IIS, PuTTY
+
+### Services
+- [[Windows Services]] — insecure executables, unquoted paths, insecure DACLs
+
+### Privileges
+- [[Abusing Windows Privileges]] — SeBackup, SeTakeOwnership, SeImpersonate
+
+### Scheduled Tasks & Installers
+- [[Scheduled Tasks & Installer Abuse]] — writable task binaries, AlwaysInstallElevated
+
+### Software
+- [[Abusing Vulnerable Software]] — finding and exploiting unpatched software
+
+### Tools
+- [[Windows Automated Enumeration Tools]] — WinPEAS, PrivescCheck, WES-NG
 
 ---
 

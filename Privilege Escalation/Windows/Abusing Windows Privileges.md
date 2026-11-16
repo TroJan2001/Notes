@@ -2,7 +2,7 @@
 title: "Abusing Windows Privileges"
 created: 2026-03-11
 type: technique
-tags: [linux, privesc, technique, windows]
+tags: [privesc, technique, windows]
 ---
 
 Privileges are rights that an account has to perform specific system-related tasks. These tasks can be as simple as the privilege to shut down the machine up to privileges to bypass some DACL-based access controls.
