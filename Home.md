@@ -38,6 +38,7 @@ tags: [home, index]
 ## Other Topics
 - [[Wireless Security MOC]] — Wi-Fi, Bluetooth, RFID/NFC, IoT protocols
 - [[Mobile Security MOC]] — App architecture, static/dynamic analysis, OWASP Mobile Top 10
+- [[Cloud Security MOC]] — Service models, IAM, storage, networking, IMDS & SSRF
 - [[Inter-Process Communication (IPC)]] / [[Sessions and Full-Duplex Communication]] — OS fundamentals
 
 ## Resources
