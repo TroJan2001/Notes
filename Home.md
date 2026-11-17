@@ -40,6 +40,7 @@ tags: [home, index]
 - [[Mobile Security MOC]] — App architecture, static/dynamic analysis, OWASP Mobile Top 10
 - [[Cloud Security MOC]] — Service models, IAM, storage, networking, IMDS & SSRF
 - [[LLM Security MOC]] — Recon, prompt injection, jailbreaking, system prompt extraction, OWASP LLM Top 10
+- [[Blue Team MOC]] — SOC operations, SIEM/Splunk, Event IDs, IR lifecycle, MITRE ATT&CK, Pyramid of Pain
 - [[Inter-Process Communication (IPC)]] / [[Sessions and Full-Duplex Communication]] — OS fundamentals
 
 ## Resources
