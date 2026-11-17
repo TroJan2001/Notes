@@ -41,6 +41,7 @@ tags: [home, index]
 - [[Cloud Security MOC]] — Service models, IAM, storage, networking, IMDS & SSRF
 - [[LLM Security MOC]] — Recon, prompt injection, jailbreaking, system prompt extraction, OWASP LLM Top 10
 - [[Blue Team MOC]] — SOC operations, SIEM/Splunk, Event IDs, IR lifecycle, MITRE ATT&CK, Pyramid of Pain
+- [[Python Scripting MOC]] — Pentest scripts, network tools, exploitation patterns, library reference
 - [[Inter-Process Communication (IPC)]] / [[Sessions and Full-Duplex Communication]] — OS fundamentals
 
 ## Resources
