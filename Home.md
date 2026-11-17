@@ -40,6 +40,8 @@ tags: [home, index]
 - [[Mobile Security MOC]] — App architecture, static/dynamic analysis, OWASP Mobile Top 10
 - [[Cloud Security MOC]] — Service models, IAM, storage, networking, IMDS & SSRF
 - [[LLM Security MOC]] — Recon, prompt injection, jailbreaking, system prompt extraction, OWASP LLM Top 10
+- [[Pentesting Methodology MOC]] — PTES, Kill Chain, threat modeling (STRIDE/DREAD/PASTA/ATT&CK), frameworks
+- [[Security Fundamentals MOC]] — CIA triad, security models, risk management, auditing, IR
 - [[Blue Team MOC]] — SOC operations, SIEM/Splunk, Event IDs, IR lifecycle, MITRE ATT&CK, Pyramid of Pain
 - [[Python Scripting MOC]] — Pentest scripts, network tools, exploitation patterns, library reference
 - [[Inter-Process Communication (IPC)]] / [[Sessions and Full-Duplex Communication]] — OS fundamentals

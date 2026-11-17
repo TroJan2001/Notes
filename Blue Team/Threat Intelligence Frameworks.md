@@ -9,20 +9,9 @@ Common language for describing adversary behavior and prioritizing detection inv
 
 ## MITRE ATT&CK Framework
 
-A dictionary for adversary behavior — organized into three levels:
+A dictionary for adversary behavior. See [[Threat Modeling]] for the full 14-tactic Enterprise matrix, Kill Chain mapping, and CTID threat modeling workflow.
 
-| Level | Answers | Example |
-|-------|---------|---------|
-| **Tactics** (14 in Enterprise matrix) | **Why** — the adversary's goal | Credential Access (TA0006) |
-| **Techniques** | **What** — the method used | Brute-Force (T1110) |
-| **Sub-techniques** | **How specifically** — the implementation | Password Guessing (T1110.001) |
-
-Below sub-techniques: **procedures** — documented real-world implementations by specific threat groups.
-
-### Key Difference from Cyber Kill Chain
-ATT&CK's 14 tactics are **non-linear**. Attackers loop back, skip stages, operate across multiple objectives. Also maps behaviors to specific groups and is continuously updated.
-
-### Common ATT&CK Mappings
+### Detection-Focused Mappings
 
 | Attack Pattern | Technique | ID |
 |---------------|-----------|-----|
