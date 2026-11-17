@@ -21,6 +21,10 @@ tags: [moc, devsecops, containers]
 - [[Container Capabilities|Capabilities]]
 - [[Exposed Docker Daemon]]
 
+## Software Development & DevSecOps
+- [[Software Development Models]] — Waterfall → Agile → DevOps, CI/CD, IaC, monitoring, microservices
+- [[DevSecOps Fundamentals]] — Shifting Left, challenges (silos, visibility, stringent processes), culture (autonomy, transparency, empathy)
+
 ---
 
 ## Auto-Index (Dataview)
