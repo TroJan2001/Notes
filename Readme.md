@@ -1,5 +1,7 @@
-🔴 My GitHub notes library is a blend of manually written content and substantial portions that have been gathered or explicitly copied (for educational purposes) from various online sources such as **TryHackMe and other internet resources.**
-  
-🔴 This repository serves educational purposes, and I explicitly disclaim responsibility for any potential misuse of the content, emphasizing that users should exercise caution and ethical considerations when engaging with the materials provided.
+A personal cybersecurity reference vault — built from hands-on labs, coursework, and research across platforms including TryHackMe, organized and annotated with my own methodology, architecture, and tooling.
 
-⭐ If you find this project useful, please consider giving it a star as it helps others discover it too!
+Topics span web pentesting, privilege escalation, binary exploitation, network exploitation, DevSecOps, cloud security, and more — structured around practical attack and defense workflows.
+
+⚠️ This repository is intended for educational and authorized security testing purposes only. Users are responsible for ensuring ethical and legal use of all materials.
+
+⭐ If you find this useful, please consider giving it a star!
