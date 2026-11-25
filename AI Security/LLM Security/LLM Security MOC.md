@@ -5,7 +5,10 @@ type: moc
 tags: [llm, moc]
 ---
 
-# AI & LLM Security
+# LLM Security
+
+Attacking and defending LLM *applications*. Part of [[AI Security MOC]]; companion to [[ML Security MOC]]
+(security of ML systems — adversarial ML, drift, poisoning, unlearning — from CSCE 704).
 
 ## Reconnaissance
 - [[LLM Reconnaissance]] — default ports, fingerprinting, Ollama/MLflow APIs, Shodan dorks, CVEs

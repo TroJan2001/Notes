@@ -39,7 +39,7 @@ tags: [home, index]
 - [[Wireless Security MOC]] — Wi-Fi, Bluetooth, RFID/NFC, IoT protocols
 - [[Mobile Security MOC]] — App architecture, static/dynamic analysis, OWASP Mobile Top 10
 - [[Cloud Security MOC]] — Service models, IAM, storage, networking, IMDS & SSRF
-- [[LLM Security MOC]] — Recon, prompt injection, jailbreaking, system prompt extraction, OWASP LLM Top 10
+- [[AI Security MOC]] — AI security umbrella: ML security (adversarial ML, poisoning, drift, CSCE 704) + LLM security (prompt injection, jailbreaking)
 - [[Pentesting Methodology MOC]] — PTES, Kill Chain, threat modeling (STRIDE/DREAD/PASTA/ATT&CK), frameworks
 - [[Security Fundamentals MOC]] — CIA triad, security models, risk management, auditing, IR
 - [[Blue Team MOC]] — SOC operations, SIEM/Splunk, Event IDs, IR lifecycle, MITRE ATT&CK, Pyramid of Pain
